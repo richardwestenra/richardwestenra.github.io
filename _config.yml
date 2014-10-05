@@ -3,8 +3,8 @@
 # 2. config.build.yml
 # 3. config.yml
 
-name: richardwestenra.github.io
-description: Richard Westenra: Web designer & front-end developer
+name: Richard Westenra
+description: Portfolio site with Yeoman Jekyllrb and Github Pages
 author:
   name: Richard Westenra
   email: rjwestenra@gmail.com
