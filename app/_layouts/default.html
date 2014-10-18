@@ -1,48 +1,17 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+{% include header.html %}
+<meta name="viewport" content="width=device-width">
 
-        <!-- build:css({app,.tmp}) /css/main.css -->
-        <!-- Syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+<!-- build:css({app,.tmp}) /css/main.css -->
+<link rel="stylesheet" href="/css/main.css">
+<!-- endbuild -->
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-        <!-- endbuild -->
+</head>
+<body>
+    {% include nav.html %}
 
-    </head>
-    <body>
-
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
-
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                <a href="http://richardwestenra.com/">Richard Westenra</a><br />
-                <a href="mailto:richard@richardwestenra.com">richard@richardwestenra.com</a>
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/richardwestenra">github.com/richardwestenra</a><br />
-                <a href="https://twitter.com/richardwestenra">twitter.com/richardwestenra</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
+    {{ content }}
 
     <!-- build:js(app) /js/scripts.js -->
     <script src="/js/main.js"></script>
     <!-- endbuild -->
-    </body>
-</html>
+{% include footer.html %}
