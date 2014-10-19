@@ -5,12 +5,15 @@
 body {
 }
 
-main {
-    padding: 50px 0;
-}
 #home {
     overflow: hidden;
+    @include clearfix;
+    h3 {
+        font-size: 2em;
+        margin: 0;
+    }
 }
+
 
 //--- Config ---//
 #config {
@@ -37,6 +40,7 @@ main {
         }
     }
 }
+
 
 
 //--- Header ---//
@@ -105,7 +109,7 @@ main {
                     background: $c_opposite;
                     color: $c_base;
                     padding: 0 8px;
-                    right: -10px;
+                    right: -15px;
                     top: 35px;
                     box-shadow: 0 1px 2px rgba($c_primary,0.1);
                     pointer-events: none;
@@ -119,14 +123,14 @@ main {
                         width: 0;
                         height: 0;
                         position: absolute;
-                        right: 18px;
+                        right: 26px;
                         top: -$t;
                         border-style: solid;
                         border-width: 0 $t $t $t;
                         border-color: transparent transparent $c_opposite transparent;
                     }
                 }
-                &:hover span {
+                &:hover span, &:focus span {
                     opacity: 1;
                     transform: translateY(10px);
                 }
@@ -134,9 +138,14 @@ main {
         }
     }
 }
+
+
+
+//--- Banner ---//
+
 .banner {
     text-align: center;
-    padding: 0 0 10px;
+    padding: 0 0 30px;
     position: relative;
     z-index: 1;
     &:before {
@@ -198,5 +207,102 @@ main {
             font-size: 2.7em;
             animation: vibrate .3s infinite alternate;
         }
+    }
+}
+
+
+//--- Home sections ---//
+
+.about, .work, .linkblog {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 4em;
+}
+.work {
+    h4 {
+        @include sansSerif;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: rgba($c_primary,0.7);
+        margin: 1.5em 0 0.5em;
+    }
+    ul {
+        margin: 0 0 2em;
+    }
+}
+section.linkblog {
+    ul {
+        @media screen and (min-width: $m_small){
+            column-count: 2;
+            font-size: 0.9em;
+        }
+        @media screen and (min-width: $m_tablet){
+            column-count: 3;
+        }
+        @media screen and (min-width: $m_large){
+            column-count: 1;
+        }
+    }
+    p {
+        margin: 0;
+        font-weight: bold;
+        font-size: 0.9em;
+    }
+}
+.linkblog {
+    ul {
+        list-style: none;
+        margin: 1em 0 0;
+        padding: 0;
+        li {
+            padding-left: 1em;
+            margin: 0 0 1em;
+            position: relative;
+            display: inline-block;
+            @media screen and (min-width: $m_large){
+                display: block;
+            }
+            &:before {
+                $t: 4px;
+                content: '';
+                width: 0;
+                height: 0;
+                position: absolute;
+                left: 0;
+                top: 0.5em;
+                transition: all ease .2s;
+                border-style: solid;
+                border-width: $t 0 $t $t;
+                border-color: transparent transparent transparent $c_primary;
+            }
+            &:hover:before {
+                left: 0.2em;
+            }
+        }
+    }
+}
+@media screen and (min-width: $m_large){
+    .about, .work, section.linkblog {
+        float: left;
+    }
+    .about {
+        width: 40%;
+        padding-right: 6%;
+    }
+    .work {
+        width: 35%;
+        padding-right: 6%;
+    }
+    section.linkblog {
+        width: 25%;
+    }
+}
+
+//--- Posts ---//
+.post {
+    max-width: 700px;
+    margin: 0 auto;
+    & > h2 {
+        font-size: 2em;
     }
 }

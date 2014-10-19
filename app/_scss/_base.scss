@@ -40,7 +40,9 @@ $fl: "../fonts/"; //font location
 
 
 //--- Base HTML ---//
-
+* {
+    box-sizing: border-box;
+}
 html, body {
     margin: 0;
     padding: 0;
@@ -69,14 +71,11 @@ h1, h2, h3, h4, h5, h6 {
 li, p, blockquote {
     line-height: 1.5em;
 }
-
 .wrapper {
-    @media screen {
-        width: 90%;
-        margin: 0 5%;
-    }
-    @media only screen and (min-width: $m_medium * 1.1) {
-        width: $m_medium;
+    width: 90%;
+    margin: 0 5%;
+    @media only screen and (min-width: $m_large) {
+        width: 80%;
         margin: 0 auto;
     }
 }
@@ -87,8 +86,9 @@ li, p, blockquote {
     padding: 1em 0;
     text-align: center;
 }
-* {
-    box-sizing: border-box;
+main {
+    padding: 50px 0;
+    clear: both;
 }
 
 

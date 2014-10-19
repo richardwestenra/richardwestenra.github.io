@@ -1,33 +1,58 @@
-//--- Typography ---//
+//--- Buttons ---//
+.btn {
+    cursor: pointer;
+    background: lighten($c_primary,5%);
+    display: inline-block;
+    white-space: nowrap;
+    color: $c_bg;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 6px 14px 3px;
+    @include display;
+    font-size: 1.1em;
+    i {
+        font-size: 0.8em;
+        position: relative;
+        top: -0.1em;
+    }
+    &:hover {
+        background: lighten($c_primary,10%);
+        color: $c_opposite;
+    }
+}
+
+
+
+//--- Markup formatting ---//
 
 // standard
 .post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
+    border: 1px solid #ddd;
+    background-color: #eef;
+    padding: 0 .4em;
 }
 
 .post ul, .post ol {
-  margin-left: 1.35em;
+    margin-left: 1.35em;
 }
 
 .post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
+    border: 1px solid #ddd;
+    background-color: #eef;
+    padding: 0 .2em;
 }
 
 .post pre code {
-  border: none;
+    border: none;
 }
 
 // terminal
 .post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
+    border: 1px solid #000;
+    background-color: #333;
+    color: #FFF;
 }
 
 .post pre.terminal code {
-  background-color: #333;
+    background-color: #333;
 }
