@@ -3,8 +3,9 @@ layout: default
 title: Richard Westenra | Web designer &amp; front-end developer
 ---
 
-<div id="home" class="wrapper">
-	<h2 class="banner">Good design speaks volumes</h2>
+<main id="home" class="wrapper">
+	<img class="gramaphone" src="/img/gramaphone.svg" width="161.25px" height="195.875px" alt="Gramaphone" />
+	<h2 class="banner">Good design speaks <strong>volumes</strong></h2>
 	<p>This is a test playground for me to learn Jekyll.</p>
 	
 	<h2>Blog posts:</h2>
@@ -13,4 +14,4 @@ title: Richard Westenra | Web designer &amp; front-end developer
 		<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
 		{% endfor %}
 	</ul>
-</div>
+</main>

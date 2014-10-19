@@ -302,7 +302,7 @@ module.exports = function (grunt) {
       },
       all: [
         'Gruntfile.js',
-        '<%= yeoman.app %>/js/**/*.js',
+        '<%= yeoman.app %>/js/{,*/}*.js',
         'test/spec/**/*.js'
       ]
     },
@@ -327,8 +327,42 @@ module.exports = function (grunt) {
         'compass:dist',
         'copy:dist'
       ]
-    }
+    },
+    modernizr: {
+      dist: {
+        devFile: '_bower_components/modernizr/modernizr.js',
+        outputFile: '<%= yeoman.dist %>/js/vendor/modernizr.js',
+        files: {
+          src: [
+            '<%= yeoman.app %>/js/{,*/}*.js',
+            '<%= yeoman.app %>/css/{,*/}*.css',
+            '!<%= yeoman.app %>/js/vendor/*'
+          ]
+        },
+        uglify: true
+      }
+    },
+    notify_hooks: {
+      options: {
+        enabled: true,
+        max_jshint_notifications: 5, // maximum number of notifications from jshint output
+      }
+    },
+    notify: {
+      build: {
+        options: {
+          message: 'Build complete'
+        }
+      },
+      deploy: {
+        options: {
+          message: 'Deployment complete'
+        }
+      }
+    },
   });
+
+  grunt.task.run('notify_hooks');
 
   // Define Tasks
   grunt.registerTask('serve', function (target) {
@@ -377,16 +411,19 @@ module.exports = function (grunt) {
     'uglify',
     'imagemin',
     'svgmin',
+    'modernizr',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'notify:build'
     ]);
 
   grunt.registerTask('deploy', [
     'check',
     'test',
     'build',
-    'buildcontrol'
+    'buildcontrol',
+    'notify:deploy'
     ]);
 
   grunt.registerTask('default', [
