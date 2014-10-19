@@ -1,9 +1,15 @@
 {% include header.html %}
 <meta name="viewport" content="width=device-width">
 
-<!-- build:css({app,.tmp}) /css/main.css -->
-<link rel="stylesheet" href="/css/main.css">
+<!-- build:js scripts/vendor/modernizr.js -->
+<script src="/_bower_components/modernizr/modernizr.js"></script>
 <!-- endbuild -->
+
+<!--[if lt IE 9]>
+<!-- build:js scripts/vendor/respond.js -->
+<script src="/_bower_components/respond/src/respond.js"></script>
+<!-- endbuild -->
+<![endif]-->
 
 </head>
 <body>
@@ -11,6 +17,11 @@
 
     {{ content }}
 
+    <!-- build:css({app,.tmp}) /css/main.css -->
+    <link rel="stylesheet" href="/_bower_components/normalize.css/normalize.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- endbuild -->
+    
     <!-- build:js(app) /js/scripts.js -->
     <script src="/js/main.js"></script>
     <!-- endbuild -->

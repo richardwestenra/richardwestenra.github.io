@@ -5,4 +5,71 @@
 body {
 }
 
+
+//--- Header ---//
+.header {
+    width:100%;
+    background-color:$c_primary;
+    z-index:10;
+    height: 2.4em;
+    .wrapper {
+        @include clearfix;
+    }
+    a {
+        color: $c_bg;
+        text-decoration: none;
+        &:hover {
+            color: $c_opposite;
+            background-color: rgba($c_opposite,0.05);
+        }
+    }
+    h1 {
+        font-size: 1.2em;
+        margin: 0;
+        line-height: 1em;
+        float: left;
+        margin-left: -0.5em;
+        a {
+            padding: 0.5em;
+            display: block;
+            i {
+                display: none;
+            }
+            &:hover {
+                padding-top: 0.51em;
+                i {
+                    display: inline-block;
+                    width: 0.8em;
+                    text-align: left;
+                    font-size: 0.78em;
+                    text-indent: -0.23em;
+                    height: auto;
+                }
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        float: right;
+        li {
+            display: inline-block;
+            a {
+                padding: 0.5em 0.2em;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.banner {
+    font-size: 6em;
+}
+
+
+
 //@import "social";

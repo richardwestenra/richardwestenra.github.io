@@ -11,23 +11,30 @@ $m_larger: 1400px;
 $m_huge: 1600px;
 
 // Colours:
-$c_bg: #f9f9f9;
+$brown: #302a22;
+$beige: #e9e2d7;
+$c_bg: $beige;
 $c_base: #333;
-$c_primary: steelblue;
+$c_primary: $brown;
 $c_opposite: #fff;
 
 // Other:
 $il: "../img/"; //image location
+$fl: "../fonts/"; //font location
 
 // @Font-face:
+@mixin display {
+    font-family: 'ChunkFiveRegular', 'Arial Black', sans-serif;
+    font-weight: normal;
+}
 @mixin serif {
     font-family: serif;
 }
 @mixin sansSerif {
-    font-family: sans-serif;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+
 }
 
-// Default styles:
 html, body {
     margin: 0;
     padding: 0;
@@ -40,20 +47,18 @@ html, body {
     @media screen and (min-width: $m_small) {
         font-size: 100%;
     }
-    @media print {
-        font-size: 80%;
-        background: $c_opposite;
-    }
 }
 a {
     color: $c_primary;
-    text-decoration: none;
+    text-decoration: underline;
     &:hover {
-        text-decoration: underline;
+        text-decoration: none;
     }
 }
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.1em;
+    color: $c_primary;
+    @include display;
 }
 li, p, blockquote {
     line-height: 1.5em;

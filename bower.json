@@ -2,5 +2,8 @@
   "name": "richardwestenragithubio",
   "version": "0.0.0",
   "dependencies": {
+    "modernizr": "~2.8.3",
+    "respond": "~1.4.2",
+    "normalize.css": "~3.0.2"
   }
 }
