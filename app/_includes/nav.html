@@ -5,7 +5,9 @@
 			<li><a href="mailto:richard@richardwestenra.com"><i class="icon-mail"></i><span>Send me an email</span></a></li>
 			<li><a href="http://github.com/richardwestenra"><i class="icon-github"></i><span>Fork me on Github</span></a></li>
 			<li><a href="http://twitter.com/richardwestenra"><i class="icon-twitter"></i><span>Follow me on Twitter</span></a></li>
-			<li><a href="#" role="button"><i class="icon-cog"></i><span>Site settings</span></a></li>
+			<li><a href="#" role="button" class="configBtn"><i class="icon-cog"></i><span>Site settings</span></a></li>
+			{% if page.is_post? %}
+			{% endif %}
 		</ul>
 	</div>
 </header>

@@ -5,6 +5,39 @@
 body {
 }
 
+main {
+    padding: 50px 0;
+}
+#home {
+    overflow: hidden;
+}
+
+//--- Config ---//
+#config {
+    background: #f8f8f8;
+    box-shadow: inset 0 0 30px rgba(#000,0.1);
+    display: none;
+    position: relative;
+    z-index: 2;
+    .wrapper {
+        padding: 1em 0;
+        position: relative;
+    }
+    .configBtn {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        font-size: 2.5em;
+        text-decoration: none;
+        color: #a00;
+        font-weight: bold;
+        transition: all ease .3s;
+        &:hover {
+            transform: rotate(90deg);
+        }
+    }
+}
+
 
 //--- Header ---//
 .header {
@@ -12,6 +45,8 @@ body {
     background-color:$c_primary;
     z-index:10;
     height: 2.4em;
+    position: relative;
+    z-index: 2;
     .wrapper {
         @include clearfix;
     }
@@ -99,52 +134,69 @@ body {
         }
     }
 }
-.gramaphone {
-    display: block;
-    margin: 50px auto 10px;
-    max-width: 30%;
-    height: auto;
-}
 .banner {
-    margin: 0;
-    font-size: 1.5em;
-    @media screen and (min-width: $m_small){
-        font-size: 2em;
-    }
-    @media screen and (min-width: $m_tablet){
-        font-size: 3em;
-    }
-    font-size: 6vw;
-    @media screen and (min-width: $m_large){
-        font-size: 4em;
-    }
     text-align: center;
-    strong {
+    padding: 0 0 10px;
+    position: relative;
+    z-index: 1;
+    &:before {
+        content: '';
+        $d: 960px;
+        width: $d;
+        height: $d;
+        background: url($il + 'home/radialStripes.svg');
+        position: absolute;
+        left: 50%;
+        top: 150px - ($d/2);
+        margin-left: $d/-2 + 30;
+        z-index: -1;
+        opacity: 0;
+        transition: .8s ease opacity;
+        animation: spin 10s infinite linear;
+        pointer-events: none;
+        .no-svg & {
+            display: none;
+        }
+    }
+    .gramaphone {
         display: block;
-        font-size: 2.6em;
-        font-weight: normal;
-        text-transform: uppercase;
-        line-height: 1em;
-        transition: .2s ease font-size;
+        margin: 0 auto 10px;
+        max-width: 30%;
+        height: auto;
+        .no-svg & {
+            display: none;
+        }
+    }
+    h2 {
+        margin: 0;
+        font-size: 1.5em;
+        @media screen and (min-width: $m_small){
+            font-size: 2em;
+        }
+        @media screen and (min-width: $m_tablet){
+            font-size: 3em;
+        }
+        font-size: 6vw;
+        @media screen and (min-width: $m_large){
+            font-size: 4em;
+        }
+        strong {
+            display: block;
+            font-size: 2.6em;
+            font-weight: normal;
+            text-transform: uppercase;
+            line-height: 1em;
+            transition: .2s ease font-size;
+        }
     }
     &:hover {
+        &:before {
+            opacity: 0.4;
+        }
         strong {
             // transform: scale(1.1);
             font-size: 2.7em;
             animation: vibrate .3s infinite alternate;
         }
     }
-}
-@keyframes vibrate {
-    0% { transform: translate(0.5px, -1px) rotate(-0.05deg); }
-    10% { transform: translate(-0.5px, -1px) rotate(-0.05deg); }
-    20% { transform: translate(-1px, 0px) rotate(0.05deg); }
-    30% { transform: translate(0px, 1px) rotate(0deg); }
-    40% { transform: translate(0.5px, -0.5px) rotate(0.05deg); }
-    50% { transform: translate(-0.5px, 1px) rotate(-0.05deg); }
-    60% { transform: translate(-1px, 0.5px) rotate(0deg); }
-    70% { transform: translate(1px, 0.5px) rotate(-0.05deg); }
-    80% { transform: translate(-0.5px, -1px) rotate(0.05deg); }
-    90% { transform: translate(1px, 1px) rotate(0deg); }
-    100% { transform: translate(0, 0) rotate(0); }
 }

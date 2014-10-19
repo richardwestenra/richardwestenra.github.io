@@ -4,8 +4,10 @@ title: Richard Westenra | Web designer &amp; front-end developer
 ---
 
 <main id="home" class="wrapper">
-	<img class="gramaphone" src="/img/gramaphone.svg" width="161.25px" height="195.875px" alt="Gramaphone" />
-	<h2 class="banner">Good design speaks <strong>volumes</strong></h2>
+	<div class="banner">
+		<img class="gramaphone" src="/img/home/gramaphone.svg" width="161.25" height="195.875" alt="Gramaphone" />
+		<h2>Good design speaks <strong>volumes</strong></h2>
+	</div>
 	<p>This is a test playground for me to learn Jekyll.</p>
 	
 	<h2>Blog posts:</h2>
@@ -15,3 +17,22 @@ title: Richard Westenra | Web designer &amp; front-end developer
 		{% endfor %}
 	</ul>
 </main>
+
+
+<script id="config_tmpl" type="text/template">
+	<div id="config">
+		<div class="wrapper">
+			<a class="configBtn" href="#" title="Close" role="button">&times;</a>
+			<h3>Configure site options</h3>
+			<h4>Change theme</h4>
+			<ul id="styleSwitcher">
+			   <li><a class="on" id="standard">Standard</a></li>
+			   <li><a id="geocities">Geocities</a></li>
+			</ul>
+			<h4>Modify link behaviour</h4>
+			<ul id="linkSwitcher">
+				<li><a class="off">Make external links open in a new tab/window</a></li>
+			</ul>
+		</div>
+	</div>
+</script>
