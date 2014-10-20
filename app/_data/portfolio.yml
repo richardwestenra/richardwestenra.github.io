@@ -64,24 +64,6 @@
   img: uniforms.png
   year: 2013
 
-- name: Grammatically Speaking
-  url: http://www.staples.ca/sbdca/en_CA/cre/programs/grammarquiz/index.html
-  client: Staples
-  img: grammar.jpg
-  year: 2013
-
-# - name: Brandopolis
-#   url: http://www.distilled.net/brandopolis/
-#   client: Distilled
-#   img: 
-#   year: 2014
-
-- name: The Career Aptitude Test
-  url: http://www.rasmussen.edu/resources/aptitude-test/
-  client: Rasmussen College
-  img: skills.jpg
-  year: 2013
-
 - name: Where to go shopping in London
   url: http://www.thetrainline.com/tools/shopping-in-london/
   client: The Trainline
@@ -110,6 +92,24 @@
   url: http://www.rasmussen.edu/resources/what-career-should-i-choose/
   client: Rasmussen College
   img: career.png
+  year: 2013
+
+- name: Grammatically Speaking
+  url: http://www.staples.ca/sbdca/en_CA/cre/programs/grammarquiz/index.html
+  client: Staples
+  img: grammar.jpg
+  year: 2013
+
+# - name: Brandopolis
+#   url: http://www.distilled.net/brandopolis/
+#   client: Distilled
+#   img: 
+#   year: 2014
+
+- name: The Career Aptitude Test
+  url: http://www.rasmussen.edu/resources/aptitude-test/
+  client: Rasmussen College
+  img: skills.jpg
   year: 2013
 
 # - name: The Movie Lover’s Guide to the World

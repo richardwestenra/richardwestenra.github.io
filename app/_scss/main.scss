@@ -347,7 +347,7 @@ body {
                     height: 0;
                     border-style: solid;
                     border-width: 0 $t $t 0;
-                    border-color: transparent rgba(#000,0.8) transparent transparent;
+                    border-color: transparent #fff transparent transparent;
                     position: absolute;
                     top: 0;
                     right: 0;
@@ -357,10 +357,8 @@ body {
                 span {
                     position: absolute;
                     opacity: 0;
-                    transition: all .6s ease;
+                    transition: opacity .6s ease, padding .15s linear;
                     z-index: 2;
-                    color: #fff;
-                    line-height: 1.3em;
                 }
                 .name {
                     width: 100%;
@@ -368,8 +366,21 @@ body {
                     background: rgba(#000,0.8);
                     left: 0;
                     bottom: 0;
-                    padding: 10px;
-                    font-size: 13px;
+                    padding: 0 10px;
+                    color: #fff;
+                    em {
+                        line-height: 1.2em;
+                        font-size: 0.9em;
+                        @include serif;
+                        font-weight: bold;
+                        display: block;
+                    }
+                    cite {
+                        font-size: 0.7em;
+                        display: block;
+                        text-align: right;
+                        font-style: normal;
+                    }
                 }
                 .year {
                     top: 6px;
@@ -378,6 +389,8 @@ body {
                     font-size: 9px;
                     font-weight: bold;
                     text-align: center;
+                    line-height: 1em;
+                    color: $c_base;
                 }
                 &:hover {
                     transform: scale(1.1);
@@ -386,6 +399,9 @@ body {
                     span, &:before {
                         opacity: 1;
                     }
+                    .name {
+                        padding: 10px;
+                    }
                 }
             }
         }
@@ -393,6 +409,20 @@ body {
 
 
 .linkblog {
+    h3 a {
+        text-decoration: none;
+        i {
+            transition: all ease .2s;
+            float: right;
+            text-shadow: 0 1px 0 #fff;
+            margin-top: -0.1em;
+        }
+        &:hover i {
+            font-size: 1.1em;
+            margin-top: -0.15em;
+            margin-right: -0.05em;
+        }
+    }
     ul {
         list-style: none;
         margin: 1em 0 0;
@@ -444,6 +474,42 @@ body {
         p {
             margin: 0.7em 0;
         }
+    }
+    form {
+        position: relative;
+        padding-bottom: 1em;
+        &:after {
+            content: '\e80c';
+            font-family: "fontello";
+            font-style: normal;
+            font-weight: normal;
+            speak: none;
+            display: inline-block;
+            text-decoration: inherit;
+            width: 1em;
+            margin-right: .2em;
+            text-align: center;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1em;
+            position: absolute;
+            right: 6px;
+            top: 6px;
+            font-size: 1.2em;
+            pointer-events: none;
+        }
+    }
+    #quicksearch {
+        background: $c_opposite;
+        padding: 6px 10px;
+        color: $c_base;
+        @include sansSerif;
+        border: none;
+        border-radius: 3px;
+        display: block;
+        font-size: 1em;
+        width: 100%;
+        transition: all ease .2s;
     }
 }
 

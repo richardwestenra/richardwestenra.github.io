@@ -37,7 +37,7 @@ title: Richard Westenra | Web designer &amp; front-end developer
 				{% for item in site.data.portfolio %}
 					<li>
 						<a href="{{ item.url }}" target="_blank" style="background-image: url(/img/portfolioThumbs/{{ item.img }});">
-							<span class="name"><em>{{ item.name }}</em> &ndash; {{ item.client }}</span>
+							<span class="name"><em>{{ item.name }}</em> <cite>&ndash; {{ item.client }}</cite></span>
 							<span class="year">{{ item.year }}</span>
 						</a>
 					</li>
@@ -47,7 +47,7 @@ title: Richard Westenra | Web designer &amp; front-end developer
 	</div>
 
 	<section class="homeSection linkblog">
-		<h3>Linkblog</h3>
+		<h3><a href="/linkblog/" title="Browse/search linkblog archive">Linkblog <i class="icon-search"></i></a></h3>
 		<ul>
 			{% for link in site.data.linkblog %}
 				{% if forloop.index <= 22 %}
@@ -58,32 +58,3 @@ title: Richard Westenra | Web designer &amp; front-end developer
 		<p><a href="/linkblog/" class="btn">Read more &raquo;</a></p>
 	</section>
 </main>
-
-<footer class="footer">
-	<div class="wrapper">
-		<p class="contact">
-			<a href="mailto:richard@richardwestenra.com" target="_blank"><i class="icon-mail"></i> richard@richardwestenra.com</a> 
-			<a href="http://twitter.com/richardwestenra" target="_blank"><i class="icon-twitter"></i> @richardwestenra</a>
-		</p>
-		<p class="legal">&copy; Copyleft 2014: All wrongs reserved</p>
-	</div>
-</footer>
-
-
-<script id="config_tmpl" type="text/template">
-	<div id="config">
-		<div class="wrapper">
-			<a class="configBtn" href="#" title="Close" role="button">&times;</a>
-			<h3>Configure site options</h3>
-			<h4>Change theme</h4>
-			<ul id="styleSwitcher">
-			   <li><a class="on" id="standard">Standard</a></li>
-			   <li><a id="geocities">Geocities</a></li>
-			</ul>
-			<h4>Modify link behaviour</h4>
-			<ul id="linkSwitcher">
-				<li><a class="off">Make external links open in a new tab/window</a></li>
-			</ul>
-		</div>
-	</div>
-</script>

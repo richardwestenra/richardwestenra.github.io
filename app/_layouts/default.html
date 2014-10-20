@@ -11,16 +11,20 @@
 <!-- endbuild -->
 <![endif]-->
 
+<!-- build:css({app,.tmp}) /css/main.css -->
+<link rel="stylesheet" href="/_bower_components/normalize.css/normalize.css">
+<link rel="stylesheet" href="/css/main.css">
+<!-- endbuild -->
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
     {% include nav.html %}
 
     {{ content }}
 
-    <!-- build:css({app,.tmp}) /css/main.css -->
-    <link rel="stylesheet" href="/_bower_components/normalize.css/normalize.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <!-- endbuild -->
+    {% include config.html %}
 
     <!-- build:js(app) /js/vendor.js -->
     <script src="/_bower_components/jQuery/dist/jquery.js"></script>
@@ -30,4 +34,14 @@
     <!-- build:js(app) /js/scripts.js -->
     <script src="/js/main.js"></script>
     <!-- endbuild -->
+
+    <footer class="footer">
+        <div class="wrapper">
+            <p class="contact">
+                <a href="mailto:richard@richardwestenra.com" target="_blank"><i class="icon-mail"></i> richard@richardwestenra.com</a> 
+                <a href="http://twitter.com/richardwestenra" target="_blank"><i class="icon-twitter"></i> @richardwestenra</a>
+            </p>
+            <p class="legal">&copy; Copyleft 2014: All wrongs reserved</p>
+        </div>
+    </footer>
 {% include footer.html %}

@@ -4,8 +4,12 @@ title: Linkblog | Richard Westenra
 ---
 <main class="wrapper">
 	<article class="post linkblog">
-		<h2>Linkblog</h2>
-		<ul>
+		<h2>Linkblog archive</h2>
+		<form class="quicksearchForm" action="#">
+			<input id="quicksearch" placeholder="Search list" type="text" name="search" value="" autofocus />
+			<p class="noResults">No results found. Try something else?</p>
+		</form>
+		<ul class="lb">
 			{% for item in site.data.linkblog %}
 				<li><a href="{{ item.url }}">{{ item.name }}</a> {% if item.desc %} &ndash; {{ item.desc }}{% endif %}</li>
 			{% endfor %}
