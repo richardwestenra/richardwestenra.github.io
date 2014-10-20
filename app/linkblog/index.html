@@ -1,0 +1,14 @@
+---
+layout: default
+title: Linkblog | Richard Westenra
+---
+<main class="wrapper">
+	<article class="post linkblog">
+		<h2>Linkblog</h2>
+		<ul>
+			{% for item in site.data.linkblog %}
+				<li><a href="{{ item.url }}">{{ item.name }}</a> {% if item.desc %} &ndash; {{ item.desc }}{% endif %}</li>
+			{% endfor %}
+		</ul>
+	</article>
+</main>

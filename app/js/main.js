@@ -9,10 +9,7 @@ $(function(){
 
 
 	//---  ---//
-	function Config(){
-		this.active = false;
-		this.html = $('#config_tmpl').html();
-	}
+
 
 
 	//--- Config popup ---//

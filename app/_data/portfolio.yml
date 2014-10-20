@@ -1,0 +1,144 @@
+- name: Prolific Pop Artists - The Recording Careers of the Best Selling Musicians
+  url: http://www.concerthotels.com/prolific-pop-artists/
+  client: Concert Hotels
+  img: musicians.jpg
+  year: 2014
+
+- name: If You Printed All The Instagram Pics Uploaded in a Year
+  url: https://photoworld.com/photos-on-the-web/
+  client: Photoworld
+  img: instagram.jpg
+  year: 2014
+
+- name: The Story of America’s Car Giants
+  url: http://www.firestonetire.com/story-americas-top-car-brands/
+  client: Firestone Tires
+  img: cars.png
+  year: 2014
+
+- name: How Adventurous Are You?
+  url: https://www.travelex.co.uk/travel/how-adventurous-are-you/
+  client: Travelex
+  img: cultureShock.png
+  year: 2014
+
+- name: What Career Is Right For Me?
+  url: http://www.rasmussen.edu/career-center/career-research-hub/what-career-is-right-for-me/
+  client: Rasmussen College
+  img: path.png
+  year: 2014
+
+# - name: How will you decorate your tree?
+#   url: http://christmastreedecoratingideas.balsamhill.com/
+#   client: Balsam Hill
+#   img: 
+#   year: 2014
+
+- name: Why You Should Take More Breaks
+  url: http://www.staples.ca/sbdca/en_CA/cre/programs/breathe/
+  client: Staples
+  img: break.jpg
+  year: 2014
+
+- name: Turning A Profit
+  url: https://www.worldpayzinc.com/tech-wealth/
+  client: WorldPayZinc
+  img: profit.png
+  year: 2014
+
+- name: The Minimal Music Quiz
+  url: http://www.concerthotels.com/minimal-music-quiz/
+  client: ConcertHotels
+  img: minimal.jpg
+  year: 2013
+
+- name: Name That Uniform
+  url: http://www.bluecotton.com/Name-That-Uniform/
+  client: Blue Cotton
+  img: uniforms.png
+  year: 2013
+
+- name: Grammatically Speaking
+  url: http://www.staples.ca/sbdca/en_CA/cre/programs/grammarquiz/index.html
+  client: Staples
+  img: grammar.jpg
+  year: 2014
+
+# - name: Brandopolis
+#   url: http://www.distilled.net/brandopolis/
+#   client: Distilled
+#   img: 
+#   year: 2014
+
+- name: The Career Aptitude Test
+  url: http://www.rasmussen.edu/resources/aptitude-test/
+  client: Rasmussen College
+  img: skills.jpg
+  year: 2014
+
+- name: Where to go shopping in London
+  url: http://www.thetrainline.com/tools/shopping-in-london/
+  client: The Trainline
+  img: shopping.png
+  year: 2013
+
+- name: The Capacity of an iPod Visualized as Vinyl
+  url: http://www.concerthotels.com/ipod-visualized-as-vinyl
+  client: Concert Hotels
+  img: ipod.jpg
+  year: 2013
+
+- name: 90's Nostalgia Quiz
+  url: http://www.twolittlefleas.co.uk/90s-nostalgia-quiz/
+  client: Two Little Fleas
+  img: nostalgia.png
+  year: 2013
+
+- name: Which TV Series Should I Watch Next?
+  url: http://www.cabletv.com/what-to-watch
+  client: CableTV.com
+  img: tv.png
+  year: 2014
+
+- name: Find Your Ultimate UK Festival
+  url: http://www.thetrainline.com/tools/festival-finder/
+  client: The Trainline
+  img: festivals.png
+  year: 2014
+
+- name: What Career Should I Choose?
+  url: http://www.rasmussen.edu/resources/what-career-should-i-choose/
+  client: Rasmussen College
+  img: career.png
+  year: 2013
+
+# - name: The Movie Lover’s Guide to the World
+#   url: http://www.travelex.com/top250movies/index.html
+#   client: Travelex
+#   img: 
+#   year: 2013
+
+# - name: DistilledU
+#   url: http://www.distilled.net/u/
+#   client: Distilled
+#   img: 
+#   year: 2012
+
+- name: Super Bowl Head to Head
+  url: http://thomson.co.uk/blog/infographic/superbowl/index.html
+  client: Thomson
+  img: superbowl.jpg
+  year: 2012
+
+- name: What Speed Do You Read?
+  url: http://www.staples.com/sbd/cre/marketing/technology-research-centers/ereaders/speed-reader/
+  client: Staples
+  img: ereader.png
+  year: 2011
+
+# - name: Visualizing the World's Food Consumption
+#   url: http://www.foodservicewarehouse.com/calorie-viz/
+#   client: FoodServiceWarehouse
+#   img: 
+#   year: 2011
+

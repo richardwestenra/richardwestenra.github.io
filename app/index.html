@@ -8,42 +8,47 @@ title: Richard Westenra | Web designer &amp; front-end developer
 		<img class="gramaphone" src="/img/home/gramaphone.svg" width="161.25" height="195.875" alt="Gramaphone" />
 		<h2>Good design speaks <strong>volumes</strong></h2>
 	</div>
+	<div class="leftCol">
+		<section class="about">
+			<h3>Hello there!</h3>
+			<p>I'm Richard. I make websites.</p>
+			<p>My primary expertise is in web design, front-end development, web standards, usability, SEO and content editing, and my preferred tools are Photoshop, HTML5, CSS3, JavaScript and WordPress.</p>
+			<p>I firmly believe that <strong>if something's worth doing then it's worth doing right.</strong> Each of my websites is finely crafted to ensure they are of the utmost quality. Before a single pixel is published, it must pass an exacting series of tests. First, I polish every design in Photoshop until it shines with an unholy burning light. Then I hand-code the site using only the finest HTML ingredients, sprinkling it with a garnish of cutting-edge CSS and jQuery.  Finally, each pixel must undergo a gruelling fitness regimen to shave off those unwanted bytes, saving precious seconds of download time. Only then is the site ready to be served piping hot to your browser.</p>
+			<p>Originally from earthquake-stricken Christchurch in New Zealand, I'm currently living in London. When I'm not being a web geek I can be found skiing, unicycling, and occasionally attempting to juggle.</p>
+			<p><a class="btn" href="mailto:richard@richardwestenra.com" title="Send me an email!" target="_blank"><i class="icon-mail"></i> Get in touch</a></p>
+		</section>
 
-	<section class="about">
-		<h3>Hello there!</h3>
-		<p>I'm Richard. I make websites.</p>
-		<p>My primary expertise is in web design, front-end development, web standards, usability, SEO and content editing, and my preferred tools are Photoshop, HTML5, CSS3, JavaScript and WordPress.</p>
-		<p>I firmly believe that <strong>if something's worth doing then it's worth doing right.</strong> Each of my websites is finely crafted to ensure they are of the utmost quality. Before a single pixel is published, it must pass an exacting series of tests. First, I polish every design in Photoshop until it shines with an unholy burning light. Then I hand-code the site using only the finest HTML ingredients, sprinkling it with a garnish of cutting-edge CSS and jQuery.  Finally, each pixel must undergo a gruelling fitness regimen to shave off those unwanted bytes, saving precious seconds of download time. Only then is the site ready to be served piping hot to your browser.</p>
-		<p>Originally from earthquake-stricken Christchurch in New Zealand, I'm currently living in London. When I'm not being a web geek I can be found skiing, unicycling, and occasionally attempting to juggle.</p>
-		<p><a class="btn" href="mailto:richard@richardwestenra.com" title="Send me an email!" target="_blank"><i class="icon-mail"></i> Get in touch</a></p>
-	</section>
+		<section class="blog">
+			<h3>Features &amp; articles</h3>
+			<ul>
+				{% for post in site.data.blog %}
+					{% if post.featured %}
+						<li><a href="{{ post.url }}"><img src="/img/blogThumbs/{{ post.img }}" alt="{{ post.name }}" width="279" height="92" /></a></li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</section>
 
-	<section class="work">
-		<h3>Stuff I&rsquo;ve made</h3>
-		<h4>Features and articles</h4>
-		<ul class="posts">
-			{% for post in site.posts %}
-			<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-			{% endfor %}
-		</ul>
-		<h4>Client work</h4>
-		<ul class="portfolio">
-			{% for item in site.data.portfolio %}
-				<li><a href="{{ item.url }}">{{ item.name }}</a></li>
-			{% endfor %}
-		</ul>
-	</section>
+		<section class="portfolio">
+			<h3>Client work</h3>
+			<ul>
+				{% for item in site.data.portfolio %}
+					<li><a href="{{ item.url }}" style="background-image: url(/img/portfolioThumbs/{{ item.img }});"><span class="name">{{ item.name }}</span><span class="year">{{ item.year }}</span></a></li>
+				{% endfor %}
+			</ul>
+		</section>
+	</div>
 
 	<section class="linkblog">
 		<h3>Linkblog</h3>
 		<ul>
-			{% for item in site.data.linkblog %}
+			{% for link in site.data.linkblog %}
 				{% if forloop.index <= 10 %}
-					<li><a href="{{ item.url }}">{{ item.name }}</a> {% if item.desc %} &ndash; {{ item.desc }}{% endif %}</li>
+					<li><a href="{{ link.url }}">{{ link.name }}</a> {% if link.desc %} &ndash; {{ link.desc }}{% endif %}</li>
 				{% endif %}
 			{% endfor %}
 		</ul>
-		<p><a href="/linkblog/">Read more &raquo;</a></p>
+		<p><a href="/linkblog/" class="btn">Read more &raquo;</a></p>
 	</section>
 </main>
 
