@@ -8,7 +8,7 @@ body {
 //--- Home ---//
 
 #home {
-    // overflow: hidden;
+    padding-bottom: 0;
     @include clearfix;
 }
     .homeSection {
@@ -49,8 +49,8 @@ body {
 
 
 //--- Header ---//
+
 .header {
-    width:100%;
     background-color:$c_primary;
     z-index:10;
     height: 2.4em;
@@ -148,6 +148,7 @@ body {
 
 
 //--- Home sections ---//
+
 .leftCol {
     @include clearfix;
 }
@@ -178,8 +179,6 @@ body {
         width: 40%;
     }
 }
-
-
 
 
 .banner {
@@ -282,20 +281,21 @@ body {
         @include clearfix;
         li {
             margin: 0;
-            padding: 0 10px 10px 0;
             @media screen and (min-width: $m_small){
                 width: 50%;
                 float: left;
+                padding: 0 5px 5px 0;
             }
             @media screen and (min-width: $m_large){
                 width: 100%;
                 float: none;
+                padding: 0 0 15px;
+            }
+            @media screen and (min-width: $m_large + 100){
+                padding: 0 0 5px;
             }
             a {
                 display: block;
-                border: 2px solid #fff;
-                border-radius: 1px;
-                box-shadow: 0 1px 2px rgba($c_primary,0.1);
                 overflow: hidden;
                 img {
                     display: block;
@@ -339,6 +339,7 @@ body {
                 background-position: center;
                 background-size: cover;
                 transition: all .3s ease;
+                transform: translate3d(0,0,0);
                 &:before {
                     $t: 32px;
                     content: '';
@@ -391,20 +392,6 @@ body {
 }
 
 
-section.linkblog {
-    ul {
-        @media screen and (min-width: $m_small){
-            font-size: 0.9em;
-            column-count: 2;
-        }
-        @media screen and (min-width: $m_tablet){
-            column-count: 1;
-        }
-    }
-    p {
-        margin: 0.7em 0;
-    }
-}
 .linkblog {
     ul {
         list-style: none;
@@ -434,9 +421,32 @@ section.linkblog {
             &:hover:before {
                 left: 0.2em;
             }
+            a {
+                font-weight: bold;
+            }
+        }
+    }
+    &.homeSection {
+        ul {
+            @media screen and (min-width: $m_small){
+                font-size: 0.9em;
+                column-count: 2;
+            }
+            @media screen and (min-width: $m_tablet){
+                column-count: 1;
+            }
+        }
+            @media screen and (min-width: $m_larger){
+                li {
+                    margin-bottom: 1.5em;
+                }
+            }
+        p {
+            margin: 0.7em 0;
         }
     }
 }
+
 
 //--- Posts ---//
 .post {
@@ -444,5 +454,51 @@ section.linkblog {
     margin: 0 auto;
     & > h2 {
         font-size: 2em;
+    }
+}
+
+
+
+
+//--- Footer ---//
+.footer {
+    background: $c_primary;
+    z-index:10;
+    padding: 1em 0;
+    text-align: center;
+    color: $c_bg;
+    .wrapper {
+        @include clearfix;
+    }
+    p {
+        margin: 0 0 1em;
+    }
+    a {
+        color: $c_bg;
+        text-decoration: none;
+        white-space: nowrap;
+        padding: 1px 5px;
+        border-radius: 3px;
+        display: inline-block;
+        margin: 0 10px;
+        &:hover {
+            color: $c_opposite;
+            text-decoration: underline;
+            background-color: rgba($c_opposite,0.1);
+        }
+    }
+    @media screen and (min-width: 860px){
+        p {
+            margin: 0;
+        }
+        .contact {
+            float: left;
+            a {
+                margin: 0 30px 0 0;
+            }
+        }
+        .legal {
+            float: right;
+        }
     }
 }

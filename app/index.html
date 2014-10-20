@@ -5,7 +5,7 @@ title: Richard Westenra | Web designer &amp; front-end developer
 
 <main id="home" class="wrapper">
 	<div class="leftCol">
-		
+
 		<div class="banner">
 			<h2><span class="line1">Good design</span> <span class="line2">speaks</span> <strong>volumes</strong></h2>
 		</div>
@@ -28,6 +28,7 @@ title: Richard Westenra | Web designer &amp; front-end developer
 					{% endif %}
 				{% endfor %}
 			</ul>
+			<p><a class="btn" href="/blog/">Show all &raquo;</a></p>
 		</section>
 
 		<section class="homeSection portfolio">
@@ -49,7 +50,7 @@ title: Richard Westenra | Web designer &amp; front-end developer
 		<h3>Linkblog</h3>
 		<ul>
 			{% for link in site.data.linkblog %}
-				{% if forloop.index <= 20 %}
+				{% if forloop.index <= 22 %}
 					<li><a href="{{ link.url }}" target="_blank">{{ link.name }}</a> {% if link.desc %} &ndash; {{ link.desc }}{% endif %}</li>
 				{% endif %}
 			{% endfor %}
@@ -57,6 +58,16 @@ title: Richard Westenra | Web designer &amp; front-end developer
 		<p><a href="/linkblog/" class="btn">Read more &raquo;</a></p>
 	</section>
 </main>
+
+<footer class="footer">
+	<div class="wrapper">
+		<p class="contact">
+			<a href="mailto:richard@richardwestenra.com" target="_blank"><i class="icon-mail"></i> richard@richardwestenra.com</a> 
+			<a href="http://twitter.com/richardwestenra" target="_blank"><i class="icon-twitter"></i> @richardwestenra</a>
+		</p>
+		<p class="legal">&copy; Copyleft 2014: All wrongs reserved</p>
+	</div>
+</footer>
 
 
 <script id="config_tmpl" type="text/template">
