@@ -5,14 +5,19 @@
 body {
 }
 
+//--- Home ---//
+
 #home {
     // overflow: hidden;
     @include clearfix;
-    h3 {
-        font-size: 1.7em;
-        margin: 0;
-    }
 }
+    .homeSection {
+        padding: 1.5em 0;
+        h3 {
+            font-size: 1.7em;
+            margin: 0;
+        }
+    }
 
 
 //--- Config ---//
@@ -141,74 +146,6 @@ body {
 
 
 
-//--- Banner ---//
-
-.banner {
-    text-align: center;
-    padding: 0 0 30px;
-    position: relative;
-    z-index: 1;
-    &:before {
-        content: '';
-        $d: 960px;
-        width: $d;
-        height: $d;
-        background: url($il + 'home/radialStripes.svg');
-        position: absolute;
-        left: 50%;
-        top: 150px - ($d/2);
-        margin-left: $d/-2 + 30;
-        z-index: -1;
-        opacity: 0;
-        transition: .8s ease opacity;
-        animation: spin 15s infinite linear;
-        pointer-events: none;
-        .no-svg & {
-            display: none;
-        }
-    }
-    .gramaphone {
-        display: block;
-        margin: 0 auto 10px;
-        max-width: 30%;
-        height: auto;
-        .no-svg & {
-            display: none;
-        }
-    }
-    h2 {
-        margin: 0;
-        font-size: 1.5em;
-        @media screen and (min-width: $m_small){
-            font-size: 2em;
-        }
-        @media screen and (min-width: $m_tablet){
-            font-size: 3em;
-        }
-        font-size: 6vw;
-        @media screen and (min-width: $m_large){
-            font-size: 4em;
-        }
-        strong {
-            display: block;
-            font-size: 2.6em;
-            font-weight: normal;
-            text-transform: uppercase;
-            line-height: 1em;
-            // transition: .2s ease font-size;
-        }
-    }
-    &:hover {
-        &:before {
-            opacity: 0.4;
-        }
-        // strong {
-        //     font-size: 2.7em;
-        //     animation: vibrate .3s infinite alternate;
-        // }
-    }
-}
-
 
 //--- Home sections ---//
 .leftCol {
@@ -219,6 +156,123 @@ body {
     z-index: 1;
     margin-bottom: 4em;
 }
+@media screen and (min-width: $m_tablet){
+    .leftCol, .about, .blog, section.linkblog {
+        float: left;
+    }
+    .leftCol {
+        width: 75%;
+    }
+    section.linkblog {
+        width: 25%;
+    }
+    .about, .blog, .portfolio {
+        padding-right: 6%;
+    }
+}
+@media screen and (min-width: $m_large){
+    .about {
+        width: 60%;
+    }
+    .blog {
+        width: 40%;
+    }
+}
+
+
+
+
+.banner {
+    font-size: 2em;
+    font-size: 6.5vw;
+    margin: 0;
+    padding: 0 0 30px;
+    position: relative;
+    text-align: center;
+    @media screen and (min-width: $m_tablet){
+        font-size: 2.6em;
+        font-size: 5vw;
+        margin-top: 1em;
+        text-align: left;
+    }
+    @media screen and (min-width: $m_large){
+        font-size: 4.5vw;
+    }
+    @media screen and (min-width: $m_larger){
+        font-size: 4em;
+    }
+    h2 {
+        font-size: 1em;
+        margin: 0;
+    }
+    &:before, &:after {
+        content: '';
+        display: block;
+        .no-svg & {
+            display: none;
+        }
+    }
+    &:before {
+        background: url($il + 'home/gramaphone.svg') no-repeat center;
+        background-size: contain;
+        $c: 0.015em;
+        width: 161.25 * $c;
+        height: 195.875 * $c;
+        margin: 0 auto 10px;
+    }
+        span, strong {
+            position: relative;
+            z-index: 1;
+        }
+        strong {
+            display: block;
+            font-size: 2.4em;
+            font-weight: normal;
+            text-transform: uppercase;
+            line-height: 1em;
+            // transition: .2s ease font-size;
+        }
+    @media screen and (min-width: $m_tablet){
+        &:after {
+            $d: 50vw;
+            width: $d;
+            height: $d;
+            background: url($il + 'home/radialStripes.svg') no-repeat center;
+            background-size: contain;
+            position: absolute;
+            left: 9em;
+            top: -($d/2);
+            margin: 1.6em 0 0 ($d/-2 + 7);
+            z-index: -1;
+            opacity: 0.4;
+            transition: .8s ease opacity;
+            animation: spin 15s infinite linear;
+            animation-play-state: paused;
+            pointer-events: none;
+        }
+        &:before {
+            position: absolute;
+            left: 9em;
+            top: -0.9em;
+            z-index: 1;
+        }
+        span {
+            display: block;
+            &.line2 {
+                font-size: 1.4em;
+                padding: 0.1em 0 0.2em;
+            }
+        }
+    }
+    &:hover {
+        &:after {
+            opacity: 0.5;
+            animation-play-state: running;
+            // animation-duration: 15s;
+        }
+    }
+}
+
 
 
 .blog {
@@ -260,7 +314,6 @@ body {
 
 .portfolio {
     clear: both;
-    padding: 4em 0 0;
     ul {
         // margin: 0 0 2em;
         // li {
@@ -269,6 +322,7 @@ body {
         list-style: none;
         padding: 0;
         @include clearfix;
+    }
         li {
             margin: 0;
             padding: 0 5px 5px 0;
@@ -277,63 +331,78 @@ body {
             @media screen and (min-width: $m_small){
                 width: 25%;
             }
-            // @media screen and (min-width: $m_large){
-            //     width: 100%;
-            //     float: none;
-            // }
             a {
                 display: block;
-                // border: 2px solid #fff;
-                // border-radius: 1px;
-                // box-shadow: 0 1px 2px rgba($c_primary,0.1);
                 overflow: hidden;
                 position: relative;
                 padding-bottom: 100%;
                 background-position: center;
                 background-size: cover;
                 transition: all .3s ease;
-                // img {
-                //     display: block;
-                //     width: 100%;
-                //     height: auto;
-                // }
+                &:before {
+                    $t: 32px;
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 0 $t $t 0;
+                    border-color: transparent rgba(#000,0.8) transparent transparent;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    opacity: 0;
+                    transition: all .6s ease;
+                }
                 span {
                     position: absolute;
-                    width: 100%;
+                    opacity: 0;
+                    transition: all .6s ease;
                     z-index: 2;
-                    background: rgba(#000,0.1);
-                    bottom: 0;
+                    color: #fff;
+                    line-height: 1.3em;
+                }
+                .name {
+                    width: 100%;
+                    overflow: hidden;
+                    background: rgba(#000,0.8);
                     left: 0;
-                    display: none;
+                    bottom: 0;
+                    padding: 10px;
+                    font-size: 13px;
+                }
+                .year {
+                    top: 6px;
+                    right: 1px;
+                    transform: rotate(45deg);
+                    font-size: 9px;
+                    font-weight: bold;
+                    text-align: center;
                 }
                 &:hover {
                     transform: scale(1.1);
                     z-index: 2;
                     box-shadow: 0 1px 6px rgba($c_primary,0.1);
+                    span, &:before {
+                        opacity: 1;
+                    }
                 }
             }
         }
-    }
 }
 
 
 section.linkblog {
     ul {
         @media screen and (min-width: $m_small){
-            column-count: 2;
             font-size: 0.9em;
+            column-count: 2;
         }
         @media screen and (min-width: $m_tablet){
-            column-count: 3;
-        }
-        @media screen and (min-width: $m_large){
             column-count: 1;
         }
     }
     p {
-        margin: 0;
-        font-weight: bold;
-        font-size: 0.9em;
+        margin: 0.7em 0;
     }
 }
 .linkblog {
@@ -366,26 +435,6 @@ section.linkblog {
                 left: 0.2em;
             }
         }
-    }
-}
-@media screen and (min-width: $m_large){
-    .leftCol, .about, .blog, section.linkblog {
-        float: left;
-    }
-    .leftCol {
-        width: 75%;
-    }
-        .about {
-            width: 60%;
-        }
-        .blog {
-            width: 40%;
-        }
-        .about, .blog, .portfolio {
-            padding-right: 6%;
-        }
-    section.linkblog {
-        width: 25%;
     }
 }
 

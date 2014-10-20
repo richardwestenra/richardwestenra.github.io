@@ -4,6 +4,7 @@
 $m_smallest: 300px;
 $m_smaller: 400px;
 $m_small: 500px;
+$m_smallish: 600px;
 $m_tablet: 768px;
 $m_medium: 960px;
 $m_large: 1140px;
@@ -77,6 +78,9 @@ li, p, blockquote {
     @media only screen and (min-width: $m_large) {
         width: 80%;
         margin: 0 auto;
+    }
+    @media only screen and (min-width: $m_larger) {
+        width: $m_large;
     }
 }
 .browsehappy {

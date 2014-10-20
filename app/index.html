@@ -4,12 +4,13 @@ title: Richard Westenra | Web designer &amp; front-end developer
 ---
 
 <main id="home" class="wrapper">
-	<div class="banner">
-		<img class="gramaphone" src="/img/home/gramaphone.svg" width="161.25" height="195.875" alt="Gramaphone" />
-		<h2>Good design speaks <strong>volumes</strong></h2>
-	</div>
 	<div class="leftCol">
-		<section class="about">
+		
+		<div class="banner">
+			<h2><span class="line1">Good design</span> <span class="line2">speaks</span> <strong>volumes</strong></h2>
+		</div>
+
+		<section class="homeSection about">
 			<h3>Hello there!</h3>
 			<p>I'm Richard. I make websites.</p>
 			<p>My primary expertise is in web design, front-end development, web standards, usability, SEO and content editing, and my preferred tools are Photoshop, HTML5, CSS3, JavaScript and WordPress.</p>
@@ -18,8 +19,8 @@ title: Richard Westenra | Web designer &amp; front-end developer
 			<p><a class="btn" href="mailto:richard@richardwestenra.com" title="Send me an email!" target="_blank"><i class="icon-mail"></i> Get in touch</a></p>
 		</section>
 
-		<section class="blog">
-			<h3>Features &amp; articles</h3>
+		<section class="homeSection blog">
+			<h3>Articles &amp; things</h3>
 			<ul>
 				{% for post in site.data.blog %}
 					{% if post.featured %}
@@ -29,22 +30,27 @@ title: Richard Westenra | Web designer &amp; front-end developer
 			</ul>
 		</section>
 
-		<section class="portfolio">
+		<section class="homeSection portfolio">
 			<h3>Client work</h3>
 			<ul>
 				{% for item in site.data.portfolio %}
-					<li><a href="{{ item.url }}" style="background-image: url(/img/portfolioThumbs/{{ item.img }});"><span class="name">{{ item.name }}</span><span class="year">{{ item.year }}</span></a></li>
+					<li>
+						<a href="{{ item.url }}" target="_blank" style="background-image: url(/img/portfolioThumbs/{{ item.img }});">
+							<span class="name"><em>{{ item.name }}</em> &ndash; {{ item.client }}</span>
+							<span class="year">{{ item.year }}</span>
+						</a>
+					</li>
 				{% endfor %}
 			</ul>
 		</section>
 	</div>
 
-	<section class="linkblog">
+	<section class="homeSection linkblog">
 		<h3>Linkblog</h3>
 		<ul>
 			{% for link in site.data.linkblog %}
-				{% if forloop.index <= 10 %}
-					<li><a href="{{ link.url }}">{{ link.name }}</a> {% if link.desc %} &ndash; {{ link.desc }}{% endif %}</li>
+				{% if forloop.index <= 20 %}
+					<li><a href="{{ link.url }}" target="_blank">{{ link.name }}</a> {% if link.desc %} &ndash; {{ link.desc }}{% endif %}</li>
 				{% endif %}
 			{% endfor %}
 		</ul>
