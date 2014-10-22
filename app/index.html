@@ -3,7 +3,7 @@ layout: default
 title: Richard Westenra | Web designer &amp; front-end developer
 ---
 
-<main id="home" class="wrapper">
+<main class="home wrapper">
 	<div class="leftCol">
 
 		<div class="banner">
@@ -20,10 +20,10 @@ title: Richard Westenra | Web designer &amp; front-end developer
 		</section>
 
 		<section class="homeSection blog">
-			<h3>Articles &amp; things</h3>
+			<h3><a href="/blog">Articles &amp; things</a></h3>
 			<ul>
 				{% for post in site.data.blog %}{% if post.featured %}
-					<li><a href="{{ post.url }}"><img src="/img/blogThumbs/{{ post.img }}" alt="{{ post.name }}" width="279" height="92" /></a></li>
+					<li><a class="thumb" href="{{ post.url }}"><img src="/img/blogThumbs/{{ post.img }}" alt="{{ post.name }}" width="279" height="92" /></a></li>
 				{% endif %}{% endfor %}
 			</ul>
 			<p><a class="btn" href="/blog/">Show all &raquo;</a></p>

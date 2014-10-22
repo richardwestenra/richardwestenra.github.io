@@ -7,7 +7,7 @@ body {
 
 //--- Home ---//
 
-#home {
+.home {
     padding-bottom: 0;
     @include clearfix;
 }
@@ -15,7 +15,21 @@ body {
         padding: 1.5em 0;
         h3 {
             font-size: 1.7em;
-            margin: 0;
+            margin: 0 0 0.8em;
+            a {
+                text-decoration: none;
+                i {
+                    transition: all ease .2s;
+                    float: right;
+                    text-shadow: 0 1px 0 #fff;
+                    margin-top: -0.1em;
+                }
+                &:hover i {
+                    font-size: 1.1em;
+                    margin-top: -0.15em;
+                    margin-right: -0.05em;
+                }
+            }
         }
     }
 
@@ -30,6 +44,17 @@ body {
     .wrapper {
         padding: 1em 0;
         position: relative;
+    }
+    h3 {
+        font-size: 2em;
+        margin: 0.5em 0;
+    }
+    h4 {
+        font-size: 1.2em;
+        margin: 1em 0 0.3em;
+    }
+    ul {
+        margin: 0 0 2em;
     }
     .configBtn {
         position: absolute;
@@ -158,24 +183,26 @@ body {
     margin-bottom: 4em;
 }
 @media screen and (min-width: $m_tablet){
-    .leftCol, .about, .blog, section.linkblog {
+    .leftCol, .homeSection.about, .homeSection.blog, .homeSection.linkblog {
         float: left;
     }
     .leftCol {
         width: 75%;
     }
-    section.linkblog {
+    .homeSection.linkblog {
         width: 25%;
     }
     .about, .blog, .portfolio {
-        padding-right: 6%;
+        &.homeSection {
+            padding-right: 6%;
+        }
     }
 }
 @media screen and (min-width: $m_large){
-    .about {
+    .homeSection.about {
         width: 60%;
     }
-    .blog {
+    .homeSection.blog {
         width: 40%;
     }
 }
@@ -278,29 +305,15 @@ body {
     ul {
         list-style: none;
         padding: 0;
+        margin: 0;
         @include clearfix;
         li {
             margin: 0;
-            @media screen and (min-width: $m_small){
-                width: 50%;
-                float: left;
-                padding: 0 5px 5px 0;
-            }
-            @media screen and (min-width: $m_large){
-                width: 100%;
-                float: none;
-                padding: 0 0 15px;
-            }
-            @media screen and (min-width: $m_large + 100){
-                padding: 0 0 5px;
-            }
-            a {
+            .thumb {
                 display: block;
                 overflow: hidden;
                 img {
                     display: block;
-                    width: 100%;
-                    height: auto;
                     transition: transform .2s ease;
                 }
                 &:hover img {
@@ -308,6 +321,60 @@ body {
                 }
             }
         }
+    }
+    &.homeSection {
+        ul {
+            li {
+                @media screen and (min-width: $m_small){
+                    width: 50%;
+                    float: left;
+                    padding: 0 5px 5px 0;
+                }
+                @media screen and (min-width: $m_large){
+                    width: 100%;
+                    float: none;
+                    padding: 0 0 15px;
+                }
+                @media screen and (min-width: $m_large + 100){
+                    padding: 0 0 5px;
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    &.post {
+        li {
+            @include clearfix;
+            clear: both;
+            padding: 15px;
+            background: rgba(#fff,0.4);
+            &:nth-child(even){
+                background: rgba(#fff,0.2);
+            }
+        }
+            .thumb {
+                width: 279px;
+                float: left;
+                margin-right: 1em;
+            }
+            h4 {
+                margin: 0.3em 1em;
+                font-size: 1.2em;
+                a {
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            p {
+                margin: 0;
+                font-size: 0.9em;
+                text-transform: uppercase;
+            }
     }
 }
 
@@ -409,20 +476,6 @@ body {
 
 
 .linkblog {
-    h3 a {
-        text-decoration: none;
-        i {
-            transition: all ease .2s;
-            float: right;
-            text-shadow: 0 1px 0 #fff;
-            margin-top: -0.1em;
-        }
-        &:hover i {
-            font-size: 1.1em;
-            margin-top: -0.15em;
-            margin-right: -0.05em;
-        }
-    }
     ul {
         list-style: none;
         margin: 1em 0 0;
@@ -533,6 +586,7 @@ body {
     padding: 1em 0;
     text-align: center;
     color: $c_bg;
+    clear: both;
     .wrapper {
         @include clearfix;
     }
