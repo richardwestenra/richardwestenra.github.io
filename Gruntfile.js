@@ -330,7 +330,7 @@ module.exports = function (grunt) {
     },
     modernizr: {
       dist: {
-        devFile: '_bower_components/modernizr/modernizr.js',
+        devFile: '<%= yeoman.app %>/_bower_components/modernizr/modernizr.js',
         outputFile: '<%= yeoman.dist %>/js/vendor/modernizr.js',
         files: {
           src: [
