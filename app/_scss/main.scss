@@ -1,6 +1,6 @@
 //--- Main ---//
 
-@import "base", "fontface", "typography", "syntax";
+@import "mixins", "base", "fontface", "typography", "syntax";
 
 body {
 }
@@ -268,7 +268,7 @@ body {
             position: absolute;
             left: 9em;
             top: -($d/2);
-            margin: 1.6em 0 0 ($d/-2 + 7);
+            margin: 2em 0 0 ($d/-2 + 7);
             z-index: -1;
             opacity: 0.4;
             transition: .8s ease opacity;
@@ -279,7 +279,7 @@ body {
         &:before {
             position: absolute;
             left: 9em;
-            top: -0.9em;
+            top: -0.5em;
             z-index: 1;
         }
         span {
@@ -510,6 +510,9 @@ body {
         }
     }
     &.homeSection {
+        @media screen and (min-width: $m_tablet){
+            margin-top: 0.5em;
+        }
         ul {
             @media screen and (min-width: $m_small){
                 font-size: 0.9em;
@@ -574,6 +577,10 @@ body {
     & > h2 {
         font-size: 2em;
     }
+}
+.meta {
+    font-size: 0.8em;
+    opacity: 0.6;
 }
 
 

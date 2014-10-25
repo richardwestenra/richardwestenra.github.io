@@ -1,0 +1,72 @@
+---
+layout: default
+---
+<style>
+/* Typography */
+.column h1, .column h2, .column h3, .column h4, .column h5, .column h6 {
+	color:#222;
+}
+.postHeader {
+	background:url(/img/threeStrikes/handcuffs.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	width:100%;
+	padding-bottom: 40%;
+	margin:0 0 40px;
+}
+blockquote {
+	padding-left:30px;
+	border-left:solid 2px #ddd;
+	margin:18px 0;
+}
+	blockquote p, blockquote li {
+		margin:0;
+		color:#666;
+	}
+q {
+	padding:0 20px 0 20px;
+	border-left:solid 2px #bbb;
+	margin:18px 0;
+	font-size:1.5em;
+	float:left;
+	width:200px;
+	color:#555;
+	line-height:1.5em;
+    font-family: 'ChunkFiveRegular', 'Arial Black', sans-serif;
+}
+q:before, q:after {
+	display: none;
+}
+	q.left {
+		border-left:solid 2px #ddd;
+		float:left;
+		padding:0 10px 0 30px;
+	}
+	q.right {
+		border-left:none;
+		border-right:solid 2px #ddd;
+		float:right;
+		padding:0 30px 0 10px;
+	}
+	q p {
+		margin:0;
+		color:#666;
+		}
+
+/* Formatting */
+body {
+	background:white;
+}
+	.header, .footer {background:#333;}
+		.header a, .footer a {color:#fff;}
+	.column, #commentsWrapper {
+		width:600px;
+	}
+</style>
+<main class="wrapper">
+	<article class="post">
+		<h2 class="postHeader ir">{{ page.title }}</h2>
+		<p class="meta">Published {{ page.date | date_to_string }}</p>
+		{{ content }}
+	</article>
+</main>
