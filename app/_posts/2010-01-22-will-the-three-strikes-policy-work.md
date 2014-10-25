@@ -1,5 +1,5 @@
 ---
-layout: threestrikes
+layout: threeStrikes
 title:  Will the Three Strikes policy work?
 ---
 
