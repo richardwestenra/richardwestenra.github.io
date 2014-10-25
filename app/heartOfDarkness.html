@@ -1,8 +1,8 @@
 ---
-layout: default
 title: Operation Heart of Darkness
 permalink: /operation-heart-of-darkness/
 ---
+{% include header.html %}
 <style>
 body {
 	background:white;
@@ -40,13 +40,18 @@ section p, section td, section th, section li, section h1, section h2, section h
 				#appendix .postContentInner {min-height:1020px;}
 		section, .postContent, .postContentInner { -webkit-background-size: 100% auto; background-size: 100% auto; }
 		#map {background:none;}
-			#map img {display:block; border:1px solid #DDDDDD; margin:30px auto; background:#fff; padding:8px; -moz-box-shadow: 2px 3px 25px #888; -webkit-box-shadow: 2px 3px 25px #888; -o-box-shadow: 2px 3px 25px #888; box-shadow: 2px 3px 25px #888; -webkit-transform: rotate(2deg); -moz-transform: rotate(2deg); transform: rotate(2deg);}
+			#map img {display:block; border:1px solid #DDDDDD; margin:30px auto; background:#fff; padding:8px; box-shadow: 2px 3px 25px #888; -webkit-transform: rotate(2deg); -moz-transform: rotate(2deg); transform: rotate(2deg); max-width: 100%; height: auto;}
 		#tldrContainer {position:fixed; width:460px; top:400px; left:50%;}
-			#tldr {float:right; text-decoration:none; cursor:pointer; font-size:18px; padding:2px 6px; border:1px solid #fff; background:#fff; color:#222; -moz-border-radius:5px; -webkit-border-radius:5px; -o-border-radius:5px; border-radius:5px;}
-			#tldr:hover{background:#eee; border:1px solid #ddd; -moz-box-shadow:1px 1px 2px #ccc; -webkit-box-shadow:1px 1px 2px #ccc; -o-box-shadow:1px 1px 2px #ccc box-shadow:1px 1px 2px #ccc;}
+			#tldr {display: none; float:right; text-decoration:none; cursor:pointer; font-size:18px; padding:2px 6px; border:1px solid #fff; background:#fff; color:#222; border-radius:3px;}
+			#tldr:hover{background:#eee; border:1px solid #ddd; box-shadow:1px 1px 2px #ccc;}
 			#tldr.on {background:#111; color:#eee;}
 			#tldr.on:hover{background:#333; border:1px solid #555;}
 </style>
+
+</head>
+<body>
+{% include nav.html %}
+
 <main class="wrapper">
 	<article class="post">
 		<h2 class="postHeader">{{ page.title }}</h2>
@@ -120,13 +125,16 @@ section p, section td, section th, section li, section h1, section h2, section h
 	</article>
 </main>
 
+{% include footerJS.html %}
 
 <script>
-// $(function() {
-// 	$('#tldr').on('click'function(){
-// 		var censor = !$(this).hasClass("on");
-// 		$(this).toggleClass('on',!censor);
-// 		$('.censored').toggleClass('censoredOn',censor);
-// 	});
-// });
+$(function() {
+	$('#tldr').fadeIn().on('click',function(){
+		var censor = !$(this).hasClass("on");
+		$(this).toggleClass('on',censor);
+		$('.censored').toggleClass('censoredOn',censor);
+	});
+});
 </script>
+
+{% include footer.html %}
