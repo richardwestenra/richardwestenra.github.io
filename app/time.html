@@ -1,0 +1,154 @@
+---
+title: "XKCD’s ‘Time’ – Animated Time-lapse"
+permalink: /xkcds-time-animated-time-lapse/
+---
+{% include header.html %}
+<style>
+body {
+	background:#eff0f2;
+	background-image: linear-gradient(bottom, #EFF0F2 60%, #CED0D6 100%);
+	background-image: -o-linear-gradient(bottom, #EFF0F2 60%, #CED0D6 100%);
+	background-image: -moz-linear-gradient(bottom, #EFF0F2 60%, #CED0D6 100%);
+	background-image: -webkit-linear-gradient(bottom, #EFF0F2 60%, #CED0D6 100%);
+	background-image: -ms-linear-gradient(bottom, #EFF0F2 60%, #CED0D6 100%);
+	background-image: -webkit-gradient(  linear,  left bottom,  left top,  color-stop(0.6, #EFF0F2),  color-stop(1, #CED0D6)  );
+}
+	.header, .footer {
+		background:#0e0e0e;
+	}
+	.header a, .footer a {color:#fff;}
+		.header a:hover, .footer a:hover,
+		.header a:focus, .footer a:focus {
+			color:#0e9cc6;
+		}
+	main h2, main h3, main h4, main h5, main h6 {
+		color:#222;
+	}
+	.postHeader {
+		text-align:center;
+	}
+	main a:link {
+		color:#006694;
+	}
+		#timeAnimation {
+			position:relative;
+			margin:15px auto;
+			max-width: 485px;
+			padding:0;
+		}
+			#timeFrame {
+				position:relative;
+				max-width:100%;
+				height:auto;
+				list-style:none;
+				margin:0;
+			}
+			#pause {
+				position:absolute;
+				bottom:20px;
+				left:30px;
+				color:#999;
+				z-index:1;
+				font-size:1.6em;
+				text-decoration:none;
+				letter-spacing: -0.2em;
+			}
+			#pause:hover {
+				color:#fff;
+			}
+			#timestamp {
+				position:absolute;
+				bottom:20px;
+				right:30px;
+				color:#999;
+				z-index:1;
+			}
+			#slider, #slider a {
+				border-color:#bbb;
+			}
+	h4 {
+		text-align:center;
+		margin:30px 0 10px;
+		font-size: 1.6em;
+	}
+	.meta {
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+{% include nav.html %}
+
+
+
+<main class="wrapper">
+	<article class="post">
+		<h2 class="postHeader">XKCD’s ‘Time’ – Animated Time-lapse</h2>
+		<p>A quick &amp; dirty JavaScript time-lapse of xkcd’s slow-changing ‘<a href="http://xkcd.com/1190/" target="_self"><em>Time</em></a>’ comic. Thanks and kudos to <a href="http://www.explainxkcd.com/wiki/index.php?title=1190:_Time" target="_self">explainxkcd.com</a>&nbsp;for listing the complete image URLs on their page.</p>
+		<div id="timeAnimation">
+			<img id="timeFrame" src="http://images.richardwestenra.com/time1.png" title="Wait for it." alt="Wait for it." width="485" height="347" />
+			<a href="#" id="pause">&#9654;</a>
+			<span id="timestamp">00:00:00</span>
+		</div>
+		<h4>Change speed:</h4>
+		<div id="slider"></div>
+		<p style="text-align:center; margin:20px 0;">Like it? <a href="http://www.reddit.com/r/xkcd/comments/1b1des/xkcds_time_animated_timelapse/">Upvote it on Reddit</a>!</p>
+		<p class="meta">Published 26 March 2013</p>
+	</article>
+</main>
+
+
+
+<link href="/assets/time/jquery-ui-1.10.2.custom/css/ui-lightness/jquery-ui-1.10.2.custom.min.css" rel="stylesheet">
+{% include footerJS.html %}
+<script src="/assets/time/jquery-ui-1.10.2.custom/js/jquery-ui-1.10.2.custom.min.js"></script>
+<script>
+$(function() {
+	var url = '/assets/time/time.json';
+	$.getJSON(url, function(data) {
+	  runAnimation(data)
+	});
+
+	function runAnimation(times){
+		var timesLength = times.length,
+			timer;
+		
+		$( "#slider" ).slider({
+			value: 800,
+			min: 0,
+			max: 999,
+			slide: function(event,ui){
+				clearInterval(timer);
+				timer = setInterval(changeSlide,(1000-ui.value));
+			}
+		});
+		
+		var slide = 0,
+			$timeFrame = $('#timeFrame'),
+			$timestamp = $('#timestamp');
+		var changeSlide = function(){
+			if (slide >= timesLength) slide = 0;
+			$timeFrame.attr('src',times[slide].downloadedUrl);
+			$timestamp.text(times[slide].dateTime);
+			slide++;
+		};
+		timer = setInterval(changeSlide,200);
+		
+		// Pause button:
+		$('#pause').on('click',function(e){
+			e.preventDefault();
+			$(this).toggleClass('on');
+			if($(this).hasClass('on')){
+				clearInterval(timer);
+				$(this).html('&#9646;&#9646;');
+			} else {
+				clearInterval(timer);
+				timer = setInterval(changeSlide,(1000-$("#slider").slider("value")));
+				$(this).html('&#9654;');
+			};
+		});
+	}
+	
+});
+</script>
+{% include footer.html %}
