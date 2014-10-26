@@ -11,7 +11,8 @@ author:
 
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',
-          '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
+          '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg',
+          '**.ico', 'node_modules']
 
 include: ['.htaccess','**.ico']
 
@@ -26,3 +27,5 @@ markdown: redcarpet
 pygments: true
 
 permalink: /:title/
+
+relative_permalinks: false
