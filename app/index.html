@@ -34,7 +34,7 @@ title: Richard Westenra | Web designer &amp; front-end developer
 			<ul>
 				{% for item in site.data.portfolio %}
 					<li>
-						<a href="{{site.baseurl}}{{ item.url }}" target="_blank" style="background-image: url(/img/portfolioThumbs/{{ item.img }});">
+						<a href="{{ item.url }}" target="_blank" style="background-image: url({{site.baseurl}}img/portfolioThumbs/{{ item.img }});">
 							<span class="name"><em>{{ item.name }}</em> <cite>&ndash; {{ item.client }}</cite></span>
 							<span class="year">{{ item.year }}</span>
 						</a>
