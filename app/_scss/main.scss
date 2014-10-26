@@ -405,7 +405,7 @@ body {
                 padding-bottom: 100%;
                 background-position: center;
                 background-size: cover;
-                transition: all .3s ease;
+                transition: all .15s ease;
                 transform: translate3d(0,0,0);
                 &:before {
                     $t: 32px;
@@ -424,7 +424,7 @@ body {
                 span {
                     position: absolute;
                     opacity: 0;
-                    transition: opacity .6s ease, padding .15s linear;
+                    transition: opacity .2s ease, padding .1s linear;
                     z-index: 2;
                 }
                 .name {
