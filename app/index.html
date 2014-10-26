@@ -20,13 +20,13 @@ title: Richard Westenra | Web designer &amp; front-end developer
 		</section>
 
 		<section class="homeSection blog">
-			<h3><a href="/blog" title="Browse blog archive">Articles &amp; things</a></h3>
+			<h3><a href="{{site.baseurl}}blog" title="Browse blog archive">Articles &amp; things</a></h3>
 			<ul>
 				{% for post in site.data.blog %}{% if post.featured %}
-					<li><a class="thumb" href="{{ post.url }}"><img src="/img/blogThumbs/{{ post.img }}" alt="{{ post.name }}" width="279" height="92" /></a></li>
+					<li><a class="thumb" href="{{site.baseurl}}{{ post.url }}"><img src="{{site.baseurl}}img/blogThumbs/{{ post.img }}" alt="{{ post.name }}" width="279" height="92" /></a></li>
 				{% endif %}{% endfor %}
 			</ul>
-			<p><a class="btn" href="/blog/">Show all &raquo;</a></p>
+			<p><a class="btn" href="{{site.baseurl}}blog/">Show all &raquo;</a></p>
 		</section>
 
 		<section class="homeSection portfolio">
@@ -34,7 +34,7 @@ title: Richard Westenra | Web designer &amp; front-end developer
 			<ul>
 				{% for item in site.data.portfolio %}
 					<li>
-						<a href="{{ item.url }}" target="_blank" style="background-image: url(/img/portfolioThumbs/{{ item.img }});">
+						<a href="{{site.baseurl}}{{ item.url }}" target="_blank" style="background-image: url(/img/portfolioThumbs/{{ item.img }});">
 							<span class="name"><em>{{ item.name }}</em> <cite>&ndash; {{ item.client }}</cite></span>
 							<span class="year">{{ item.year }}</span>
 						</a>
@@ -45,12 +45,12 @@ title: Richard Westenra | Web designer &amp; front-end developer
 	</div>
 
 	<section class="homeSection linkblog">
-		<h3><a href="/linkblog/" title="Browse/search linkblog archive">Linkblog <i class="icon-search"></i></a></h3>
+		<h3><a href="{{site.baseurl}}linkblog/" title="Browse/search linkblog archive">Linkblog <i class="icon-search"></i></a></h3>
 		<ul>
 			{% for link in site.data.linkblog %}{% if forloop.index <= 22 %}
 				<li><a href="{{ link.url }}" target="_blank">{{ link.name }}</a> {% if link.desc %} &ndash; {{ link.desc }}{% endif %}</li>
 			{% endif %}{% endfor %}
 		</ul>
-		<p><a href="/linkblog/" class="btn">Read more &raquo;</a></p>
+		<p><a href="{{site.baseurl}}linkblog/" class="btn">Read more &raquo;</a></p>
 	</section>
 </main>

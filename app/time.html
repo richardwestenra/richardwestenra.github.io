@@ -99,12 +99,12 @@ body {
 
 
 
-<link href="/assets/time/jquery-ui-1.10.2.custom/css/ui-lightness/jquery-ui-1.10.2.custom.min.css" rel="stylesheet">
+<link href="{{site.baseurl}}assets/time/jquery-ui-1.10.2.custom/css/ui-lightness/jquery-ui-1.10.2.custom.min.css" rel="stylesheet">
 {% include footerJS.html %}
-<script src="/assets/time/jquery-ui-1.10.2.custom/js/jquery-ui-1.10.2.custom.min.js"></script>
+<script src="{{site.baseurl}}assets/time/jquery-ui-1.10.2.custom/js/jquery-ui-1.10.2.custom.min.js"></script>
 <script>
 $(function() {
-	var url = '/assets/time/time.json';
+	var url = '{{site.baseurl}}assets/time/time.json';
 	$.getJSON(url, function(data) {
 	  runAnimation(data)
 	});
