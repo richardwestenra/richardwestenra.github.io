@@ -413,24 +413,10 @@ main {
 					column-gap:50px;
 					padding-right:80px;
 				}
-		#plug {
-			padding:15px;
-			border-top:10px #0b7d9e solid;
-			border-bottom:10px #0b7d9e solid;
-		}
-		.entry-meta {
+		.meta {
 			color:#063e4f;
-			font-size:12px;
-		}
-		#embed {
-			border:1px #0B7D9E solid;
-			color:#111;
-			font-size:11px;
-			font-family:monospace;
-			border-radius:3px;
-			padding:5px;
-			width:550px;
-			height:90px;
-			display:block;
-			margin:0 auto;
+			font-size:0.9em;
+			text-align: center;
+			margin: 1em;
+			opacity: 1;
 		}
