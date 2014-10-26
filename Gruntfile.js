@@ -177,7 +177,7 @@ module.exports = function (grunt) {
       options: {
         dest: '<%= yeoman.dist %>'
       },
-      html: '<%= yeoman.dist %>/index.html'
+      html: '<%= yeoman.dist %>/**/*.html'
     },
     usemin: {
       options: {
@@ -312,7 +312,8 @@ module.exports = function (grunt) {
       },
       check: {
         src: [
-          '<%= yeoman.app %>/css/**/*.css'
+          '.tmp/css/**/*.css'
+          // '<%= yeoman.app %>/css/**/*.css'
           // '<%= yeoman.app %>/_scss/**/*.scss'
         ]
       }
@@ -395,8 +396,8 @@ module.exports = function (grunt) {
     'clean:server',
     'jekyll:check',
     'compass:server',
-    'jshint:all',
-    'csslint:check'
+    'jshint:all'
+    // 'csslint:check'
   ]);
 
   grunt.registerTask('build', [
