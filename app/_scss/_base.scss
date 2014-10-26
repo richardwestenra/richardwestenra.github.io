@@ -102,3 +102,14 @@ main {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
+
+// Mixin classes: 
+.display {@include display;}
+.serif {@include serif;}
+.sansSerif {@include sansSerif;}
+.ir {@include ir;}
+.hidden {@include hidden;}
+.visuallyhidden {@include visuallyhidden;}
+.focusable {@include focusable;}
+.invisible {@include invisible;}
+.clearfix {@include clearfix;}
