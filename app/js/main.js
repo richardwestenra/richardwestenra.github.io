@@ -20,10 +20,21 @@ $(function(){
 
 
 	//--- Header nav menu hamburger ---//
+	// Cache elements in vars
+	var $header = $('.header'),
+		$nav = $('#nav');
+	// Toggle nav on button click
 	$('.hamburger').on('click',function(e){
 		e.preventDefault();
-		$('#nav').toggleClass('visible');
+		$nav.toggleClass('visible');
 	})
+	// Hide nav on document click (except header)
+    $(document).on('click', function(e) {
+		// if the target of the click isn't the container, nor a descendant of the container
+		if (!$header.is(e.target) && $header.has(e.target).length === 0) {
+			$nav.removeClass('visible');
+		}
+	});
 
 
 	//--- Linkblog Quicksearch ---//
