@@ -29,10 +29,12 @@ main h2, main h3, main h4, main h5, main h6 { color:#222; }
 	#converter {
 		margin:0 auto;
 	}
-		#converter div {
-			display: inline-block;
-			width: 40%;
-			vertical-align: top;
+		@media screen and (min-width: 300px){
+			#converter div {
+				display: inline-block;
+				width: 40%;
+				vertical-align: top;
+			}
 		}
 			#converter input {
 				border:6px solid #006694;
