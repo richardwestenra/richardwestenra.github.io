@@ -8,6 +8,17 @@ $(function(){
 	//--- Helper functions ---//
 
 
+	//--- In-page scroll ---//
+	$('.scroll').on('click',function(e,target){
+		e.preventDefault();
+		var o = 0, t = 900; //offset (px), time delay (ms)
+		var $anchor = $(this).attr('href');
+		$('html, body').stop().animate({
+			scrollTop: ($($anchor).offset().top) - o
+		}, t);
+	});
+
+
 	//--- Header nav menu hamburger ---//
 	$('.hamburger').on('click',function(e){
 		e.preventDefault();
