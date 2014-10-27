@@ -27,7 +27,7 @@ $(function(){
 	$('.hamburger').on('click',function(e){
 		e.preventDefault();
 		$nav.toggleClass('visible');
-	})
+	});
 	// Hide nav on document click (except header)
     $(document).on('click', function(e) {
 		// if the target of the click isn't the container, nor a descendant of the container
