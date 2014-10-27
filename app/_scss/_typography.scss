@@ -1,4 +1,12 @@
+//--- Post typography etc ---//
+
+.post img {
+    max-width: 100%;
+    height: auto;
+}
+
 //--- Buttons ---//
+
 .btn {
     cursor: pointer;
     background: lighten($c_primary,5%);
@@ -36,9 +44,9 @@
     padding: 0 .4em;
 }
 
-.post ul, .post ol {
-    margin-left: 1.35em;
-}
+// .post ul, .post ol {
+//     margin-left: 1.35em;
+// }
 
 .post code {
     border: 1px solid #ddd;
@@ -61,6 +69,7 @@
     background-color: #333;
 }
 
+
 //--- Legacy Wordpress formatting ---//
 
 .aligncenter {
@@ -81,20 +90,14 @@
 .wp-caption, .caption {
     background-color: #fcfbf9;
     border: 1px solid #d6cfc4;
-    -khtml-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
     border-radius: 3px;
     margin: 10px;
-    padding-top: 4px;
+    padding: 4px;
     text-align: center;
     img {
         border: 0 none;
         margin: 0;
         padding: 0;
-        -moz-border-radius:0;
-        -wekit-border-radius:0;
-        -o-border-radius:0;
         border-radius:0;
     }
     .caption-text, .wp-caption-text {
