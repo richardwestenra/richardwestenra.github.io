@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Richard Westenra | Web designer &amp; front-end developer
+id: home
 ---
 
 <main class="home wrapper">
@@ -10,7 +11,7 @@ title: Richard Westenra | Web designer &amp; front-end developer
 			<h2><span class="line1">Good design</span> <span class="line2">speaks</span> <strong>volumes</strong></h2>
 		</div>
 
-		<section class="homeSection about">
+		<section id="about" class="homeSection about">
 			<h3>Hello there!</h3>
 			<p>I'm Richard. I make websites, data-visualisations, interactives and web-apps.</p>
 			<p>I reckon that if something's worth doing then it's worth doing right. Each of my websites is finely crafted to a high standard. Before a single pixel is published, it must pass an exacting series of tests: First, I polish every design in Photoshop until it shines with an unholy burning light. Then I hand-code the site using only the finest HTML ingredients, sprinkling it with a light garnish of CSS and JavaScript.  Finally, each pixel must undergo a gruelling fitness regimen to shave off those unwanted bytes, saving precious seconds of download time. Only then is the site ready to be served piping hot to your browser. Yes, I know that my metaphors don't make sense. Nevermind that.</p>
@@ -19,7 +20,7 @@ title: Richard Westenra | Web designer &amp; front-end developer
 			<p><a class="btn" href="mailto:richard@richardwestenra.com" title="Send me an email!" target="_blank"><i class="icon-mail"></i> Get in touch</a></p>
 		</section>
 
-		<section class="homeSection blog">
+		<section id="blog" class="homeSection blog">
 			<h3><a href="{{site.baseurl}}blog" title="Browse blog archive">Articles &amp; things</a></h3>
 			<ul>
 				{% for post in site.data.blog %}{% if post.featured %}
@@ -29,7 +30,7 @@ title: Richard Westenra | Web designer &amp; front-end developer
 			<p><a class="btn" href="{{site.baseurl}}blog/">Show all &raquo;</a></p>
 		</section>
 
-		<section class="homeSection portfolio">
+		<section id="portfolio" class="homeSection portfolio">
 			<h3>Client work</h3>
 			<ul>
 				{% for item in site.data.portfolio %}
@@ -44,7 +45,7 @@ title: Richard Westenra | Web designer &amp; front-end developer
 		</section>
 	</div>
 
-	<section class="homeSection linkblog">
+	<section id="linkblog" class="homeSection linkblog">
 		<h3><a href="{{site.baseurl}}linkblog/" title="Browse/search linkblog archive">Linkblog <i class="icon-search"></i></a></h3>
 		<ul>
 			{% for link in site.data.linkblog %}{% if forloop.index <= 22 %}

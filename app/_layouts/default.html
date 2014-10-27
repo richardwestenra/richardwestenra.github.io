@@ -4,9 +4,10 @@
     {% include nav.html %}
 
     {{ content }}
-{% comment %}
-    {% include config.html %}
-{% endcomment %}
+
+	{% if page.id == 'home' %}
+	    {% include config.html %}
+	{% endif %}
 
 {% include footerJS.html %}
 {% include footer.html %}

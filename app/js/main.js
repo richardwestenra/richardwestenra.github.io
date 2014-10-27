@@ -8,6 +8,13 @@ $(function(){
 	//--- Helper functions ---//
 
 
+	//--- Header nav menu hamburger ---//
+	$('.hamburger').on('click',function(e){
+		e.preventDefault();
+		$('#nav').toggleClass('visible');
+	})
+
+
 	//--- Linkblog Quicksearch ---//
 	$('.quicksearchForm').on('submit',function(e){
 		e.preventDefault();

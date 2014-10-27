@@ -79,8 +79,8 @@ body {
     background-color:$c_primary;
     z-index:10;
     height: 2.4em;
-    position: relative;
     z-index: 2;
+    position: relative;
     .wrapper {
         @include clearfix;
     }
@@ -120,49 +120,101 @@ body {
             }
         }
     }
+    .mobile-only {
+        @media screen and (min-width: $m_small) {
+            display: none;
+        }
+    }
+    .hamburger {
+        float: right;
+        padding: 0.5em 0.4em;
+        line-height: 1.4em;
+        i {
+            margin-right: 5px;
+        }
+    }
     ul {
         margin: 0;
         padding: 0;
         list-style: none;
-        float: right;
-        li {
-            display: inline-block;
-            a {
-                padding: 0.5em 0.4em;
-                display: inline-block;
-                position: relative;
-                span {
-                    opacity: 0;
-                    position: absolute;
-                    transition: all ease .2s;
-                    text-align: center;
-                    background: $c_opposite;
-                    color: $c_base;
-                    padding: 0 8px;
-                    right: -15px;
-                    top: 35px;
-                    box-shadow: 0 1px 2px rgba($c_primary,0.1);
-                    pointer-events: none;
-                    border-radius: 3px;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        opacity: 0;
+        transform: translateX(300px);
+        transition: all ease .3s;
+        background: $c_opposite;
+        z-index: 30;
+        &.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        @media screen and (max-width: $m_small) {
+            li {
+                display: block;
+                a {
                     display: block;
-                    white-space: nowrap;
-                    font-size: 12px;
-                    &:before {
-                        $t: 6px;
-                        content: '';
-                        width: 0;
-                        height: 0;
-                        position: absolute;
-                        right: 26px;
-                        top: -$t;
-                        border-style: solid;
-                        border-width: 0 $t $t $t;
-                        border-color: transparent transparent $c_opposite transparent;
+                    padding: 1em 1.4em;
+                    color: $c_base;
+                    i {
+                        margin-right: 0.6em;
+                    }
+                    &:hover, &:focus {
+                        color: $c_base;
+                        background: rgba($c_base,0.1);
                     }
                 }
-                &:hover span, &:focus span {
-                    opacity: 1;
-                    transform: translateY(10px);
+            }
+        }
+
+        @media screen and (min-width: $m_small) {
+            opacity: 1;
+            transform: translateX(0);
+            transform: none;
+            position: static;
+            right: auto;
+            top: auto;
+            background: none;
+            float: right;
+            li {
+                display: inline-block;
+                a {
+                    padding: 0.5em 0.4em;
+                    display: inline-block;
+                    position: relative;
+                    span {
+                        opacity: 0;
+                        position: absolute;
+                        transition: all ease .2s;
+                        text-align: center;
+                        background: $c_opposite;
+                        color: $c_base;
+                        padding: 0 8px;
+                        right: -15px;
+                        top: 35px;
+                        box-shadow: 0 1px 2px rgba($c_primary,0.1);
+                        pointer-events: none;
+                        border-radius: 3px;
+                        display: block;
+                        white-space: nowrap;
+                        font-size: 12px;
+                        &:before {
+                            $t: 6px;
+                            content: '';
+                            width: 0;
+                            height: 0;
+                            position: absolute;
+                            right: 26px;
+                            top: -$t;
+                            border-style: solid;
+                            border-width: 0 $t $t $t;
+                            border-color: transparent transparent $c_opposite transparent;
+                        }
+                    }
+                    &:hover span, &:focus span {
+                        opacity: 1;
+                        transform: translateY(10px);
+                    }
                 }
             }
         }
