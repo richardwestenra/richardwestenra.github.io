@@ -254,19 +254,32 @@ body {
         li {
             @include clearfix;
             clear: both;
-            padding: 15px;
-            background: rgba(#fff,0.4);
-            &:nth-child(even){
-                background: rgba(#fff,0.2);
+            padding: 0 0 25px;
+            @media screen and (min-width: $m_small){
+                padding: 15px;
+                background: rgba(#fff,0.4);
+                &:nth-child(even){
+                    background: rgba(#fff,0.2);
+                }
             }
         }
             .thumb {
-                width: 279px;
-                float: left;
-                margin-right: 1em;
+                display: block;
+                @media screen and (min-width: $m_small){
+                    width: 279px;
+                    float: left;
+                    margin-right: 1em;
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                }
             }
             h4 {
-                margin: 0.3em 1em;
+                margin: 0.6em 0 0.2em;
+                @media screen and (min-width: $m_small){
+                    margin: 0.3em 1em;
+                }
                 font-size: 1.2em;
                 a {
                     text-decoration: none;
