@@ -1,0 +1,97 @@
+---
+title: Photos From My Recent Trips To Space
+permalink: /photos-from-my-recent-trips-to-space/
+---
+{% include header.html %}
+
+<style>
+body {
+	background:white url({{site.baseurl}}img/tripToSpace/paperBgRepeat.png);
+}
+@font-face {
+    font-family: 'ElliotSixRegular';
+    src: url('{{site.baseurl}}fonts/elliotsix/ElliotSix-webfont.eot');
+    src: url('{{site.baseurl}}fonts/elliotsix/ElliotSix-webfont.eot?#iefix') format('embedded-opentype'),
+         url('{{site.baseurl}}fonts/elliotsix/ElliotSix-webfont.woff') format('woff'),
+         url('{{site.baseurl}}fonts/elliotsix/ElliotSix-webfont.ttf') format('truetype'),
+         url('{{site.baseurl}}fonts/elliotsix/ElliotSix-webfont.svg#ElliotSixRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+main {
+	max-width:750px;
+}
+.post a {
+	text-decoration:none;
+}
+main, .postHeader {
+	font-family: 'ElliotSixRegular', Arial, sans-serif;
+	color:#333;
+	line-height:1.35em;
+}
+.post .postHeader {
+	font-size:3em;
+	text-align:center;
+	margin: 0 0 0.5em;
+	color: orange;
+}
+.post p {
+	font-size:1.6em;
+	line-height:1.6em;
+}
+.post .meta {
+	font-size: 0.9em;
+	text-align: center;
+}
+.post img {
+	border: 5px solid #fff;
+	box-shadow: 0 0 3px rgba(0,0,0,.1);
+	transform: rotate(2deg);
+}
+.post img.alignright {
+	transform: rotate(-3deg);
+	max-width: 50%;
+}
+</style>
+
+</head>
+<body>
+    {% include nav.html %}
+<main class="wrapper">
+	<article class="post">
+		<h2 class="postHeader">{{ page.title }}</h2>
+		<p>Last week I went for two trips to space. The first one was on a private spacecraft. I won it through a competition on the back of a cereal box or something. It was really fun.</p>
+		<p><img class="aligncenter size-full" title="Photo of me on the private spacecraft" src="{{site.baseurl}}img/tripToSpace/photos-from-my-trip-to-space-3.jpg" alt="" width="500" height="298"></p>
+		<p>This photo was taken aboard the private spacecraft. At this point being in space was still pretty new for me, so I was fairly excited about it.</p>
+		<p>When I got back to Earth, NASA wanted me for another mission. This time we went to the International Space Station. I wasn’t busy or anything so I agreed to go. It was really fun too.</p>
+		<br/>
+		<p><img class="size-full alignright" title="Photo of me with the NASA space shuttle" src="{{site.baseurl}}img/tripToSpace/photos-from-my-trip-to-space-1.jpg" alt="" width="400" height="503">This picture is of me with the NASA space shuttle. We made some mission critical upgrades to some mission critical systems and went on a mission critical space walk. This was my first time doing a space walk. It was pretty neat.</p>
+		<p>Sorry if the photo is hard to make out. It’s tricky taking photos in space because of all the mission critters!</p>
+		<br/>
+		<p><img class="aligncenter size-full wp583" title="Doing a spacewalk near the ISS over New Zealand with Rob and Chris" src="{{site.baseurl}}img/tripToSpace/photos-from-my-trip-to-space-2.jpg" alt="" width="500" height="375"></p>
+		<p>In this picture I am hanging out with Rob and Chris who are two other astronauts. We are attaching a new truss segment to the ISS and beginning to upgrade the power grid or something like that. I like this photo because you can see my house in the background.</p>
+		<p>After the upgrades were done we flew home. Then I woke up and realised it was all a dream.</p>
+		<p>Anyway I hope you like my pictures. I am glad I brought my camera, otherwise my friends would never believe that I really went to space in my dream.</p>
+		<p>By Richard age 24</p>
+		<p class="meta">Published 19 January 2010</p>
+	</article>
+</main>
+
+
+
+	<div class="column wrapper clearfix">
+		<div class="post content">
+			<h4 class="postHeader"><?php the_title(); ?></h4>
+			<div class="postContent">
+				<?php the_content(); ?>
+			</div>
+		</div>
+		<?php get_footer('comments'); ?>
+	</div>
+
+
+
+
+
+{% include footerJS.html %}
+{% include footer.html %}
