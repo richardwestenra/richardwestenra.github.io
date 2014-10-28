@@ -37,12 +37,12 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
 	main h5 {font-size:40px; margin:0 0 10px;}
 	.postContent h1, .postContent h2, .postContent h3, .postContent h4, .postContent h5, .postContent h6, 
 	#commentsWrapper h1, #commentsWrapper h2, #commentsWrapper h3, #commentsWrapper h4, #commentsWrapper h5, #commentsWrapper h6 {color:#444; text-shadow:none;}
-	.postContent p, .postContent td, .postContent th, .postContent li {color:#000;}
+	/*.postContent p, .postContent td, .postContent th, .postContent li {color:#000;}*/
 	main h5.beer {font-size:33px;}
 		main h5 span {font-size:50px;}
 		main h5.beer span {font-size:45px;}
 		#tally h5 {font-size:65px; text-transform:uppercase; text-align:center; line-height:1em; margin:0;}
-		#tally h6 {font-size:35px; text-align:center;}
+		#tally h6 {font-size:35px; text-align:center; margin: 10px 0;}
 		#tally p {text-align:center; color:white; text-shadow:0px 1px 2px rgba(0, 0, 0, 0.3); text-align:center;}
 
 html {background:#0678b4 url({{site.baseurl}}img/greatWinterRoadtrip/mainBg.png) repeat-x bottom left fixed;}
@@ -60,6 +60,7 @@ html {background:#0678b4 url({{site.baseurl}}img/greatWinterRoadtrip/mainBg.png)
 					clear:both;
 					padding:12px 16px;
 					position:relative;
+					font-size: 0.9em;
 				}
 				.postContentLeft {float:left; clear:left; width:420px;}
 				.postContentRight {float:right; clear:right; width:420px;}
@@ -77,6 +78,7 @@ html {background:#0678b4 url({{site.baseurl}}img/greatWinterRoadtrip/mainBg.png)
 						margin-bottom:14px;
 						border-radius: 2px;
 						opacity:1;
+						transition: all ease .1s;
 					}
 					.post .wp-caption img {
 						margin:0;
@@ -85,8 +87,7 @@ html {background:#0678b4 url({{site.baseurl}}img/greatWinterRoadtrip/mainBg.png)
 					}
 					.post a:hover img,
 					.post a:focus img {
-						opacity:0.9;
-						box-shadow:0 1px 5px rgba(0,0,0,0.5);
+						transform: scale(1.1);
 					}
 						.postContent p:first-child {
 							margin-top: 0;
@@ -95,6 +96,12 @@ html {background:#0678b4 url({{site.baseurl}}img/greatWinterRoadtrip/mainBg.png)
 							box-shadow:none;
 							border:1px solid #bbb;
 						}
+	.meta {
+		margin-top: 5em;
+		color: #fff;
+		text-align: center;
+		opacity: 1;
+	}
 </style>
 
 </head>
@@ -121,8 +128,8 @@ A good day out: Nothing compared to a good mid-season day, but fun all the same.
 			</div>
 			<div class="clearfix">
 				<a href="{{site.baseurl}}img/greatWinterRoadtrip/May1.jpg" rel="lightbox-roadtrip" title="Hiking the big Cheese"><img class="alignleft" src="{{site.baseurl}}img/greatWinterRoadtrip/May1thumb.jpg" alt="Hiking the big Cheese" width="210" height="158" /></a>
-				<a href="{{site.baseurl}}img/greatWinterRoadtrip/May2.jpg" rel="lightbox-roadtrip" title="Making do with a wee kicker"><img style="float:left; margin:3px 0 0 7px;" class="aligncenter" src="{{site.baseurl}}img/greatWinterRoadtrip/May2thumb.jpg" alt="Making do with a wee kicker" width="210" height="158" /></a>
 				<a href="{{site.baseurl}}img/greatWinterRoadtrip/May3.jpg" rel="lightbox-roadtrip" title="Ryan landing a 180"><img class="alignright" src="{{site.baseurl}}img/greatWinterRoadtrip/May3thumb.jpg" alt="Ryan landing a 180"  width="210" height="158" /></a>
+				<a href="{{site.baseurl}}img/greatWinterRoadtrip/May2.jpg" rel="lightbox-roadtrip" title="Making do with a wee kicker"><img style="margin-top:3px;" class="aligncenter" src="{{site.baseurl}}img/greatWinterRoadtrip/May2thumb.jpg" alt="Making do with a wee kicker" width="210" height="158" /></a>
 			</div>
 
 			<hr style="margin:20px auto;" />
@@ -149,13 +156,13 @@ A good day out: Nothing compared to a good mid-season day, but fun all the same.
 			<hr style="margin-top:40px;" />
 			
 			<h5>Knocking off the Grand Traverse</h5>
-			<div class="postContent" style="width:300px; min-height:272px; float:left;">
+			<div class="postContent" style="width:340px; min-height:272px; float:left;">
 				<p><strong>Temple Basin – 9th August</strong></p>
 				<p>Brian and I trekked from the top of the Elevator Chute, across the top of Upper Bills (just under B'limit) to reach a point just short of Cassidy peak at sunset, culminating in my longest Temple Basin run to date. I'll blame my sketchy skiing on loose boots, but I managed to hold it together at least and made the descent without bailing nor losing the ear-to-ear grin from my face.</p>
 			</div>
 			<a href="{{site.baseurl}}img/greatWinterRoadtrip/traverse6.jpg" rel="lightbox-roadtrip" title="Poser"><img style="margin-top:0;" class="alignright" src="{{site.baseurl}}img/greatWinterRoadtrip/traverse6thumb.jpg" alt="" width="150" height="113" /></a>
 			<a href="{{site.baseurl}}img/greatWinterRoadtrip/traverse5.jpg" rel="lightbox-roadtrip" title=""><img style="clear:none; margin-right:10px; margin-top:0;" class="alignright" src="{{site.baseurl}}img/greatWinterRoadtrip/traverse5thumb.jpg" alt="" width="150" height="113" /></a>
-			<a href="{{site.baseurl}}img/greatWinterRoadtrip/traverse3.jpg" rel="lightbox-roadtrip" title=""><img style="clear:both; margin-right:0; margin-top:-177px;" class="alignright" src="{{site.baseurl}}img/greatWinterRoadtrip/traverse3thumb.jpg" alt="" width="332" height="145" /></a>
+			<a href="{{site.baseurl}}img/greatWinterRoadtrip/traverse3.jpg" rel="lightbox-roadtrip" title=""><img style="clear:both; margin-right:0; margin-top:-167px;" class="alignright" src="{{site.baseurl}}img/greatWinterRoadtrip/traverse3thumb.jpg" alt="" width="320" height="" /></a>
 			
 			<div class="clearfix" style="clear:both;">
 				<a href="{{site.baseurl}}img/greatWinterRoadtrip/traverse4.jpg" rel="lightbox-roadtrip" title="Hikers in Upper Bill's. Snaking past them was sadistically fun."><img class="alignleft" style="margin:0 10px 0 0;" src="{{site.baseurl}}img/greatWinterRoadtrip/traverse4thumb.jpg" alt=""  width="165" height="220" /></a>
@@ -206,8 +213,10 @@ A good day out: Nothing compared to a good mid-season day, but fun all the same.
 				<a href="{{site.baseurl}}img/greatWinterRoadtrip/bigMountain1.jpg" rel="lightbox-roadtrip" title=""><img class="alignright" src="{{site.baseurl}}img/greatWinterRoadtrip/bigMountain1thumb.jpg" alt="" width="328" height="246" /></a>
 			</div>
 			
-			<div style="width:666px; margin:auto; padding:12px;" class="postContent clearfix">
-				<iframe src="http://player.vimeo.com/video/6476456?title=0&amp;byline=0&amp;portrait=0" width="640" height="365" frameborder="0"></iframe>
+			<div style="padding: 12px;" class="postContent clearfix">
+				<div style="position: relative; padding: 0 0 58%;">
+					<iframe style="width: 100%; height: 100%; position: absolute;" src="http://player.vimeo.com/video/6476456?title=0&amp;byline=0&amp;portrait=0" width="640" height="365" frameborder="0"></iframe>
+				</div>
 				<p style="text-align:center; margin:0;"><a href="http://vimeo.com/6476456">Black Diamond Big Mountain Event from Temple Basin</a> from <a href="http://vimeo.com/user296423">Richard Sutcliffe</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
 			</div>
 			
@@ -251,8 +260,8 @@ A good day out: Nothing compared to a good mid-season day, but fun all the same.
 			</div>
 			<div class="clearfix">
 				<a href="{{site.baseurl}}img/greatWinterRoadtrip/ultimate3.jpg" rel="lightbox-roadtrip" title=""><img class="alignleft" src="{{site.baseurl}}img/greatWinterRoadtrip/ultimate3thumb.jpg" alt="" width="210" height="158" /></a>
-				<a href="{{site.baseurl}}img/greatWinterRoadtrip/ultimate4.jpg" rel="lightbox-roadtrip" title=""><img style="float:left; margin:3px 0 0 7px;" class="aligncenter" src="{{site.baseurl}}img/greatWinterRoadtrip/ultimate4thumb.jpg" alt="" width="210" height="158" /></a>
 				<a href="{{site.baseurl}}img/greatWinterRoadtrip/ultimate5.jpg" rel="lightbox-roadtrip" title="The epic snow was enough to tire out even Willy"><img class="alignright" src="{{site.baseurl}}img/greatWinterRoadtrip/ultimate5thumb.jpg" alt="The epic snow was enough to tire out even Willy"  width="210" height="158" /></a>
+				<a href="{{site.baseurl}}img/greatWinterRoadtrip/ultimate4.jpg" rel="lightbox-roadtrip" title=""><img style="margin-top:3px;" class="aligncenter" src="{{site.baseurl}}img/greatWinterRoadtrip/ultimate4thumb.jpg" alt="" width="210" height="158" /></a>
 			</div>
 			
 			<hr />
@@ -282,7 +291,7 @@ A good day out: Nothing compared to a good mid-season day, but fun all the same.
 			<h5>Staff-only powder day</h5>
 			<div class="clearfix">
 				<a href="{{site.baseurl}}img/greatWinterRoadtrip/final.jpg" rel="lightbox-roadtrip" title=""><img class="alignleft" style="margin:0;" src="{{site.baseurl}}img/greatWinterRoadtrip/finalThumb.jpg" alt="" width="411" height="308" /></a>
-				<div class="postContent" style="width:220px; min-height:295px; float:right; clear:none;">
+				<div class="postContent" style="max-width:270px; min-height:295px; float:right; clear:none;">
 					<p><strong>Temple Basin – 5th October</strong></p>
 					<p>Once the punters had finally left, the staff finally got a day to themselves to pack their bags, tidy the lodge, take down the trip cords, and of course pillage the empty slopes. Inevitably there were wind-blown freshies the day after closing, so we spent a couple of hours picking out pow between the ice patches in between taking down trips at Downhill, then headed home through Lower Bill's for the last time with packs full of gear.</p>
 				</div>
