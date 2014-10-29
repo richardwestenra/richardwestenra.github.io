@@ -47,6 +47,7 @@ body {
     .wrapper {
         padding: 1em 0;
         position: relative;
+        @include clearfix;
     }
     h3 {
         font-size: 2em;
@@ -54,15 +55,28 @@ body {
     }
     h4 {
         font-size: 1.2em;
-        margin: 1em 0 0.3em;
+        // margin: 1em 0 0.3em;
+        margin: 0 0 0.3em;
+    }
+    section {
+        padding: 1em 0;
+        @media screen and (min-width: $m_tablet){
+            float: left;
+            width: 49%;
+            &:first-of-type {
+                margin-right: 2%;
+            }
+        }
     }
     ul {
-        margin: 0 0 2em;
+        margin: 0;
         text-align: left;
         list-style: none;
-        padding: 0 0 0 0.4em;
+        padding: 0;
         li {
+            display: inline-block;
             margin: 0.3em 0;
+            margin-right: 3em;
         }
         a {
             text-decoration: none;
@@ -81,9 +95,9 @@ body {
         text-decoration: none;
         color: #a00;
         font-weight: bold;
-        transition: all ease .3s;
+        transition: all ease .2s;
         &:hover {
-            transform: rotate(90deg);
+            transform: scale(1.4);
         }
     }
 }
