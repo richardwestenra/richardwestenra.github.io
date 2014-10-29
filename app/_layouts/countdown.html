@@ -13,23 +13,22 @@ body {background:#fff;}
 main.wrapper {max-width:771px; margin: 0 auto;}
 aside.intro {margin-bottom:-10px;}
 aside.intro p {text-align:center; color:#666; font-size:11px; position:relative; z-index:5; margin:0;}
+.post {
+	max-width: none;
+}
 .post .postHeader {
 	text-align: center;
 	font-size: 1.7em;
-}
-.post {
-	max-width: none;
-	font-family:'jr!handRegular',"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-	text-shadow:0 -1px 1px #DDD;
-	font-size:1.15em;
-	margin:1em 0;
 }
 .postContent {
 	position: relative;
 	background:url({{site.baseurl}}img/countdown/countdownBgRepeat.jpg) repeat-y 0 290px;
 	-webkit-background-size: 100% auto;
 	background-size: 100% auto;
-	padding:120px 90px;
+	padding:60px 50px;
+	font-family:'jr!handRegular',"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	text-shadow:0 -1px 1px #DDD;
+	font-size:1.15em;
 }
 .postContent:before {
 	background-image:url({{site.baseurl}}img/countdown/countdownBgTop.jpg);
@@ -54,13 +53,46 @@ aside.intro p {text-align:center; color:#666; font-size:11px; position:relative;
 	position: relative;
 	z-index: 1;
 }
-#winterOfDiscontent {
-	margin-right:-14%;
-	float:right;
-	padding:0;
-	border:none;
-	background:none;
-	/*max-width: 48%;*/
+.winter {
+	margin:-10px -30px 1em 2em;
+	transform: rotate(6deg);
+	max-width: 40%;
+	position: relative;
+}
+.winter:before {
+	background:url({{site.baseurl}}img/countdown/paperclip.png) no-repeat center;
+	-webkit-background-size: contain;
+	background-size: contain;
+	content: '';
+	position: absolute;
+	right: -4px;
+	top: 20px;
+	width: 40px;
+	height: 45px;
+	z-index: 5;
+}
+.winter img {
+	border: 3px solid #f9f9f9;
+	box-shadow: 0 0 5px rgba(0,0,0,0.15);
+}
+.meta {
+	text-align: center;
+}
+@media (min-width: 600px){
+	.postContent {
+		padding:120px 90px;
+	}
+	.winter {
+		margin-right: -65px;
+	}
+	.winter img {
+		border-width: 6px;
+	}
+	.winter:before {
+		right: -9px;
+		top: 70px;
+		width: 69px;
+	}
 }
 </style>
 </head>
@@ -74,7 +106,9 @@ aside.intro p {text-align:center; color:#666; font-size:11px; position:relative;
 			</aside>
 			<div class="postContent">
 				<div class="postContentInner">
-					<img id="winterOfDiscontent" src="{{site.baseurl}}img/countdown/winterPhotograph.jpg" height="348" width="280" alt="Now is the winter of our discontent" title="Now is the winter of our discontent" />
+					<div class="winter alignright">
+						<img src="{{site.baseurl}}img/countdown/winter.jpg" height="534" width="400" alt="Countdown in winter" title="Now is the winter of our discontent" />
+					</div>
 					{{ content }}
 				</div>
 			</div>
