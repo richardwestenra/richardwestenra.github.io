@@ -1,0 +1,106 @@
+//--- Geocities ---//
+@mixin comicsans {
+	font-family: "Comic Sans MS", "Comic Sans", monospace;
+}
+body.geocities{
+	@include comicsans;
+	color:#ff17f7;
+	background:url($il + "geocities/starBackground2.gif") repeat;
+	text-align:center;
+}
+.geocities {	
+
+	.header, .footer {
+		background:#0f0;
+		color: red;
+		a {
+			color: red;
+			&:hover, &:focus {
+				color:pink;
+			}
+		}
+	}
+	a {
+		color:#FF0;
+		&:hover, &:focus {
+			color:#0F0;
+		}
+		&.btn {
+			@include comicsans;
+			font-weight: bold;
+			color: blue;
+			background-color: orange;
+			text-shadow: none;
+			padding: 10px 30px;
+			border-radius: 0;
+			&:hover, &:focus {
+				color:purple;
+			}
+		}
+	}
+	h1, h2, h3, h4, h5, h6 {
+		@include comicsans;
+		color:cyan;
+		font-weight:bold;
+		text-decoration:blink;
+		text-align:left;
+	}
+	#config {
+		background: navy;
+		h3, h4 {
+			color: #0f0;
+		}
+	}
+	.banner {
+		text-shadow:0 0 4px white, 0 -5px 4px #FFFF33, 2px -10px 6px #FFDD33, -2px -15px 11px #FF8800, 2px -25px 18px #FF2200;
+		&:before, &:after {
+			display: none;
+		}
+		h2 {
+			text-transform: uppercase;
+			color: #fff;
+			text-align:center;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+			animation-direction: alternate;
+			animation-duration:3s;
+			animation-name: scroll;
+			span, strong {
+				font-size:70px;
+				line-height: 1.4em;
+				display: inline;
+			}
+		}
+	}
+	@keyframes scroll {
+		from {margin-left:-50px;}
+		to {margin-left:50px;}
+	}
+		 
+	.leftCol {
+		padding-top:70px;
+		background:url($il + "geocities/welcome.gif") no-repeat center top;
+		background-size: 80% auto;
+	}
+	.about:before {
+		content: '';
+		background:url($il + "geocities/construction5.gif") no-repeat center;
+		background-size: contain;
+		width: 50%;
+		max-width: 160px;
+		padding-bottom: 50%;
+		float: right;
+	}
+	.about .btn {
+		background:url($il + "geocities/3dmail-1_e0.gif") repeat;
+		width:105px;
+		height:40px;
+		@include ir;
+		margin: 1em auto;
+		display: block;
+	}
+	.portfolio ul {
+		padding-top: 90px;
+		background:url($il + "geocities/kiwi.gif") repeat-x;
+	}
+}

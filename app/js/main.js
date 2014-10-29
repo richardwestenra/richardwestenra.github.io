@@ -2,7 +2,9 @@ $(function(){
 	'use strict';
 
 	//--- Global variables ---//
-
+	var $body = $('body'),
+		$header = $('.header'),
+		$nav = $('#nav');
 
 
 	//--- Helper functions ---//
@@ -20,9 +22,6 @@ $(function(){
 
 
 	//--- Header nav menu hamburger ---//
-	// Cache elements in vars
-	var $header = $('.header'),
-		$nav = $('#nav');
 	// Toggle nav on button click
 	$('.hamburger').on('click',function(e){
 		e.preventDefault();
@@ -47,10 +46,26 @@ $(function(){
 
 	//--- Config popup ---//
 	var $config = $( $('#config_tmpl').html() );
-	$('body').prepend($config);
+	$body.prepend($config);
 	$('.configBtn').on('click',function(e){
 		e.preventDefault();
 		$config.slideToggle(240);
+	});
+
+
+	//--- Style-switcher ---//
+	var $styleLinks = $('#styleSwitcher').find('a');
+	var styles = [];
+	$styleLinks.each(function(i,d){
+		styles.push( $(d).attr('id') );
+	});
+	// $body.addClass('geocities');
+	$styleLinks.on('click',function(e){
+		e.preventDefault();
+		var id = $(this).attr('id');
+		$body.removeClass(styles.join(' ')).addClass(id);
+		$styleLinks.removeClass('on');
+		$(this).addClass('on');
 	});
 
 

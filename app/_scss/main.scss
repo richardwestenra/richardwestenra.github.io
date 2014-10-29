@@ -58,6 +58,20 @@ body {
     }
     ul {
         margin: 0 0 2em;
+        text-align: left;
+        list-style: none;
+        padding: 0 0 0 0.4em;
+        li {
+            margin: 0.3em 0;
+        }
+        a {
+            text-decoration: none;
+            i {
+            }
+            &.on i {
+                @extend .icon-check;
+            }
+        }
     }
     .configBtn {
         position: absolute;
@@ -547,3 +561,5 @@ body {
         }
     }
 }
+
+@import "geocities";
