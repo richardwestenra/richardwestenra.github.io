@@ -11,16 +11,33 @@ body {background:#fff;}
 .header, .footer {background:#333;}
 	.header a, .footer a {color:#fff;}
 main.wrapper {max-width:771px; margin: 0 auto;}
-aside.intro {margin-bottom:-10px;}
-aside.intro p {text-align:center; color:#666; font-size:11px; position:relative; z-index:5; margin:0;}
+.legilimens {
+	display: inline-block;
+	font-size: 0.9em;
+	opacity: 0.8;
+	padding: 3px 10px 5px;
+	border-radius: 4px;
+}
+.legilimens:hover, .legilimens:focus {
+	opacity: 1;
+	background: #eee;
+}
 .post {
+	text-align:center;
+}
+.paper .post {
 	max-width: none;
 }
 .post .postHeader {
-	text-align: center;
 	font-size: 1.7em;
 }
 .postContent {
+	text-align: left;
+}
+.postContent {
+	font-size: 1.15em;
+}
+.paper .postContent {
 	position: relative;
 	background:url({{site.baseurl}}img/countdown/countdownBgRepeat.jpg) repeat-y 0 290px;
 	-webkit-background-size: 100% auto;
@@ -28,17 +45,16 @@ aside.intro p {text-align:center; color:#666; font-size:11px; position:relative;
 	padding:60px 50px;
 	font-family:'jr!handRegular',"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 	text-shadow:0 -1px 1px #DDD;
-	font-size:1.15em;
 }
-.postContent:before {
+.paper .postContent:before {
 	background-image:url({{site.baseurl}}img/countdown/countdownBgTop.jpg);
 	background-position: left top;
 }
-.postContent:after {
+.paper .postContent:after {
 	background-image:url({{site.baseurl}}img/countdown/countdownBgBottom.jpg);
 	background-position: left bottom;
 }
-.postContent:before, .postContent:after {
+.paper .postContent:before, .paper .postContent:after {
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -49,17 +65,20 @@ aside.intro p {text-align:center; color:#666; font-size:11px; position:relative;
 	-webkit-background-size: 100% auto;
 	background-size: 100% auto;
 }
-.postContentInner {
+.paper .postContentInner {
 	position: relative;
 	z-index: 1;
 }
 .winter {
+	max-width: 40%;
+	margin: 0 0 2em 2em;
+}
+.paper .winter {
 	margin:-10px -30px 1em 2em;
 	transform: rotate(6deg);
-	max-width: 40%;
 	position: relative;
 }
-.winter:before {
+.paper .winter:before {
 	background:url({{site.baseurl}}img/countdown/paperclip.png) no-repeat center;
 	-webkit-background-size: contain;
 	background-size: contain;
@@ -73,22 +92,19 @@ aside.intro p {text-align:center; color:#666; font-size:11px; position:relative;
 }
 .winter img {
 	border: 3px solid #f9f9f9;
-	box-shadow: 0 0 5px rgba(0,0,0,0.15);
-}
-.meta {
-	text-align: center;
+	box-shadow: 0 0 3px rgba(0,0,0,0.15);
 }
 @media (min-width: 600px){
-	.postContent {
+	.paper .postContent {
 		padding:120px 90px;
 	}
-	.winter {
+	.paper .winter {
 		margin-right: -65px;
 	}
 	.winter img {
 		border-width: 6px;
 	}
-	.winter:before {
+	.paper .winter:before {
 		right: -9px;
 		top: 70px;
 		width: 69px;
@@ -99,11 +115,8 @@ aside.intro p {text-align:center; color:#666; font-size:11px; position:relative;
 <body>
     {% include nav.html %}
 	<main class="wrapper">
-		<article class="post">
+		<article class="post paper">
 			<h2 class="postHeader">{{ page.title }}</h2>
-			<aside class="intro">
-				<p>Having difficulty reading this page? <a href="javascript:(%28function%28%29%7Bwindow.baseUrl%3D%27https%3A//www.readability.com%27%3Bwindow.readabilityToken%3D%27%27%3Bvar%20s%3Ddocument.createElement%28%27script%27%29%3Bs.setAttribute%28%27type%27%2C%27text/javascript%27%29%3Bs.setAttribute%28%27charset%27%2C%27UTF-8%27%29%3Bs.setAttribute%28%27src%27%2CbaseUrl%2B%27/bookmarklet/read.js%27%29%3Bdocument.documentElement.appendChild%28s%29%3B%7D%29%28%29)" title="Increase legibility using Readability">Click here to increase text legibility</a> using <a href="https://www.readability.com/"><em>Readability</em></a>.</p>
-			</aside>
 			<div class="postContent">
 				<div class="postContentInner">
 					<div class="winter alignright">
@@ -116,4 +129,23 @@ aside.intro p {text-align:center; color:#666; font-size:11px; position:relative;
 		</article>
 	</main>
 {% include footerJS.html %}
+<script>
+$(function() {
+	var $legilimens = $('<a>',{
+		'href': '#',
+		'title': 'Increase text legibility',
+		'class': 'legilimens',
+		'role': 'button',
+		'text': 'Increase text legibility'
+	}).on('click',function(e){
+		e.preventDefault();
+		$('.post').toggleClass('paper');
+		$(this).text(function(i,d){
+			var t = ['Increase text legibility', 'Reset text legibility'];
+			return d===t[0] ? t[1] : t[0];
+		});
+	});
+	$('.postHeader').after( $legilimens );
+});
+</script>
 {% include footer.html %}
