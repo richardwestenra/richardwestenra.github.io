@@ -532,7 +532,10 @@ body {
         text-align: left;
     }
 }
-
+#disqus_thread.wrapper {
+    max-width: 800px;
+    padding-bottom: 50px;
+}
 
 
 

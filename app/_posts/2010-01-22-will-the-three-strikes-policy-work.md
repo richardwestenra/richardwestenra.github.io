@@ -1,6 +1,7 @@
 ---
-layout: threeStrikes
+layout: threestrikes
 title:  Will the Three Strikes policy work?
+comments: true
 ---
 
 The New Zealand government <a href="http://www.stuff.co.nz/national/politics/3242717/Three-strikes-policy-announced">announced a new judicial ‘three strikes’ policy</a> shortly before the close of business hours on Tuesday afternoon:
