@@ -69,4 +69,31 @@ $(function(){
 	});
 
 
+
+	//-- Toggle opening links in a new tab ---//
+	var $linkSwitcher = $('#linkSwitcher').find('a');
+	$linkSwitcher.on('click',function(e){
+		e.preventDefault();
+		$(this).toggleClass('on');
+		var isOn = $(this).hasClass('on');
+		localStorage.setItem('externalLinks',isOn);
+		toggleLinks(isOn);
+	});
+	// Detect localstorage value and use that if it exists
+	if(localStorage.getItem('externalLinks') !== null) {
+		var isOn = JSON.parse( localStorage.getItem('externalLinks') );
+		$linkSwitcher.toggleClass('on',isOn);
+		toggleLinks(isOn);
+	}
+	function toggleLinks(state){
+		var $extLinks = $('a').filter(function() {
+		   return this.hostname && this.hostname !== location.hostname;
+		}).toggleClass('external',state).attr({
+			target: function(){
+				return state ? '_blank' : '_self';
+			}
+		});
+	}
+
+
 });
