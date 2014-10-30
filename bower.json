@@ -7,6 +7,7 @@
     "normalize.css": "~3.0.2",
     "jQuery": "~2.1.1",
     "quicksearch": "~2.0.5",
-    "konami": "https://raw.githubusercontent.com/snaptortoise/konami-js/master/konami.js"
+    "konami": "https://raw.githubusercontent.com/snaptortoise/konami-js/master/konami.js",
+    "featherlight": "~0.4.10"
   }
 }
