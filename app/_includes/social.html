@@ -1,0 +1,34 @@
+<div class="social social-likes social-likes_vertical social-likes_notext" data-url="{{site.liveUrl}}{{page.permalink}}" data-title="{% if page.socialTitle %}{{page.socialTitle}}{% else %}{{page.title}}{% endif %}">
+  <a class="facebook" href="#" title="Share link on Facebook">Facebook</a>
+  <a class="twitter" href="#" title="Share link on Twitter" data-via="richardwestenra"{% if page.tweet %} data-title="{{page.tweet}}"{% endif %}>Twitter</a>
+  <a class="plusone" href="#" title="Share link on Google+">Google+</a>
+  {% if page.socialImg %}<a class="pinterest" href="#" title="Share image on Pinterest" data-media="{{site.liveUrl}}{{page.socialImg}}">Pinterest</a>{% endif %}
+  {% if page.embed %}<a class="embedLink" href="#" title="Embed link on your website"><span class="social-likes__button">Embed</span></a>{% endif %}
+</div>
+
+<!-- build:js(app) {{site.baseurl}}js/socialLikes.js -->
+<script src="{{site.baseurl}}_bower_components/social-likes/src/social-likes.js"></script>
+<!-- endbuild -->
+<script>
+$(function(){
+	function roundLarge(x) {
+		for(var i=1000000; i>=10; i=i/10) {
+			if (x>(i*10)) return Math.round(x/i)*i;
+		}
+		return Math.round(x);
+	}
+	function si(x) {
+		var n = { 'M': 1000000, 'K': 1000};
+		for(var key in n){
+			if (x>n[key]) return roundLarge(x) / n[key] + key;
+		}
+		return Math.round(x);
+	}
+	//--- Reformat counter share number ---//
+	$('.social-likes').delay(999).fadeIn(400,function(){
+		$(this).addClass('piano');
+	}).socialLikes().on('counter.social-likes',function(e,s,n){
+	  	if(n>0) $('.social-likes__counter_'+s).text(si(n));
+	});
+});
+</script>

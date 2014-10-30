@@ -3,8 +3,8 @@
 # 2. config.build.yml
 # 3. config.yml
 
-name: Richard Westenra
-description: Portfolio site with Yeoman Jekyllrb and Github Pages
+name: "Richard Westenra | Web designer &amp; front-end developer"
+description: "I make websites. Not shit websites. Good websites."
 author:
   name: Richard Westenra
   email: rjwestenra@gmail.com
@@ -26,6 +26,8 @@ markdown: redcarpet
 
 pygments: true
 
-permalink: /:title/
+permalink: :title/
 
 relative_permalinks: false
+
+liveUrl: "http://richardwestenra.com/"

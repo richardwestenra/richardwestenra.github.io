@@ -1,7 +1,7 @@
 ---
 layout: countdown
 title: An open letter to Countdown Church Corner
-permalink: /an-open-letter-to-countdown-church-corner/
+permalink: an-open-letter-to-countdown-church-corner/
 comments: true
 ---
 

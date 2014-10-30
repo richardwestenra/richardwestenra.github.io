@@ -11,3 +11,6 @@
 <!-- build:js(app) {{site.baseurl}}js/scripts.js -->
 <script src="{{site.baseurl}}js/main.js"></script>
 <!-- endbuild -->
+{% if page.social %}
+	{% include social.html %}
+{% endif %}
