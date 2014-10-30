@@ -575,5 +575,10 @@ body {
         }
     }
 }
-
+body.konami {
+    animation-iteration-count: 6;
+    animation-timing-function: linear;
+    animation-duration:.5s;
+    animation-name: spin;
+}
 @import "geocities";

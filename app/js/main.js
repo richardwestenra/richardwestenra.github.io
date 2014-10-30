@@ -105,4 +105,16 @@ $(function(){
 	}
 
 
+
+	//--- Konami code easter egg ---//
+	var easterEgg = new Konami();
+	easterEgg.code = function() {
+		$body.addClass('konami');
+		setTimeout(function(){
+			$body.removeClass('konami');
+		}, 3000);
+	}
+	easterEgg.load();
+
+
 });
