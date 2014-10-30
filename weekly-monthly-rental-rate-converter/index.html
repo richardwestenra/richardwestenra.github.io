@@ -1,6 +1,6 @@
 <!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><title>Weekly/Monthly Rental Rate Converter</title><meta name=description content="I make websites. Not shit websites. Good websites."><meta name=viewport content="width=device-width"><script src=/js/vendor/modernizr.1cb5.js></script><!--[if lt IE 9]>
 	<script src="/js/vendor/respond.d41d.js"></script>
-	<![endif]--><link rel=stylesheet href=/css/main.4b86.css><link href="http://fonts.googleapis.com/css?family=Ubuntu:400,700" rel=stylesheet type=text/css><style>body {
+	<![endif]--><link rel=stylesheet href=/css/main.28f6.css><link href="http://fonts.googleapis.com/css?family=Ubuntu:400,700" rel=stylesheet type=text/css><style>body {
 	background:#eff0f2;
 	background-image: linear-gradient(bottom, #EFF0F2 60%, #CED0D6 100%);
 	background-image: -o-linear-gradient(bottom, #EFF0F2 60%, #CED0D6 100%);
@@ -76,7 +76,27 @@ main h2, main h3, main h4, main h5, main h6 { color:#222; }
 	.postContent {
 		max-width: 500px;
 		margin: 4em auto;
-	}</style></head><body><div class=container><header class=header role=banner><div class=wrapper><h1 class=title><a title=Home href="/">richardwestenr<i class=icon-home></i><span>a</span>.com</a></h1><a href=#nav class="mobile-only hamburger" role=button><i class=icon-menu></i><span>Menu</span></a><ul id=nav role=navigation><li><a href=mailto:richard@richardwestenra.com target=_blank><i class=icon-mail></i><span>Send me an email</span></a></li><li><a href=http://github.com/richardwestenra target=_blank><i class=icon-github></i><span>Fork me on Github</span></a></li><li><a href=http://twitter.com/richardwestenra target=_blank><i class=icon-twitter></i><span>Follow me on Twitter</span></a></li></ul></div></header><main class=wrapper><article class=post><h2 class=postHeader>Convert between weekly rate and monthly rate</h2><form id=converter class=clearfix><div><input id=week><label for=week>Per week</label></div><p id=equals>=</p><div><input id=month><label for=month>Per month</label></div></form><p class=postContent>Quickly and easily convert between rent per month and rent per week. Enter your current rate in the appropriate text input and the other box will instantly show the corresponding value.</p><p class=meta>Published 25 October 2011</p></article></main><script src=/js/vendor.e9c8.js></script><script src=/js/scripts.fe6d.js></script><script>$(function() {
+	}</style></head><body><div class=container><header class=header role=banner><div class=wrapper><h1 class=title><a title=Home href="/">richardwestenr<i class=icon-home></i><span>a</span>.com</a></h1><a href=#nav class="mobile-only hamburger" role=button><i class=icon-menu></i><span>Menu</span></a><ul id=nav role=navigation><li><a href=mailto:richard@richardwestenra.com target=_blank><i class=icon-mail></i><span>Send me an email</span></a></li><li><a href=http://github.com/richardwestenra target=_blank><i class=icon-github></i><span>Fork me on Github</span></a></li><li><a href=http://twitter.com/richardwestenra target=_blank><i class=icon-twitter></i><span>Follow me on Twitter</span></a></li><li><a href=# role=button class=configBtn><i class=icon-cog></i><span>Site settings</span></a></li></ul></div></header><!--[if lt IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--><noscript><p class=browsehappy>For full functionality of this site it is necessary to enable JavaScript. Here are <a href="http://www.enable-javascript.com/" target=_blank>instructions how to enable JavaScript in your web browser</a>.</p></noscript><main class=wrapper><article class=post><h2 class=postHeader>Convert between weekly rate and monthly rate</h2><form id=converter class=clearfix><div><input id=week><label for=week>Per week</label></div><p id=equals>=</p><div><input id=month><label for=month>Per month</label></div></form><p class=postContent>Quickly and easily convert between rent per month and rent per week. Enter your current rate in the appropriate text input and the other box will instantly show the corresponding value.</p><p class=meta>Published 25 October 2011</p></article></main><script id=config_tmpl type=text/template><div id="config">
+		<div class="wrapper">
+			<a class="configBtn" href="#" title="Close" role="button">&times;</a>
+			<h3>Configure site options</h3>
+			<section>
+				<h4>Change theme</h4>
+				<ul id="styleSwitcher">
+				   <li><a class="on" href="#" id="standard"><i class="icon-check-empty"></i> Standard</a></li>
+				   <li><a href="#" id="geocities"><i class="icon-check-empty"></i> Geocities</a></li>
+				</ul>
+			</section>
+			<section>
+				<h4>Modify link behaviour</h4>
+				<ul id="linkSwitcher">
+					<li><a href="#"><i class="icon-check-empty"></i> Open external links in a new tab</a></li>
+				</ul>
+			</section>
+		</div>
+	</div></script><script src=/js/vendor.0ef8.js></script><script src=/js/scripts.cab2.js></script><script>$(function() {
 	$("#converter input").keyup(function(event) {
 		// Convert ALL the things, unless they're NaN, in which case tell off the naughty user
 		var inputID = $(this).attr("id");
