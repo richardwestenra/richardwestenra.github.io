@@ -58,6 +58,7 @@ body.geocities{
 		}
 		h2 {
 			text-transform: uppercase;
+			text-decoration: none;
 			color: #fff;
 			text-align:center;
 			animation-iteration-count: infinite;
@@ -73,8 +74,8 @@ body.geocities{
 		}
 	}
 	@keyframes scroll {
-		from {margin-left:-50px;}
-		to {margin-left:50px;}
+		from {transform: translateX(-50px);}
+		to {transform: translateX(50px);}
 	}
 		 
 	.leftCol {
