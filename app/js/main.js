@@ -1,3 +1,4 @@
+/* global Konami */
 $(function(){
 	'use strict';
 
@@ -80,6 +81,15 @@ $(function(){
 
 	//-- Toggle opening links in a new tab ---//
 	var $linkSwitcher = $('#linkSwitcher').find('a');
+	function toggleLinks(state){
+		var $extLinks = $('a').filter(function() {
+		   return this.hostname && this.hostname !== location.hostname;
+		}).toggleClass('external',state).attr({
+			target: function(){
+				return state ? '_blank' : '_self';
+			}
+		});
+	}
 	$linkSwitcher.on('click',function(e){
 		e.preventDefault();
 		$(this).toggleClass('on');
@@ -94,15 +104,6 @@ $(function(){
 		$linkSwitcher.toggleClass('on',isOn);
 		toggleLinks(isOn);
 	}
-	function toggleLinks(state){
-		var $extLinks = $('a').filter(function() {
-		   return this.hostname && this.hostname !== location.hostname;
-		}).toggleClass('external',state).attr({
-			target: function(){
-				return state ? '_blank' : '_self';
-			}
-		});
-	}
 
 
 
@@ -113,7 +114,7 @@ $(function(){
 		setTimeout(function(){
 			$body.removeClass('konami');
 		}, 3000);
-	}
+	};
 	easterEgg.load();
 
 
