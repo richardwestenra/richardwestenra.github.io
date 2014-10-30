@@ -1,13 +1,12 @@
 {% include header.html %}
+
 </head>
-<body>
-    {% include nav.html %}
+<body class="default">
 
-    {{ content }}
+{% include nav.html %}
 
-	{% if page.id == 'home' %}
-	    {% include config.html %}
-	{% endif %}
+{{ content }}
 
 {% include footerJS.html %}
+
 {% include footer.html %}
