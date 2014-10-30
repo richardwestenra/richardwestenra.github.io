@@ -59,14 +59,22 @@ $(function(){
 	$styleLinks.each(function(i,d){
 		styles.push( $(d).attr('id') );
 	});
-	// $body.addClass('geocities');
+	// Toggle style on click
 	$styleLinks.on('click',function(e){
 		e.preventDefault();
 		var id = $(this).attr('id');
 		$body.removeClass(styles.join(' ')).addClass(id);
 		$styleLinks.removeClass('on');
 		$(this).addClass('on');
+		localStorage.setItem('styleSwitcher',id);
 	});
+	// Detect localstorage value and use that if it exists
+	var localStyle = localStorage.getItem('styleSwitcher');
+	if(localStyle !== null) {
+		$body.removeClass(styles.join(' ')).addClass(localStyle);
+		$styleLinks.removeClass('on');
+		$('#'+localStyle).addClass('on');
+	}
 
 
 
@@ -80,8 +88,9 @@ $(function(){
 		toggleLinks(isOn);
 	});
 	// Detect localstorage value and use that if it exists
-	if(localStorage.getItem('externalLinks') !== null) {
-		var isOn = JSON.parse( localStorage.getItem('externalLinks') );
+	var localExt = localStorage.getItem('externalLinks');
+	if(localExt !== null) {
+		var isOn = JSON.parse(localExt);
 		$linkSwitcher.toggleClass('on',isOn);
 		toggleLinks(isOn);
 	}
