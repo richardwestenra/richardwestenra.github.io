@@ -1,7 +1,7 @@
-- name: Prolific Pop Artists - The Recording Careers of the Best Selling Musicians
-  url: http://www.concerthotels.com/prolific-pop-artists/
+- name: Charting the Careers of Music’s Biggest Stars
+  url: http://www.concerthotels.com/best-selling-musicians/
   client: Concert Hotels
-  img: musicians.jpg
+  img: musicians.png
   year: 2014
 
 - name: If You Printed All The Instagram Pics Uploaded in a Year
