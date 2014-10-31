@@ -339,9 +339,12 @@ body {
         li {
             margin: 0;
             padding: 0 5px 5px 0;
-            width: 33%;
+            width: 50%;
             float: left;
             @media screen and (min-width: $m_small){
+                width: 33%;
+            }
+            @media screen and (min-width: $m_tablet){
                 width: 25%;
             }
             a {

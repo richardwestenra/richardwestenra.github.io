@@ -37,4 +37,4 @@
 {% if page.socialTitle %}<meta property="og:title" content="{{page.socialTitle}}"/>{% endif %}
 {% if page.socialDesc %}<meta property="og:description" content="{{page.socialDesc}}"/>{% endif %}
 {% if page.socialImg %}<meta property="og:image" content="{{site.liveUrl}}{{page.socialImg}}"/>{% endif %}
-{% if page.permalink %}<meta property="og:url" content="{{site.liveUrl}}{{page.permalink}}"/>{% endif %}
+{% if page.permalink %}<meta property="og:url" content="{% if page.sociaUrl %}{{page.sociaUrl}}{% else %}{{site.liveUrl}}{{page.permalink}}{% endif %}"/>{% endif %}
