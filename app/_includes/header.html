@@ -7,18 +7,18 @@
 <meta name="description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}">
 <meta name="viewport" content="width=device-width">
 
-<!-- build:js {{site.baseurl}}js/vendor/modernizr.js -->
-<script src="{{site.baseurl}}_bower_components/modernizr/modernizr.js"></script>
-<!-- endbuild -->
-
-<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
-
 <!-- build:css({app,.tmp}) {{site.baseurl}}css/main.css -->
 <link rel="stylesheet" href="{{site.baseurl}}_bower_components/normalize.css/normalize.css">
 <link rel="stylesheet" href="{{site.baseurl}}css/main.css">
 <!-- endbuild -->
 
 <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+<!-- build:js {{site.baseurl}}js/vendor/modernizr.js -->
+<script src="{{site.baseurl}}_bower_components/modernizr/modernizr.js"></script>
+<!-- endbuild -->
+
+<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
 
 {% if page.socialImg %}<meta name="twitter:card" content="summary_large_image">{% endif %}
 {% if page.socialImg %}<meta name="twitter:site" content="richardwestenra">{% endif %}
