@@ -1,6 +1,3 @@
-{% if page.comments %}
-	{% include disqus.html %}
-{% endif %}
 {% include config.html %}
 <!-- build:js(app) {{site.baseurl}}js/vendor.js -->
 <script src="{{site.baseurl}}_bower_components/jQuery/dist/jquery.js"></script>
@@ -13,4 +10,7 @@
 <!-- endbuild -->
 {% if page.social %}
 	{% include social.html %}
+{% endif %}
+{% if page.comments %}
+	{% include disqus.html %}
 {% endif %}

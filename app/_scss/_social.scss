@@ -18,7 +18,7 @@ $dl: 48px;
         display: inline-block;
         height: $ds;
         margin: 0 5px;
-        line-height: $ds * 1.1;
+        line-height: $ds;
         color: #fff;
         text-shadow: 0 1px 1px rgba(#000,.1);
         transition: all ease .2s;
@@ -41,6 +41,7 @@ $dl: 48px;
             left: 0;
         }
         @media only screen and (max-width: $m_large) {
+            background: #666;
             &:hover {
                 background: #444;
             }
