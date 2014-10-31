@@ -3,12 +3,11 @@
   "version": "0.0.0",
   "dependencies": {
     "modernizr": "~2.8.3",
-    "respond": "~1.4.2",
     "normalize.css": "~3.0.2",
-    "jQuery": "~2.1.1",
     "quicksearch": "~2.0.5",
     "konami": "https://raw.githubusercontent.com/snaptortoise/konami-js/master/konami.js",
     "featherlight": "~0.4.10",
-    "social-likes": "~3.0.4"
+    "social-likes": "~3.0.4",
+    "jQuery": "1.11.1"
   }
 }
