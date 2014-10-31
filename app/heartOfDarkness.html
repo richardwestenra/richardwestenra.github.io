@@ -24,21 +24,21 @@ body {
     font-style: normal;
 }
 #kurtz {margin:-172px -73px 0 0; float:right; padding:0; border:none; background:none;}
-section p, section td, section th, section li, section h1, section h2, section h3, section h4, section h5, section h6, #tldr {font-family:'MyUnderwoodRegular', 'SearsTowerRegular', 'Rough_Typewriter', "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Lucida Console", "Lucida Sans Typewriter", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace; font-size:16px; margin-bottom:15px; color:#444;}
+.post section, #tldr, .post h5, .post h6 {font-family:'MyUnderwoodRegular', 'SearsTowerRegular', 'Rough_Typewriter', "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Lucida Console", "Lucida Sans Typewriter", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;}
 .post h5, .post h6 {font-weight:bold; margin-top:30px;}
 .post h6 {text-transform:uppercase;}
 .censoredOn {color:#111; background:#111; border-radius:2px;}
 .censoredOn::selection {color:#111; background:#111;}
 .censoredOn::-moz-selection {color:#111; background:#111;}
 
-	.post {max-width:771px;}
-		aside.intro {}
-			aside.intro p {color:#666; font-size:14px; position:relative; z-index:5;}
-		section {margin-top:0; background:url({{site.baseurl}}img/countdown/countdownBgRepeat.jpg) repeat-y 0 290px;}
+	.post {max-width:771px; color:#444;}
+		.intro {color:#666;}
+			.intro p {font-size:14px; position:relative; z-index:5;}
+		.post section {margin-top:0; background:url({{site.baseurl}}img/countdown/countdownBgRepeat.jpg) repeat-y 0 290px;}
 			.postContent { background:url({{site.baseurl}}img/heartOfDarkness/heartOfDarknessBgTop.jpg) no-repeat left top;}
 				.postContentInner { background:url({{site.baseurl}}img/countdown/countdownBgBottom.jpg) no-repeat left bottom; padding:190px 90px 90px;}
 				#appendix .postContentInner {min-height:1020px;}
-		section, .postContent, .postContentInner { -webkit-background-size: 100% auto; background-size: 100% auto; }
+		.post section, .postContent, .postContentInner { -webkit-background-size: 100% auto; background-size: 100% auto; }
 		#map {background:none;}
 			#map img {display:block; border:1px solid #DDDDDD; margin:30px auto; background:#fff; padding:8px; box-shadow: 2px 3px 25px #888; -webkit-transform: rotate(2deg); -moz-transform: rotate(2deg); transform: rotate(2deg); max-width: 100%; height: auto;}
 		#tldrContainer {position:fixed; width:460px; top:400px; left:50%;}
@@ -46,6 +46,9 @@ section p, section td, section th, section li, section h1, section h2, section h
 			#tldr:hover{background:#eee; border:1px solid #ddd; box-shadow:1px 1px 2px #ccc;}
 			#tldr.on {background:#111; color:#eee;}
 			#tldr.on:hover{background:#333; border:1px solid #555;}
+	.geocities .post, .geocities .intro {color:lime;}
+	.geocities .post section, .geocities .postContent, .geocities .postContentInner { background: none; padding: 0; min-height: 0 !important; }
+	.geocities #kurtz { display: none; }
 </style>
 
 </head>
