@@ -20,6 +20,11 @@ body {
     padding: 0;
     margin: 0;
 }
+.container {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+}
 .header {
     opacity: 0.15;
     transition: opacity ease .1s;
