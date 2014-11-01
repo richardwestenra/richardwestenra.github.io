@@ -6,12 +6,14 @@ $dl: 48px;
     display: none;
     text-align: center;
     clear:both;
-    @media only screen and (min-width: $m_large) {
+    margin: 1em 0;
+    @media only screen and (min-width: $m_medium) {
         position: fixed;
         left: 0;
         top: 10%;
+        margin: 0;
     }
-    @media only screen and (min-width: $m_large) and (min-height: $m_small) {
+    @media only screen and (min-width: $m_medium) and (min-height: $m_small) {
         top: 30%;
     }
     a {
@@ -40,13 +42,13 @@ $dl: 48px;
             top: 0;
             left: 0;
         }
-        @media only screen and (max-width: $m_large) {
+        @media only screen and (max-width: $m_medium) {
             background: #666;
             &:hover {
                 background: #444;
             }
         }
-        @media only screen and (min-width: $m_large) {
+        @media only screen and (min-width: $m_medium) {
             display: block;
             margin: 0;
             width: $dl;
@@ -62,7 +64,7 @@ $dl: 48px;
             }
         }
     }
-    @media only screen and (min-width: $m_large) {
+    @media only screen and (min-width: $m_medium) {
         &.piano a {
             animation: piano .2s ease 2 alternate;
             @for $i from 1 through 5 {
@@ -109,7 +111,7 @@ $dl: 48px;
                 top: -0.05em;
             }
         }
-        @media only screen and (min-width: $m_large) {
+        @media only screen and (min-width: $m_medium) {
             .facebook, .social-likes__widget_facebook {
                 background-color: $facebook;
             }
@@ -136,7 +138,7 @@ $dl: 48px;
                 font-size: 13px;
                 line-height: $ds;
                 margin: 1px 12px 1px 5px;
-                @media only screen and (min-width: $m_large) {
+                @media only screen and (min-width: $m_medium) {
                     display: block;
                     font-size: 12px;
                     margin: 0;

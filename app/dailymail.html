@@ -1,0 +1,129 @@
+---
+title: If Daily Mail readers wrote the headlines
+permalink: daily-mail/
+description: Replace Daily Mail headlines with comments from the corresponding articles with this bookmarklet. The results are often terrifying.
+comments: true
+social: true
+socialUrl: http://dailymail.richardwestenra.com/
+socialImg: img/dailymail/dm.jpg
+---
+{% include header.html %}
+
+<style>
+.post h3 {
+    margin: 1.5em 0 0.5em;
+    font-size: 1.5em;
+}
+.post img {
+    border: 6px solid #fff;
+}
+.instructions {
+    display: none;
+    background: #fbfbfb;
+    background: rgba(255,255,255,0.5);
+    margin: 1em 0;
+    padding: 15px;
+}
+.instructions h4 {
+    font-size: 1.2em;
+    margin: 0;
+}
+.instructions textarea {
+    display: block;
+    padding: 5px;
+    width: 100%;
+    height: 120px;
+    font-family: monospace;
+    border-radius: 3px;
+    border: 1px solid #bbb;
+    margin: 0.5em 0;
+}
+.instructions li {
+    font-size: 0.9em;
+    margin: 1em 0;
+}
+.meta {
+    margin-top: 2em;
+}
+</style>
+</head>
+<body>
+
+{% include nav.html %}
+
+<main class="wrapper">
+    <article class="post">
+        <h2 class="postHeader">{{ page.title }}</h2>
+        <p>Use <a class="btn" href="javascript:(function()%7Bfunction%20callback()%7B(function(%24)%7Bvar%20jQuery%3D%24%3Bfunction%20callback()%7Balert(%22Replacing%20Daily%20Mail%20headlines%20with%20comments.%20Hold%20tight%2C%20this%20might%20take%20a%20few%20seconds...%22)%7Dvar%20s%3Ddocument.createElement(%22script%22)%3Bs.src%3D%22http%3A%2F%2Frichardwestenra.com%2Fjs%2Fassets%2Fdailymail%2Fdailymail.min.js%22%3Bif(s.addEventListener)%7Bs.addEventListener(%22load%22%2Ccallback%2Cfalse)%7Delse%20if(s.readyState)%7Bs.onreadystatechange%3Dcallback%7Ddocument.body.appendChild(s)%3B%7D)(jQuery.noConflict(true))%7Dvar%20s%3Ddocument.createElement(%22script%22)%3Bs.src%3D%22https%3A%2F%2Fajax.googleapis.com%2Fajax%2Flibs%2Fjquery%2F1.7.1%2Fjquery.min.js%22%3Bif(s.addEventListener)%7Bs.addEventListener(%22load%22%2Ccallback%2Cfalse)%7Delse%20if(s.readyState)%7Bs.onreadystatechange%3Dcallback%7Ddocument.body.appendChild(s)%3B%7D)()">this bookmarklet</a> to replace headlines on the <a href="http://www.dailymail.co.uk/" rel="nofollow">Daily Mail</a> homepage with user comments from the corresponding article. The results are often a little terrifying:</p>
+        <img src="{{site.baseurl}}img/dailymail/dm.jpg" width="100%" height="" alt="Screenshot of the Daily Mail website with headlines replaced by comments" />
+        <h3>How to use it:</h3>
+        <ol>
+            <li>Drag this link to your bookmarks: <a class="btn" href="javascript:(function()%7Bfunction%20callback()%7B(function(%24)%7Bvar%20jQuery%3D%24%3Bfunction%20callback()%7Balert(%22Replacing%20Daily%20Mail%20headlines%20with%20comments.%20Hold%20tight%2C%20this%20might%20take%20a%20few%20seconds...%22)%7Dvar%20s%3Ddocument.createElement(%22script%22)%3Bs.src%3D%22http%3A%2F%2Frichardwestenra.com%2Fjs%2Fassets%2Fdailymail%2Fdailymail.min.js%22%3Bif(s.addEventListener)%7Bs.addEventListener(%22load%22%2Ccallback%2Cfalse)%7Delse%20if(s.readyState)%7Bs.onreadystatechange%3Dcallback%7Ddocument.body.appendChild(s)%3B%7D)(jQuery.noConflict(true))%7Dvar%20s%3Ddocument.createElement(%22script%22)%3Bs.src%3D%22https%3A%2F%2Fajax.googleapis.com%2Fajax%2Flibs%2Fjquery%2F1.7.1%2Fjquery.min.js%22%3Bif(s.addEventListener)%7Bs.addEventListener(%22load%22%2Ccallback%2Cfalse)%7Delse%20if(s.readyState)%7Bs.onreadystatechange%3Dcallback%7Ddocument.body.appendChild(s)%3B%7D)()">Convert DM headlines</a>.<br/> <small>(If you're stuck, see <a href="#android" class="openInstructions scroll">instructions for Android users</a>, <a href="#ios" class="openInstructions scroll">instructions for iOS users</a>, or <a href="#bar" class="openInstructions scroll">how to show your bookmarks bar</a>)</small>.
+                <div id='android' class="instructions">
+                    <h4>Instructions for Android users:</h4>
+                    <ol>
+                        <li>First, copy the code from the textbox below:
+                            <textarea class="bookmarklet-input">javascript:(function()%7Bfunction%20callback()%7B(function(%24)%7Bvar%20jQuery%3D%24%3Bfunction%20callback()%7Balert(%22Replacing%20Daily%20Mail%20headlines%20with%20comments.%20Hold%20tight%2C%20this%20might%20take%20a%20few%20seconds...%22)%7Dvar%20s%3Ddocument.createElement(%22script%22)%3Bs.src%3D%22http%3A%2F%2Frichardwestenra.com%2Fjs%2Fassets%2Fdailymail%2Fdailymail.min.js%22%3Bif(s.addEventListener)%7Bs.addEventListener(%22load%22%2Ccallback%2Cfalse)%7Delse%20if(s.readyState)%7Bs.onreadystatechange%3Dcallback%7Ddocument.body.appendChild(s)%3B%7D)(jQuery.noConflict(true))%7Dvar%20s%3Ddocument.createElement(%22script%22)%3Bs.src%3D%22https%3A%2F%2Fajax.googleapis.com%2Fajax%2Flibs%2Fjquery%2F1.7.1%2Fjquery.min.js%22%3Bif(s.addEventListener)%7Bs.addEventListener(%22load%22%2Ccallback%2Cfalse)%7Delse%20if(s.readyState)%7Bs.onreadystatechange%3Dcallback%7Ddocument.body.appendChild(s)%3B%7D)()</textarea></li>
+                        <li>Create a new bookmark for this page. If you are prompted to edit the bookmarklet, replace the address or URL with the code copied in the previous step.</li>
+                        <li>If you were not prompted to edit the bookmark in the previous step, navigate to the bookmark you created. <i>(The location of your bookmarks is dependent on your browser.)</i> Replace the address or URL of the bookmark with the code you copied in the first step.</li>
+                        <li>While not necessary, you'll probably want to change the name of the bookmark to something short and memorable, like <em>&ldquo;Convert DM Headlines&rdquo;</em> or whatever.</li>
+                    </ol>
+                </div>
+                <div id='ios' class="instructions">
+                    <h4>Instructions for iOS (iPhone, iPad, etc) users:</h4>
+                    <ol>
+                        <li>First, copy the code from the textbox below. To copy: tap once on the code, tap Select All then tap Copy.
+                            <textarea class="bookmarklet-input">javascript:(function()%7Bfunction%20callback()%7B(function(%24)%7Bvar%20jQuery%3D%24%3Bfunction%20callback()%7Balert(%22Replacing%20Daily%20Mail%20headlines%20with%20comments.%20Hold%20tight%2C%20this%20might%20take%20a%20few%20seconds...%22)%7Dvar%20s%3Ddocument.createElement(%22script%22)%3Bs.src%3D%22http%3A%2F%2Frichardwestenra.com%2Fjs%2Fassets%2Fdailymail%2Fdailymail.min.js%22%3Bif(s.addEventListener)%7Bs.addEventListener(%22load%22%2Ccallback%2Cfalse)%7Delse%20if(s.readyState)%7Bs.onreadystatechange%3Dcallback%7Ddocument.body.appendChild(s)%3B%7D)(jQuery.noConflict(true))%7Dvar%20s%3Ddocument.createElement(%22script%22)%3Bs.src%3D%22https%3A%2F%2Fajax.googleapis.com%2Fajax%2Flibs%2Fjquery%2F1.7.1%2Fjquery.min.js%22%3Bif(s.addEventListener)%7Bs.addEventListener(%22load%22%2Ccallback%2Cfalse)%7Delse%20if(s.readyState)%7Bs.onreadystatechange%3Dcallback%7Ddocument.body.appendChild(s)%3B%7D)()</textarea></li>
+                        <li>Next, click Safari's Add Bookmark icon (<img src="https://d370mdr42phnax.cloudfront.net/6534b2/images/ios-safari-share.gif" height="18" width="27" alt="Add Bookmark Icon">). Select “Add Bookmark” and without making any changes, bookmark this page by clicking “Save.”</li>
+                        <li>Now click on the Bookmarks icon (<img src="https://d370mdr42phnax.cloudfront.net/6534b2/images/ios-safari-bookmarks.gif" height="18" width="30" alt="Bookmarks Icon">) to reveal your bookmarks. Navigate to your new bookmark and click “Edit” in the corner of the bookmarks window.</li>
+                        <li>Select your newly created bookmark and change the name to something short and memorable, like <em>&ldquo;Convert DM Headlines&rdquo;</em> or whatever.</li>
+                        <li>Next, delete the URL shown and paste the code you copied in step 1: tap the URL shown in the second field, tap "Select All", tap "Paste". </li>
+                        <li>Tap "Done" on the keyboard, which will return you to the list of bookmarks. Tap "Done" to finish editing bookmarks. Tap "Done" a third time to close the bookmarks list. </li>
+                    </ol>
+                </div>
+                <div id='bar' class="instructions">
+                    <h4>How to open your bookmarks bar:</h4>
+                    <ul>
+                        <li>in <b>Chrome</b>, press the Ctrl+Shift+B keyboard shortcut (Command+Shift+B for Mac users).</li>
+                        <li>in <b>Firefox</b>, right-click on an empty section of the Tab Strip and check Bookmarks Toolbar in the pop-up menu.</li>
+                        <li>in <b>Safari</b>, press Command+Shift+B keyboard shortcut.</li>     
+                        <li>in <b>IE 9</b>, right-click on an empty section of the Tab Strip and check Favorites bar in the pop-up menu.</li>               
+                        <li>in <b>IE 8/7</b>, follow the same step as in IE 9, then right click on the <a class="btn" href="javascript:(function()%7Bfunction%20callback()%7B(function(%24)%7Bvar%20jQuery%3D%24%3Bfunction%20callback()%7Balert(%22Replacing%20Daily%20Mail%20headlines%20with%20comments.%20Hold%20tight%2C%20this%20might%20take%20a%20few%20seconds...%22)%7Dvar%20s%3Ddocument.createElement(%22script%22)%3Bs.src%3D%22http%3A%2F%2Frichardwestenra.com%2Fjs%2Fassets%2Fdailymail%2Fdailymail.min.js%22%3Bif(s.addEventListener)%7Bs.addEventListener(%22load%22%2Ccallback%2Cfalse)%7Delse%20if(s.readyState)%7Bs.onreadystatechange%3Dcallback%7Ddocument.body.appendChild(s)%3B%7D)(jQuery.noConflict(true))%7Dvar%20s%3Ddocument.createElement(%22script%22)%3Bs.src%3D%22https%3A%2F%2Fajax.googleapis.com%2Fajax%2Flibs%2Fjquery%2F1.7.1%2Fjquery.min.js%22%3Bif(s.addEventListener)%7Bs.addEventListener(%22load%22%2Ccallback%2Cfalse)%7Delse%20if(s.readyState)%7Bs.onreadystatechange%3Dcallback%7Ddocument.body.appendChild(s)%3B%7D)()">Convert DM headlines</a> button, and select "Add to favorites...".</li>
+                    </ul>
+                </div>
+            </li>
+            <li>Visit the <a href="http://www.dailymail.co.uk/" rel="nofollow">Daily Mail</a> homepage and then click the bookmark.</li>
+            <li>Tell your friends or <a href="http://twitter.com/RichardWestenra">follow me on twitter</a> if you like.</li>
+        </ol>
+        <p>Thanks! &lt;3</p>
+        
+        <h3>Credits</h3>
+        <p>Made by <a href="http://richardwestenra.com/">Richard Westenra</a>. Hat tip to <a href="https://twitter.com/TechnicallyRon/">@TechnicallyRon</a> for <a href="https://twitter.com/TechnicallyRon/statuses/445178115887595520">the idea</a>.</p>
+        <p class="meta">Published March 2014</p>
+    </article>
+</main>
+
+
+
+{% include footerJS.html %}
+<script>
+$(function(){
+    $('.openInstructions').on('click',function(e){
+        e.preventDefault();
+        var t = $(this).attr('href');
+        $(t).slideDown();
+    });
+    $('.scroll').on('click',function(e,target){
+        e.preventDefault();
+        var anchorOffset =  $( $(this).attr('href') ).offset().top,
+            pageOffset = 50,
+            targetOffset = anchorOffset - pageOffset,
+            duration = 500;
+        $('html, body').stop().animate({
+            scrollTop: targetOffset
+        }, duration);
+    });
+});
+</script>
+
+{% include footer.html %}

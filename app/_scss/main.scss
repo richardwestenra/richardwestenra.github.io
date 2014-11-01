@@ -205,8 +205,8 @@ body {
             z-index: -1;
             opacity: 0.4;
             transition: .8s ease opacity;
-            animation: spin 15s infinite linear;
-            animation-play-state: paused;
+            animation: spin 45s infinite linear;
+            // animation-play-state: paused;
             pointer-events: none;
         }
         &:before {
@@ -225,8 +225,8 @@ body {
     }
     &:hover {
         &:after {
-            opacity: 0.5;
-            animation-play-state: running;
+            opacity: 0.6;
+            // animation-play-state: running;
             // animation-duration: 15s;
         }
     }
@@ -290,6 +290,11 @@ body {
                     background: rgba(#fff,0.2);
                 }
             }
+            p {
+                margin: 0;
+                font-size: 0.9em;
+                text-transform: uppercase;
+            }
         }
             .thumb {
                 display: block;
@@ -316,11 +321,6 @@ body {
                     }
                 }
             }
-            p {
-                margin: 0;
-                font-size: 0.9em;
-                text-transform: uppercase;
-            }
     }
 }
 
@@ -328,10 +328,6 @@ body {
 .portfolio {
     clear: both;
     ul {
-        // margin: 0 0 2em;
-        // li {
-        //     margin: 0.7em 0;
-        // }
         list-style: none;
         padding: 0;
         @include clearfix;
@@ -347,7 +343,7 @@ body {
             @media screen and (min-width: $m_tablet){
                 width: 25%;
             }
-            a {
+            .thumb {
                 display: block;
                 overflow: hidden;
                 position: relative;
@@ -368,7 +364,7 @@ body {
                     top: 0;
                     right: 0;
                     opacity: 0;
-                    transition: all .6s ease;
+                    // transition: opacity .6s ease;
                     .no-opacity &, .no-csstransforms & {
                         display: none;
                     }
@@ -376,7 +372,6 @@ body {
                 span {
                     position: absolute;
                     opacity: 0;
-                    transition: opacity .2s ease, padding .1s linear;
                     z-index: 2;
                     .no-opacity & {
                         display: none;
@@ -391,6 +386,7 @@ body {
                     bottom: 0;
                     padding: 0 10px;
                     color: #fff;
+                    transition: opacity .2s ease, padding .1s linear;
                     em {
                         line-height: 1.2em;
                         font-size: 0.9em;
@@ -439,6 +435,19 @@ body {
                 }
             }
         }
+    &.post {
+        max-width: none;
+        li {
+            width: 50%;
+            @media screen and (min-width: $m_small){
+                width: 33%;
+            }
+            @media screen and (min-width: $m_tablet){
+                padding: 0 15px 15px 0;
+                width: 25%;
+            }
+        }
+    }
 }
 
 
@@ -549,6 +558,7 @@ body {
     font-size: 0.8em;
     opacity: 0.6;
     text-align: center;
+    margin-top: 2em;
     .default & {
         text-align: left;
     }
@@ -569,6 +579,7 @@ body {
     text-align: center;
     color: $c_bg;
     clear: both;
+    margin-top: 2em;
     .wrapper {
         @include clearfix;
     }

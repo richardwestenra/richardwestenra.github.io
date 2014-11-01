@@ -1,0 +1,21 @@
+---
+layout: default
+title: Web Design and Front-end Development Portfolio | Richard Westenra
+description: A selection of my recent client work.
+permalink: portfolio/
+---
+<main class="wrapper">
+	<article class="post portfolio">
+		<h2>Portfolio</h2>
+		<ul>
+			{% for item in site.data.portfolio %}
+				<li>
+					<a class="thumb" href="{{ item.url }}" target="_blank" style="background-image: url({{site.baseurl}}img/portfolioThumbs/{{ item.img }});">
+						<span class="name"><em>{{ item.name }}</em> <cite>&ndash; {{ item.client }}</cite></span>
+						<span class="year">{{ item.year }}</span>
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</article>
+</main>
