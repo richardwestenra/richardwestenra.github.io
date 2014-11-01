@@ -26,6 +26,10 @@
         <changefreq>weekly</changefreq>
     </url>
     <url>
+        <loc>http://richardwestenra.com/daily-mail/</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
         <loc>http://richardwestenra.com/doge/</loc>
         <changefreq>weekly</changefreq>
     </url>
@@ -39,6 +43,10 @@
     </url>
     <url>
         <loc>http://richardwestenra.com/linkblog/</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://richardwestenra.com/portfolio/</loc>
         <changefreq>weekly</changefreq>
     </url>
     <url>
