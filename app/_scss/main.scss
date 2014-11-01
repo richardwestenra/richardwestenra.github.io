@@ -564,9 +564,10 @@ body {
     }
 }
 #disqus_thread.wrapper {
+    background: rgba(#fff,0.5);
     max-width: 800px;
-    margin: 0 auto;
-    padding-bottom: 50px;
+    margin: 1em auto;
+    padding: 1em 2em;
 }
 
 

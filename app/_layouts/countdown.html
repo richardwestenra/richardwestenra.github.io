@@ -10,7 +10,6 @@
 body {background:#fff;}
 .header, .footer {background:#333;}
 	.header a, .footer a {color:#fff;}
-main.wrapper {max-width:771px; margin: 0 auto;}
 .legilimens {
 	display: inline-block;
 	font-size: 0.9em;
@@ -23,6 +22,7 @@ main.wrapper {max-width:771px; margin: 0 auto;}
 	background: #eee;
 }
 .post {
+	max-width:771px;
 	text-align:center;
 }
 .paper .post {
@@ -109,6 +109,13 @@ main.wrapper {max-width:771px; margin: 0 auto;}
 		top: 70px;
 		width: 69px;
 	}
+}
+.geocities .postContent, .geocities .postContent:before, .geocities .postContent:after {
+	background: none;
+	padding: 0;
+}
+.geocities .winter:before {
+	display: none;
 }
 </style>
 </head>

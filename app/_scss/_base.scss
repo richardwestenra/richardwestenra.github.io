@@ -32,10 +32,12 @@ li, p, blockquote {
 }
 .wrapper {
     width: 90%;
-    margin: 0 5%;
+    margin-left: 5%;
+    margin-right: 5%;
     @media only screen and (min-width: $m_large) {
         width: 80%;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     @media only screen and (min-width: $m_larger) {
         width: $m_large;
@@ -49,7 +51,8 @@ li, p, blockquote {
     text-align: center;
 }
 main {
-    padding: 50px 0 1.5em;
+    margin-top: 4em;
+    margin-bottom: 1.5em;
     clear: both;
 }
 
