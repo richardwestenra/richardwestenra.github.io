@@ -135,10 +135,16 @@
                             border-width: 0 $t $t $t;
                             border-color: transparent transparent $c_opposite transparent;
                         }
+                        .no-opacity & {
+                            display: none;
+                        }
                     }
                     &:hover span, &:focus span {
                         opacity: 1;
                         transform: translateY(10px);
+                        .no-opacity & {
+                            display: block;
+                        }
                     }
                 }
             }

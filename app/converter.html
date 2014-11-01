@@ -1,7 +1,10 @@
 ---
-title: Weekly/Monthly Rental Rate Converter
+title: Free Weekly/Monthly Rental Rate Calculator
+description: Quickly convert between PCM and PW with this free interactive calculator tool.
 permalink: weekly-monthly-rental-rate-converter/
 comments: true
+social: true
+socialImg: img/blogThumbs/converter.png
 ---
 {% include header.html %}
 
@@ -37,7 +40,7 @@ main h2, main h3, main h4, main h5, main h6 { color:#222; }
 				vertical-align: top;
 			}
 		}
-			#converter input {
+			.c_input {
 				border:6px solid #006694;
 				border-radius:12px;
 				padding:7px;
@@ -49,13 +52,13 @@ main h2, main h3, main h4, main h5, main h6 { color:#222; }
 				color:#666;
 				text-align: center;
 			}
-			#converter input:focus {
+			.c_input:focus {
 				background:#fff;
 				box-shadow:inset 0 1px 10px #ccc;
 				color:#333;
 				outline:none;
 			}
-			#converter input.inputError {
+			.c_input.inputError {
 				color:#aa0000;
 			}
 			#converter label {
@@ -94,16 +97,16 @@ main h2, main h3, main h4, main h5, main h6 { color:#222; }
 			<h2 class="postHeader">Convert between weekly rate and monthly rate</h2>
 			<form id="converter" class="clearfix">
 				<div>
-					<input id="week" type="text" />
+					<input id="week" class="c_input" type="number" />
 					<label for="week">Per week</label>
 				</div>
 				<p id="equals"> = </p>
 				<div>
-					<input id="month" type="text" />
+					<input id="month" class="c_input" type="number" />
 					<label for="month">Per month</label>
 				</div>
 			</form>
-			<p class="postContent">Quickly and easily convert between rent per month and rent per week. Enter your current rate in the appropriate text input and the other box will instantly show the corresponding value.</p>
+			<p class="postContent">Easily convert between rent per calendar month and rent per week. Enter your current rate in the appropriate text input and the other box will instantly show the corresponding value.</p>
 			<p class="meta">Published 25 October 2011</p>
 		</article>
 	</main>
@@ -112,30 +115,26 @@ main h2, main h3, main h4, main h5, main h6 { color:#222; }
 
 <script>
 $(function() {
-	$("#converter input").keyup(function(event) {
-		// Convert ALL the things, unless they're NaN, in which case tell off the naughty user
-		var inputID = $(this).attr("id");
-		if (inputID == "week") {
-			if (isNaN($(this).val())) {
-				$("#month").val("Please enter a number").addClass("inputError");
-			} else {
-				$("#month").val($(this).val() * 52 / 12).removeClass("inputError");
-			}
-		} else if (inputID == "month") {
-			if (isNaN($(this).val())) {
-				$("#week").val("Please enter a number").addClass("inputError");
-			} else {
-				$("#week").val($(this).val() * 12 / 52).removeClass("inputError");
-			}
+	$("#converter input").on('keyup',function() {
+		function rnd(n){
+			return Math.round(n*100)/100;
 		}
-		// Delete input text if NaN or if zero, else highlight it all
-		$("#converter input").focusin(function(){
-			if ($(this).val() == 0 || isNaN($(this).val())) {
-				$(this).val("");
-			} else {
-				$(this).focus().select();
-			}
-		});
+		function convert(n,toWeek){
+			return toWeek ? n*12/52 : n*52/12;
+		}
+		var inputID = $(this).attr('id');
+		var nan = isNaN($(this).val());
+		var toWeek = inputID === 'month';
+		var newVal = rnd( convert($(this).val(), toWeek) );
+		$("#converter input").not('#'+inputID).val(function(){
+			return nan ? 'Please enter a number' : newVal;
+		}).toggleClass('inputError',nan);
+	}).on('focusin',function(){
+		if ($(this).val() === 0 || isNaN($(this).val())) {
+			$(this).val('');
+		} else {
+			$(this).focus().select();
+		}
 	});
 });
 </script>

@@ -20,17 +20,17 @@
 
 <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
 
+<meta name="twitter:site" content="richardwestenra">
 {% if page.socialImg %}<meta name="twitter:card" content="summary_large_image">{% endif %}
-{% if page.socialImg %}<meta name="twitter:site" content="richardwestenra">{% endif %}
-{% if page.socialTitle %}<meta name="twitter:title" content="{{page.socialTitle}}">{% endif %}
-{% if page.socialDesc %}<meta name="twitter:description" content="{{page.socialDesc}}">{% endif %}
+{% if page.title or page.socialTitle %}<meta name="twitter:title" content="{% if page.socialTitle %}{{page.socialTitle}}{% else %}{{page.title}}{% endif %}">{% endif %}
+{% if page.description or page.socialDesc %}<meta name="twitter:description" content="{% if page.socialDesc %}{{page.socialDesc}}{% else %}{{page.description}}{% endif %}">{% endif %}
 {% if page.socialImg %}<meta name="twitter:image:src" content="{{site.liveUrl}}{{page.socialImg}}">{% endif %}
 
-{% if page.socialTitle %}<meta itemprop="name" content="{{page.socialTitle}}">{% endif %}
-{% if page.socialDesc %}<meta itemprop="description" content="{{page.socialDesc}}">{% endif %}
+{% if page.title or page.socialTitle %}<meta itemprop="name" content="{% if page.socialTitle %}{{page.socialTitle}}{% else %}{{page.title}}{% endif %}">{% endif %}
+{% if page.description or page.socialDesc %}<meta itemprop="description" content="{% if page.socialDesc %}{{page.socialDesc}}{% else %}{{page.description}}{% endif %}">{% endif %}
 {% if page.socialImg %}<meta itemprop="image" content="{{site.liveUrl}}{{page.socialImg}}">{% endif %}
 
-{% if page.socialTitle %}<meta property="og:title" content="{{page.socialTitle}}"/>{% endif %}
-{% if page.socialDesc %}<meta property="og:description" content="{{page.socialDesc}}"/>{% endif %}
+{% if page.title or page.socialTitle %}<meta property="og:title" content="{% if page.socialTitle %}{{page.socialTitle}}{% else %}{{page.title}}{% endif %}"/>{% endif %}
+{% if page.description or page.socialDesc %}<meta property="og:description" content="{% if page.socialDesc %}{{page.socialDesc}}{% else %}{{page.description}}{% endif %}"/>{% endif %}
 {% if page.socialImg %}<meta property="og:image" content="{{site.liveUrl}}{{page.socialImg}}"/>{% endif %}
 {% if page.permalink %}<meta property="og:url" content="{% if page.sociaUrl %}{{page.sociaUrl}}{% else %}{{site.liveUrl}}{{page.permalink}}{% endif %}"/>{% endif %}

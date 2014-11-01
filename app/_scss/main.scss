@@ -369,16 +369,23 @@ body {
                     right: 0;
                     opacity: 0;
                     transition: all .6s ease;
+                    .no-opacity &, .no-csstransforms & {
+                        display: none;
+                    }
                 }
                 span {
                     position: absolute;
                     opacity: 0;
                     transition: opacity .2s ease, padding .1s linear;
                     z-index: 2;
+                    .no-opacity & {
+                        display: none;
+                    }
                 }
                 .name {
                     width: 100%;
                     overflow: hidden;
+                    background: #444;
                     background: rgba(#000,0.8);
                     left: 0;
                     bottom: 0;
@@ -407,6 +414,9 @@ body {
                     text-align: center;
                     line-height: 1em;
                     color: $c_base;
+                    .no-csstransforms & {
+                        display: none;
+                    }
                 }
                 &:hover {
                     transform: scale(1.1);
@@ -414,9 +424,17 @@ body {
                     box-shadow: 0 1px 6px rgba($c_primary,0.1);
                     span, &:before {
                         opacity: 1;
+                        .no-opacity & {
+                            display: block;
+                        }
                     }
                     .name {
                         padding: 10px;
+                    }
+                    .no-csstransforms & {
+                        &:before, .year {
+                            display: none;
+                        }
                     }
                 }
             }
