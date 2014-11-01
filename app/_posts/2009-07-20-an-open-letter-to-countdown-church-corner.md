@@ -1,8 +1,11 @@
 ---
 layout: countdown
 title: An open letter to Countdown Church Corner
+description: What happened? You used to be cool. We used to see each other all the time.
 permalink: an-open-letter-to-countdown-church-corner/
 comments: true
+social: true
+socialImg: img/blogThumbs/countdown.jpg
 ---
 
 Dear Countdown Church Corner.
