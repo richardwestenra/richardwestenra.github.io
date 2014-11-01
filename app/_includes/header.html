@@ -53,6 +53,6 @@
 {% if page.socialImg %}
 	<meta property="og:image" content="{{site.liveUrl}}{{page.socialImg}}"/>
 {% endif %}
-{% if page.permalink %}
-	<meta property="og:url" content="{% if page.sociaUrl %}{{page.sociaUrl}}{% else %}{{site.liveUrl}}{{page.permalink}}{% endif %}"/>
+{% if page.permalink or page.socialUrl %}
+	<meta property="og:url" content="{% if page.socialUrl %}{{page.socialUrl}}{% else %}{{site.liveUrl}}{{page.permalink}}{% endif %}"/>
 {% endif %}

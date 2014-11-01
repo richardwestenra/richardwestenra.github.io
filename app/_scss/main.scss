@@ -549,6 +549,7 @@ body {
     font-size: 0.8em;
     opacity: 0.6;
     text-align: center;
+    margin-top: 2em;
     .default & {
         text-align: left;
     }
@@ -569,6 +570,7 @@ body {
     text-align: center;
     color: $c_bg;
     clear: both;
+    margin-top: 2em;
     .wrapper {
         @include clearfix;
     }
