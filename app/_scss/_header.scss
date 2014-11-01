@@ -46,7 +46,7 @@
         }
     }
     .mobile-only {
-        @media screen and (min-width: $m_small) {
+        @media screen and (min-width: $m_tablet) {
             display: none;
         }
     }
@@ -74,7 +74,7 @@
             opacity: 1;
             transform: translateX(0);
         }
-        @media screen and (max-width: $m_small) {
+        @media screen and (max-width: $m_tablet) {
             li {
                 display: block;
                 a {
@@ -92,7 +92,7 @@
             }
         }
 
-        @media screen and (min-width: $m_small) {
+        @media screen and (min-width: $m_tablet) {
             opacity: 1;
             transform: translateX(0);
             transform: none;
