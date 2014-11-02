@@ -72,6 +72,9 @@ body {
 		    line-height: 185px;
 		    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 		}
+		.no-csstransforms #clock {
+			display: none;
+		}
 		#clock::after {
 		    position: absolute;
 		    display: inline-block;
@@ -152,14 +155,6 @@ body {
 		opacity: 0.9;
 	}
 </style>
-<!--[if lt IE 9]>
-<style>
-	#clock {
-		display: none;
-	}
-</style>
-<![endif]-->
-
 </head>
 <body>
     {% include nav.html %}
