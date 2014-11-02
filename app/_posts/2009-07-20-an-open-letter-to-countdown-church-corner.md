@@ -5,7 +5,7 @@ description: What happened? You used to be cool. We used to see each other all t
 permalink: an-open-letter-to-countdown-church-corner/
 comments: true
 social: true
-socialImg: img/blogThumbs/countdown.jpg
+socialImg: assets/social/countdown.jpg
 ---
 
 Dear Countdown Church Corner.
