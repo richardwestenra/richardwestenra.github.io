@@ -339,6 +339,7 @@ module.exports = function (grunt) {
         files: {
           src: [
             '<%= yeoman.app %>/js/{,*/}*.js',
+            '<%= yeoman.app %>/_scss/{,*/}*.scss',
             '<%= yeoman.app %>/css/{,*/}*.css',
             '!<%= yeoman.app %>/js/vendor/*'
           ]
