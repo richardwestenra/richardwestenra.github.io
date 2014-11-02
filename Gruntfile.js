@@ -100,6 +100,9 @@ module.exports = function (grunt) {
       server: [
         '.tmp',
         '.jekyll'
+      ],
+      useminprepare: [
+        '<%= yeoman.dist %>/useminprepare.html'
       ]
     },
     compass: {
@@ -124,7 +127,7 @@ module.exports = function (grunt) {
       },
       server: {
         options: {
-          debugInfo: true,
+          // debugInfo: true,
           generatedImagesDir: '.tmp/img/generated'
         }
       }
@@ -177,11 +180,11 @@ module.exports = function (grunt) {
       options: {
         dest: '<%= yeoman.dist %>'
       },
-      html: '<%= yeoman.dist %>/**/*.html'
+      html: '<%= yeoman.dist %>/useminprepare.html'
     },
     usemin: {
       options: {
-        assetsDirs: '<%= yeoman.dist %>',
+        assetsDirs: '<%= yeoman.dist %>'
       },
       html: ['<%= yeoman.dist %>/**/*.html'],
       css: ['<%= yeoman.dist %>/css/**/*.css', '<%= yeoman.dist %>/**/*.html']
@@ -406,6 +409,7 @@ module.exports = function (grunt) {
     'jekyll:dist',
     'concurrent:dist',
     'useminPrepare',
+    'clean:useminprepare',
     'concat',
     'autoprefixer:dist',
     'cssmin',
