@@ -122,19 +122,16 @@ $(function() {
 		function convert(n,toWeek){
 			return toWeek ? n*12/52 : n*52/12;
 		}
-		var inputID = $(this).attr('id');
-		var nan = isNaN($(this).val());
-		var toWeek = inputID === 'month';
-		var newVal = rnd( convert($(this).val(), toWeek) );
+		var inputID = $(this).attr('id'),
+			val = $(this).val(),
+			nan = val.length<1 || isNaN(val), // true if Not a Number
+			toWeek = inputID === 'month', // true if converting month->week
+			newVal = rnd( convert(val, toWeek) );
 		$("#converter input").not('#'+inputID).val(function(){
 			return nan ? 'Please enter a number' : newVal;
 		}).toggleClass('inputError',nan);
 	}).on('focusin',function(){
-		if ($(this).val() === 0 || isNaN($(this).val())) {
-			$(this).val('');
-		} else {
-			$(this).focus().select();
-		}
+		$(this).focus().select();
 	});
 });
 </script>
