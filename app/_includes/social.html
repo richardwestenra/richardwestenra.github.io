@@ -1,4 +1,4 @@
-<div class="social social-likes social-likes_vertical social-likes_notext" data-url="{{site.liveUrl}}{{page.permalink}}" data-title="{% if page.socialTitle %}{{page.socialTitle}}{% else %}{{page.title}}{% endif %}">
+<div class="social social-likes social-likes_vertical social-likes_notext" data-url="{% if page.socialUrl %}{{page.socialUrl}}{% else %}{{site.liveUrl}}{{page.permalink}}{% endif %}" data-title="{% if page.socialTitle %}{{page.socialTitle}}{% else %}{{page.title}}{% endif %}">
   <a class="facebook" href="#" title="Share link on Facebook">Facebook</a>
   <a class="twitter" href="#" title="Share link on Twitter" data-via="richardwestenra"{% if page.tweet %} data-title="{{page.tweet}}"{% endif %}>Twitter</a>
   <a class="plusone" href="#" title="Share link on Google+">Google+</a>
