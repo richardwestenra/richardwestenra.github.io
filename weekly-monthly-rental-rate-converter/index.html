@@ -132,18 +132,15 @@ main h2, main h3, main h4, main h5, main h6 { color:#222; }
 		function convert(n,toWeek){
 			return toWeek ? n*12/52 : n*52/12;
 		}
-		var inputID = $(this).attr('id');
-		var nan = isNaN($(this).val());
-		var toWeek = inputID === 'month';
-		var newVal = rnd( convert($(this).val(), toWeek) );
+		var inputID = $(this).attr('id'),
+			val = $(this).val(),
+			nan = val.length<1 || isNaN(val), // true if Not a Number
+			toWeek = inputID === 'month', // true if converting month->week
+			newVal = rnd( convert(val, toWeek) );
 		$("#converter input").not('#'+inputID).val(function(){
 			return nan ? 'Please enter a number' : newVal;
 		}).toggleClass('inputError',nan);
 	}).on('focusin',function(){
-		if ($(this).val() === 0 || isNaN($(this).val())) {
-			$(this).val('');
-		} else {
-			$(this).focus().select();
-		}
+		$(this).focus().select();
 	});
 });</script><footer class=footer><div class=wrapper><p class=contact><a href=mailto:richard@richardwestenra.com target=_blank><i class=icon-mail></i> richard@richardwestenra.com</a> <a href=http://twitter.com/richardwestenra target=_blank><i class=icon-twitter></i> @richardwestenra</a></p><p class=legal>&copy; Copyleft 2014: All wrongs reserved</p></div></footer></div></body></html>
