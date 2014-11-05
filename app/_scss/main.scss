@@ -191,9 +191,9 @@ body {
             line-height: 1em;
             // transition: .2s ease font-size;
         }
+    $d: 50vw;
     @media screen and (min-width: $m_tablet){
         &:after {
-            $d: 50vw;
             width: $d;
             height: $d;
             background: url($il + 'home/radialStripes.svg') no-repeat center;
@@ -221,6 +221,11 @@ body {
                 font-size: 1.4em;
                 padding: 0.1em 0 0.2em;
             }
+        }
+    }
+    @media screen and (min-width: $m_huge){
+        &:after {
+            margin-left:($d/-2 + 5.5);
         }
     }
     &:hover {
