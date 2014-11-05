@@ -59,7 +59,20 @@ main h2, main h3, main h4, main h5, main h6 { color:#222; }
 				outline:none;
 			}
 			.c_input.inputError {
-				color:#aa0000;
+				color:#a04545;
+				background: #fee;
+			}
+			::-webkit-input-placeholder {
+				color: #a04545;
+			}
+			:-moz-placeholder {
+				color: #a04545;
+			}
+			::-moz-placeholder {
+				color: #a04545;
+			}
+			:-ms-input-placeholder {
+				color: #a04545;
 			}
 			#converter label {
 				clear:both;
@@ -115,7 +128,7 @@ main h2, main h3, main h4, main h5, main h6 { color:#222; }
 
 <script>
 $(function() {
-	$("#converter input").on('keyup',function() {
+	$("#converter input").on('keyup change',function() {
 		function rnd(n){
 			return Math.round(n*100)/100;
 		}
@@ -127,11 +140,17 @@ $(function() {
 			nan = val.length<1 || isNaN(val), // true if Not a Number
 			toWeek = inputID === 'month', // true if converting month->week
 			newVal = rnd( convert(val, toWeek) );
-		$("#converter input").not('#'+inputID).val(function(){
-			return nan ? 'Please enter a number' : newVal;
-		}).toggleClass('inputError',nan);
-	}).on('focusin',function(){
-		$(this).focus().select();
+		$("#converter input")
+			.toggleClass('inputError',nan)
+			.not('#'+inputID)
+			.val(function(){
+				return nan ? null : newVal;
+			})
+			.attr('placeholder',function(){
+				return nan ? 'Please enter a number' : null;
+			});
+	}).on('click',function(){
+		$(this).select();
 	});
 });
 </script>
