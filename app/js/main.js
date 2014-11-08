@@ -11,6 +11,19 @@ $(function(){
 	//--- Helper functions ---//
 
 
+
+	//--- Testimonials carousel ---//
+	$('.carousel').slick({
+		arrows: false,
+		autoplay: true,
+		centerPadding: '5%',
+		dots: true,
+		slide: 'li',
+		slidesToShow: 1,
+		speed: 300
+	});
+
+
 	//--- In-page scroll ---//
 	$('.scroll').on('click',function(e,target){
 		e.preventDefault();

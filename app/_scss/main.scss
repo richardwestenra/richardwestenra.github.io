@@ -1,6 +1,6 @@
 //--- Main ---//
 
-@import "variables", "mixins", "base", "fontface", "typography", "syntax", "header";
+@import "variables", "mixins", "base", "fontface", "typography", "syntax", "header", "slick";
 
 body {
 }
@@ -237,6 +237,69 @@ body {
     }
 }
 
+
+.testimonials {
+    padding-top: 3em;
+    position: relative;
+    &:before, &:after {
+        position: absolute;
+        font-size: 300px;
+        @include serif;
+        color: rgba($c_primary,0.05);
+        z-index: 0;
+    }
+    &:before {
+        content: "“";
+        top: -20px;
+        left: -40px;
+    }
+    &:after {
+        content: "”";
+        top: 0px;
+        right: -40px;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+        li {
+        }
+        blockquote {
+            position: relative;
+            z-index: 2;
+            margin: 0;
+            text-shadow: 0 1px 3px $c_bg;
+            p {
+                @include serif;
+                font-style: italic;
+                font-size: 1.3em;
+                margin: 0 0 .3em;
+                &:before {
+                    content: "“";
+                }
+                &:after {
+                    content: "”";
+                }
+            }
+            footer {
+                line-height: 1.3em;
+                font-size: 0.9em;
+                opacity: 0.8;
+            }
+                cite {
+                    display: block;
+                    font-style: normal;
+                    margin: 0;
+                }
+                span {
+                    display: block;
+                    font-size: 0.8em;
+                    opacity: 0.6;
+                }
+        }
+}
 
 
 .blog {
