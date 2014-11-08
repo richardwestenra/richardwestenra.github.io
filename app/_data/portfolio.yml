@@ -10,11 +10,12 @@
   img: instagram.jpg
   year: 2014
 
-- name: The Story of America’s Car Giants
-  url: http://www.firestonetire.com/story-americas-top-car-brands/
-  client: Firestone Tires
-  img: cars.png
-  year: 2014
+# Removed due to confidentiality
+# - name: The Story of America’s Car Giants
+#   url: http://www.firestonetire.com/story-americas-top-car-brands/
+#   client: Firestone Tires
+#   img: cars.png
+#   year: 2014
 
 - name: How Adventurous Are You?
   url: https://www.travelex.co.uk/travel/how-adventurous-are-you/
@@ -34,11 +35,12 @@
 #   img: 
 #   year: 2014
 
-- name: Why You Should Take More Breaks
-  url: http://www.staples.ca/sbdca/en_CA/cre/programs/breathe/
-  client: Staples
-  img: break.jpg
-  year: 2014
+# Removed due to confidentiality
+# - name: Why You Should Take More Breaks
+#   url: http://www.staples.ca/sbdca/en_CA/cre/programs/breathe/
+#   client: Staples
+#   img: break.jpg
+#   year: 2014
 
 - name: Find Your Ultimate UK Festival
   url: http://www.thetrainline.com/tools/festival-finder/
@@ -48,13 +50,13 @@
 
 - name: Turning A Profit
   url: https://www.worldpayzinc.com/tech-wealth/
-  client: WorldPayZinc
+  client: WorldPay Zinc
   img: profit.png
   year: 2014
 
 - name: The Minimal Music Quiz
   url: http://www.concerthotels.com/minimal-music-quiz/
-  client: ConcertHotels
+  client: Concert Hotels
   img: minimal.jpg
   year: 2013
 
@@ -94,17 +96,18 @@
   img: career.png
   year: 2013
 
-- name: Grammatically Speaking
-  url: http://www.staples.ca/sbdca/en_CA/cre/programs/grammarquiz/index.html
-  client: Staples
-  img: grammar.jpg
-  year: 2013
+# Removed due to confidentiality
+# - name: Grammatically Speaking
+#   url: http://www.staples.ca/sbdca/en_CA/cre/programs/grammarquiz/index.html
+#   client: Staples
+#   img: grammar.jpg
+#   year: 2013
 
-# - name: Brandopolis
-#   url: http://www.distilled.net/brandopolis/
-#   client: Distilled
-#   img: 
-#   year: 2014
+- name: Distilled.net
+  url: http://www.distilled.net/
+  client: Distilled
+  img: distilled.png
+  year: 2013
 
 - name: The Career Aptitude Test
   url: http://www.rasmussen.edu/resources/aptitude-test/
@@ -130,11 +133,12 @@
   img: superbowl.jpg
   year: 2012
 
-- name: What Speed Do You Read?
-  url: http://www.staples.com/sbd/cre/marketing/technology-research-centers/ereaders/speed-reader/
-  client: Staples
-  img: ereader.png
-  year: 2011
+# Removed due to confidentiality
+# - name: What Speed Do You Read?
+  # url: http://www.staples.com/sbd/cre/marketing/technology-research-centers/ereaders/speed-reader/
+  # client: Staples
+  # img: ereader.png
+  # year: 2011
 
 # - name: Visualizing the World's Food Consumption
 #   url: http://www.foodservicewarehouse.com/calorie-viz/

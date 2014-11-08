@@ -620,6 +620,10 @@ body {
             float: right;
         }
     }
+    .legal span {
+        display: inline-block;
+        transform: scaleX(-1);
+    }
 }
 body.konami {
     animation-iteration-count: 6;
