@@ -85,4 +85,12 @@
             scrollTop: targetOffset
         }, duration);
     });
+    $('.social-likes').socialLikes().on('counter.social-likes',function(e,s,n){
+        // Restore pre-url-transfer share counts:
+        function recalc(serv,num){ if(s===serv) n += num; }
+        recalc('facebook',500);
+        recalc('twitter',120);
+        // recalc('plusone',43);
+        if(n>0) $('.social-likes__counter_'+s).removeClass('social-likes__counter_empty').text(prettyNumbers(n));
+    });
 });</script><footer class=footer><div class=wrapper><p class=contact><a href=mailto:richard@richardwestenra.com target=_blank><i class=icon-mail></i> richard@richardwestenra.com</a> <a href=http://twitter.com/richardwestenra target=_blank><i class=icon-twitter></i> @richardwestenra</a></p><p class=legal><span>&copy;</span> Copyleft: All wrongs reserved</p></div></footer></div></body></html>
