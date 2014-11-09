@@ -16,11 +16,12 @@ $(function(){
 	$('.carousel').slick({
 		arrows: false,
 		autoplay: true,
+		autoplaySpeed: 5000,
 		centerPadding: '5%',
 		dots: true,
 		slide: 'li',
 		slidesToShow: 1,
-		speed: 300
+		speed: 400
 	});
 
 

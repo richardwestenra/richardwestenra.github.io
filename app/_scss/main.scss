@@ -118,6 +118,7 @@ body {
 @media screen and (min-width: $m_tablet){
     .leftCol, .homeSection.about, .homeSection.blog, .homeSection.linkblog {
         float: left;
+        width: 100%;
     }
     .leftCol {
         width: 75%;
@@ -459,7 +460,6 @@ body {
                         line-height: 1.2em;
                         font-size: 0.9em;
                         @include serif;
-                        font-weight: bold;
                         display: block;
                     }
                     cite {
