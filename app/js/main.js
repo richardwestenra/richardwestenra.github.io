@@ -9,6 +9,20 @@ $(function(){
 
 
 	//--- Helper functions ---//
+	function roundLarge(x) {
+		for(var i=1000000; i>=10; i=i/10) {
+			if (x>(i*10)) return Math.round(x/i)*i;
+		}
+		return Math.round(x);
+	}
+	function si(x) {
+		var n = { 'M': 1000000, 'K': 1000};
+		for(var key in n){
+			if (x>n[key]) return roundLarge(x) / n[key] + key;
+		}
+		return Math.round(x);
+	}
+	window.prettyNumbers = si;
 
 
 	//--- In-page scroll ---//

@@ -4,7 +4,6 @@ permalink: daily-mail/
 description: Replace Daily Mail headlines with comments from the corresponding articles with this bookmarklet. The results are often terrifying.
 comments: true
 social: true
-socialUrl: http://dailymail.richardwestenra.com/
 socialImg: assets/social/dm.jpg
 ---
 {% include header.html %}
@@ -122,6 +121,14 @@ $(function(){
         $('html, body').stop().animate({
             scrollTop: targetOffset
         }, duration);
+    });
+    $('.social-likes').socialLikes().on('counter.social-likes',function(e,s,n){
+        // Restore pre-url-transfer share counts:
+        function recalc(serv,num){ if(s===serv) n += num; }
+        recalc('facebook',500);
+        recalc('twitter',120);
+        // recalc('plusone',43);
+        if(n>0) $('.social-likes__counter_'+s).removeClass('social-likes__counter_empty').text(prettyNumbers(n));
     });
 });
 </script>
