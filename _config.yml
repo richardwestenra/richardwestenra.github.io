@@ -11,7 +11,6 @@ author:
 
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',
-          '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg',
           '**.ico', 'node_modules']
 
 include: ['.htaccess','**.ico','sitemap.xml', 'CNAME']
