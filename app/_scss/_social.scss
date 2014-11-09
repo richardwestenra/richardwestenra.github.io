@@ -19,7 +19,7 @@ $dl: 48px;
     a {
         display: inline-block;
         height: $ds;
-        margin: 0 5px;
+        margin: 0 5px 10px;
         line-height: $ds;
         color: #fff;
         text-shadow: 0 1px 1px rgba(#000,.1);
@@ -41,12 +41,6 @@ $dl: 48px;
             position: absolute;
             top: 0;
             left: 0;
-        }
-        @media only screen and (max-width: $m_medium) {
-            background: #666;
-            &:hover {
-                background: #444;
-            }
         }
         @media only screen and (min-width: $m_medium) {
             display: block;
@@ -136,14 +130,40 @@ $dl: 48px;
             .social-likes__counter {
                 float: right;
                 font-size: 13px;
-                line-height: $ds;
-                margin: 1px 12px 1px 5px;
+                line-height: $ds - 10;
+                margin: 5px 7px;
+                background: $c_opposite;
+                color: $c_base;
+                padding: 0 6px;
+                box-shadow: 0 0 5px 1px rgba(#000,0.05);
+                position: relative;
+                border-radius: 2px;
+                text-shadow: none;
+                &:before {
+                    $t: 5px;
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: $t $t $t 0;
+                    border-color: transparent $c_opposite transparent transparent;
+                    position: absolute;
+                    left: -$t;
+                    top: 5px;
+                }
                 @media only screen and (min-width: $m_medium) {
                     display: block;
                     font-size: 12px;
                     margin: 0;
                     float: none;
                     line-height: 1em;
+                    color: $c_opposite;
+                    background: none;
+                    padding: 0;
+                    box-shadow: none;
+                    &:before {
+                        display: none;
+                    }
                 }
                 &.social-likes__counter_empty {
                     display: none;
