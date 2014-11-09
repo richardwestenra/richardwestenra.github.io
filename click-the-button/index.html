@@ -167,25 +167,12 @@ body {
 				</ul>
 			</section>
 		</div>
-	</div></script><script src=//code.jquery.com/jquery-1.11.0.min.js></script><script src=/js/main.b0a9.js></script><div class="social social-likes social-likes_vertical social-likes_notext" data-url="http://richardwestenra.com/click-the-button/" data-title="Click The Button"><a class=facebook href=# title="Share link on Facebook">Facebook</a> <a class=twitter href=# title="Share link on Twitter" data-via=richardwestenra>Twitter</a> <a class=plusone href=# title="Share link on Google+">Google+</a> <a class=pinterest href=# title="Share image on Pinterest" data-media=http://richardwestenra.com/assets/social/click.png>Pinterest</a></div><script src=/js/vendor/socialLikes.9d72.js></script><script>$(function(){
-	function roundLarge(x) {
-		for(var i=1000000; i>=10; i=i/10) {
-			if (x>(i*10)) return Math.round(x/i)*i;
-		}
-		return Math.round(x);
-	}
-	function si(x) {
-		var n = { 'M': 1000000, 'K': 1000};
-		for(var key in n){
-			if (x>n[key]) return roundLarge(x) / n[key] + key;
-		}
-		return Math.round(x);
-	}
+	</div></script><script src=//code.jquery.com/jquery-1.11.0.min.js></script><script src=/js/main.f2d2.js></script><div class="social social-likes social-likes_vertical social-likes_notext" data-url="http://richardwestenra.com/click-the-button/" data-title="Click The Button"><a class=facebook href=# title="Share link on Facebook">Facebook</a> <a class=twitter href=# title="Share link on Twitter" data-via=richardwestenra>Twitter</a> <a class=plusone href=# title="Share link on Google+">Google+</a> <a class=pinterest href=# title="Share image on Pinterest" data-media=http://richardwestenra.com/assets/social/click.png>Pinterest</a></div><script src=/js/vendor/socialLikes.9d72.js></script><script>$(function(){
 	//--- Reformat counter share number ---//
 	$('.social-likes').delay(999).fadeIn(400,function(){
 		$(this).addClass('piano');
 	}).socialLikes().on('counter.social-likes',function(e,s,n){
-	  	if(n>0) $('.social-likes__counter_'+s).text(si(n));
+	  	if(n>0) $('.social-likes__counter_'+s).text(prettyNumbers(n));
 	});
 });</script><div id=disqus_thread class=wrapper><noscript><p class=browsehappy>Please enable JavaScript to view the <a href=http://disqus.com/?ref_noscript>comments powered by Disqus.</a></p></noscript></div><script type=text/javascript>var disqus_shortname = 'richardwestenra';
 (function() {
