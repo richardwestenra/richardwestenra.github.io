@@ -1,3 +1,9 @@
+- name: ISS Screensaver
+  url: live-iss-screensaver/
+  img: iss.jpg
+  date: 11 June 2014
+  featured: true
+
 - name: Dogenerator
   url: doge/
   img: dogenerator.jpg
@@ -50,7 +56,7 @@
   url: will-the-three-strikes-policy-work/
   img: threeStrikes.png
   date: January 2010
-  featured: true
+  featured: false
 
 - name: Photos from my recent trips to space
   url: photos-from-my-recent-trips-to-space/
