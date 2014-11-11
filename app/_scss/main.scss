@@ -204,10 +204,8 @@ body {
             top: -($d/2);
             margin: 2em 0 0 ($d/-2 + 7);
             z-index: -1;
-            opacity: 0.4;
-            transition: .8s ease opacity;
+            opacity: 0.5;
             animation: spin 45s infinite linear;
-            // animation-play-state: paused;
             pointer-events: none;
         }
         &:before {
@@ -227,13 +225,6 @@ body {
     @media screen and (min-width: $m_huge){
         &:after {
             margin-left:($d/-2 + 5.5);
-        }
-    }
-    &:hover {
-        &:after {
-            opacity: 0.6;
-            // animation-play-state: running;
-            // animation-duration: 15s;
         }
     }
 }
