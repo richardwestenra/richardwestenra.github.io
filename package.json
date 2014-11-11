@@ -1,8 +1,8 @@
 {
-  "name": "richardwestenragithubio",
+  "name": "richardwestenra",
   "private": true,
-  "version": "0.0.0",
-  "description": "Yeoman workflow for richardwestenra.github.io",
+  "version": "0.1.4",
+  "description": "Yeoman workflow for richardwestenra.com",
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
