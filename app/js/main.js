@@ -25,6 +25,20 @@ $(function(){
 	window.prettyNumbers = si;
 
 
+
+	//--- Testimonials carousel ---//
+	$('.carousel').slick({
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		centerPadding: '5%',
+		dots: true,
+		slide: 'li',
+		slidesToShow: 1,
+		speed: 400
+	});
+
+
 	//--- In-page scroll ---//
 	$('.scroll').on('click',function(e,target){
 		e.preventDefault();
