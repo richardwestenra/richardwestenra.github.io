@@ -26,6 +26,22 @@ $(function(){
 
 
 
+	//--- Gramaphone SVG animation ---//
+
+	var gramaphoneTemplate = $('#gramaphone-template').html();
+	var $banner = $('.banner');
+	$banner.prepend(gramaphoneTemplate);
+	var svg = new Walkway({
+		selector: '.gramaphone',
+		duration: 3000
+	});
+	svg.draw(function(){
+		$banner.addClass('reveal');
+	});
+
+
+
+
 	//--- Testimonials carousel ---//
 	$('.carousel').slick({
 		arrows: false,
