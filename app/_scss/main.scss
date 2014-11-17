@@ -60,7 +60,7 @@ body {
     }
     section {
         padding: 1em 0;
-        @media screen and (min-width: $m_tablet){
+        @media (min-width: $m_tablet){
             float: left;
             width: 49%;
             &:first-of-type {
@@ -115,7 +115,7 @@ body {
     z-index: 1;
     margin-bottom: 4em;
 }
-@media screen and (min-width: $m_tablet){
+@media (min-width: $m_tablet){
     .leftCol, .homeSection.about, .homeSection.blog, .homeSection.linkblog {
         float: left;
         width: 100%;
@@ -132,7 +132,7 @@ body {
         }
     }
 }
-@media screen and (min-width: $m_large){
+@media (min-width: $m_large){
     .homeSection.about {
         width: 60%;
     }
@@ -149,16 +149,16 @@ body {
     padding: 0 0 30px;
     position: relative;
     text-align: center;
-    @media screen and (min-width: $m_tablet){
+    @media (min-width: $m_tablet){
         font-size: 2.6em;
         font-size: 5vw;
         margin-top: 1em;
         text-align: left;
     }
-    @media screen and (min-width: $m_large){
+    @media (min-width: $m_large){
         font-size: 4.5vw;
     }
-    @media screen and (min-width: $m_larger){
+    @media (min-width: $m_larger){
         font-size: 4em;
     }
     h2 {
@@ -193,7 +193,7 @@ body {
             // transition: .2s ease font-size;
         }
     $d: 50vw;
-    @media screen and (min-width: $m_tablet){
+    @media (min-width: $m_tablet){
         &:after {
             width: $d;
             height: $d;
@@ -222,7 +222,7 @@ body {
             }
         }
     }
-    @media screen and (min-width: $m_huge){
+    @media (min-width: $m_huge){
         &:after {
             margin-left:($d/-2 + 5.5);
         }
@@ -318,17 +318,17 @@ body {
     &.homeSection {
         ul {
             li {
-                @media screen and (min-width: $m_small){
+                @media (min-width: $m_small){
                     width: 50%;
                     float: left;
                     padding: 0 5px 5px 0;
                 }
-                @media screen and (min-width: $m_large){
+                @media (min-width: $m_large){
                     width: 100%;
                     float: none;
                     padding: 0 0 15px;
                 }
-                @media screen and (min-width: $m_large + 100){
+                @media (min-width: $m_large + 100){
                     padding: 0 0 5px;
                 }
                 img {
@@ -358,7 +358,7 @@ body {
         }
             .thumb {
                 display: block;
-                @media screen and (min-width: $m_small){
+                @media (min-width: $m_small){
                     width: 279px;
                     float: left;
                     margin-right: 1em;
@@ -370,7 +370,7 @@ body {
             }
             h4 {
                 margin: 0.6em 0 0.2em;
-                @media screen and (min-width: $m_small){
+                @media (min-width: $m_small){
                     margin: 0.3em 1em;
                 }
                 font-size: 1.2em;
@@ -397,10 +397,10 @@ body {
             padding: 0 5px 5px 0;
             width: 50%;
             float: left;
-            @media screen and (min-width: $m_small){
+            @media (min-width: $m_small){
                 width: 33%;
             }
-            @media screen and (min-width: $m_tablet){
+            @media (min-width: $m_tablet){
                 width: 25%;
             }
             .thumb {
@@ -545,19 +545,19 @@ body {
         }
     }
     &.homeSection {
-        @media screen and (min-width: $m_tablet){
+        @media (min-width: $m_tablet){
             margin-top: 0.5em;
         }
         ul {
-            @media screen and (min-width: $m_small){
+            @media (min-width: $m_small){
                 font-size: 0.9em;
                 column-count: 2;
             }
-            @media screen and (min-width: $m_tablet){
+            @media (min-width: $m_tablet){
                 column-count: 1;
             }
         }
-            @media screen and (min-width: $m_larger){
+            @media (min-width: $m_larger){
                 li {
                     margin-bottom: 1.5em;
                 }
@@ -660,7 +660,7 @@ body {
             background-color: rgba($c_opposite,0.1);
         }
     }
-    @media screen and (min-width: 860px){
+    @media (min-width: 860px){
         p {
             margin: 0;
         }
@@ -686,3 +686,24 @@ body.konami {
     animation-name: spin;
 }
 @import "social", "geocities";
+
+@media print {
+    body {
+        background: white;
+    }
+    .header, .footer {
+        background: white;
+        &, a {
+            color: $c_base;
+        }
+        h1 {
+            font-size: 2em;
+        }
+    }
+    #nav, .hamburger, .homeSection .btn, .quicksearchForm {
+        display: none;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: $c_base;
+    }
+}
