@@ -56,3 +56,7 @@
 {% if page.permalink or page.socialUrl %}
 	<meta property="og:url" content="{% if page.socialUrl %}{{page.socialUrl}}{% else %}{{site.liveUrl}}{{page.permalink}}{% endif %}"/>
 {% endif %}
+
+{% if page.id == 'home' %}
+	<meta name="google-site-verification" content="d52GJ61kc5mbGdIxUBc0W8ASDtvisIKUhFNDdGGMZso" />
+{% endif %}

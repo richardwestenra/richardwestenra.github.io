@@ -109,11 +109,11 @@
 #   img: grammar.jpg
 #   year: 2013
 
-- name: Distilled.net
-  url: http://www.distilled.net/
-  client: Distilled
-  img: distilled.png
-  year: 2013
+# - name: Distilled.net
+#   url: http://www.distilled.net/
+#   client: Distilled
+#   img: distilled.png
+#   year: 2013
 
 - name: The Career Aptitude Test
   url: http://www.rasmussen.edu/resources/aptitude-test/
