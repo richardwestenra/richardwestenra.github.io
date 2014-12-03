@@ -96,8 +96,18 @@ main h2, main h3, main h4, main h5, main h6 { color:#222; }
 				vertical-align: top;
 			}
 	.postContent {
-		max-width: 500px;
+		max-width: 550px;
 		margin: 4em auto;
+	}
+	h4 {
+		font-size: 1.2em;
+		margin: 3em 0 0;
+	}
+	.postContent strong {
+		display: block;
+		font-family: monospace;
+		font-size: 1.2em;
+		margin: 0.5em 0;
 	}
 </style>
 
@@ -119,7 +129,11 @@ main h2, main h3, main h4, main h5, main h6 { color:#222; }
 					<label for="month">Per month</label>
 				</div>
 			</form>
-			<p class="postContent">Easily convert between rent per calendar month and rent per week. Enter your current rate in the appropriate text input and the other box will instantly show the corresponding value.</p>
+			<div class="postContent">
+				<p>Easily convert between rent per calendar month and rent per week. Enter your current rate in the appropriate text input and the other box will instantly show the corresponding value.</p>
+				<h4>How the calculation is made</h4>
+				<p>There are <a href="http://www.tenantsact.org.au/FAQRetrieve.aspx?ID=36382" target="_blank">several different ways</a> to convert between pw and pcm values. This calculator uses the following formula: <strong>PW = PCM &times; 12 / 365.25 &times; 7</strong> This means that to get the rental rate per week, the monthly value is multiplied by 12 to get the rent per year, then divided by 365.25 (the average number of days in a year, including leap years) to get the daily value, then multiplied by 7. To convert back into months, the reverse operation is applied.</p>
+			</div>
 			<p class="meta">Published 25 October 2011</p>
 		</article>
 	</main>
