@@ -30,3 +30,5 @@ permalink: :title/
 relative_permalinks: false
 
 liveUrl: "http://richardwestenra.com/"
+
+env: local

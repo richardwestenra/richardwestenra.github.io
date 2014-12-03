@@ -1,4 +1,4 @@
-/* global Konami */
+/* global Konami, Modernizr, Walkway */
 $(function(){
 	'use strict';
 
