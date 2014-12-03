@@ -161,25 +161,6 @@ body {
     @media (min-width: $m_larger){
         font-size: 4em;
     }
-    #gramaphone {
-    }
-        path {
-            fill: transparent;
-            stroke: $c_base;
-            stroke-width: 2px;
-            transition: fill ease 0.6s, stroke-width ease 0.6s;
-        }
-    h2 {
-        font-size: 1em;
-        margin: 0;
-    }
-    &:after {
-        content: '';
-        display: block;
-        .no-svg & {
-            display: none;
-        }
-    }
     .gramaphone {
         $c: 0.015em;
         width: 161.25 * $c;
@@ -188,6 +169,29 @@ body {
         .no-svg & {
             display: none;
         }
+    }
+        path {
+            fill: transparent;
+            stroke: $c_base;
+            stroke-width: 1.5px;
+            transition: fill ease 0.5s, stroke-width ease 0.5s;
+        }
+    &.reveal, .no-js & {
+        .gramaphone {
+            animation: vibrate 0.3s ease infinite;
+            animation-play-state: paused;
+            &:hover {
+                animation-play-state: running;
+            }
+            path {
+                stroke-width: 0;
+                fill: $c_base;
+            }
+        }
+    }
+    h2 {
+        font-size: 1em;
+        margin: 0;
     }
         span, strong {
             position: relative;
@@ -200,13 +204,11 @@ body {
             text-transform: uppercase;
             line-height: 1em;
         }
-    &.reveal, .no-js & {
-        .gramaphone {
-            animation: vibrate 0.3s ease 0.5s 3;
-            path {
-                stroke-width: 0;
-                fill: $c_base;
-            }
+    &:after {
+        content: '';
+        display: block;
+        .no-svg & {
+            display: none;
         }
     }
     $d: 50vw;
@@ -215,7 +217,7 @@ body {
             position: absolute;
             left: 9em;
             top: -0.5em;
-            z-index: 1;
+            z-index: 2;
         }
         &:after {
             width: $d;
@@ -243,6 +245,16 @@ body {
             }
         }
     }
+    @media (min-width: $m_larger){
+        .gramaphone {
+            .no-svg & {
+                display: block;
+                background: url($il + 'home/gramaphone.png') no-repeat center;
+                width: 161px;
+                height: 196px;
+            }
+        }
+    }
     @media (min-width: $m_huge){
         &:after {
             margin-left:($d/-2 + 5.5);
@@ -260,6 +272,9 @@ body {
         @include serif;
         color: rgba($c_primary,0.05);
         z-index: 0;
+        .no-rgba & {
+            display: none;
+        }
     }
     &:before {
         content: "“";
