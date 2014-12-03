@@ -1,3 +1,9 @@
+- name: "Beyond the Bay: Comparing the world’s top startup ecosystems"
+  url: http://www.simplybusiness.co.uk/microsites/top-startup-ecosystems/
+  client: Simply Business
+  img: ecosystems.png
+  year: 2014
+
 - name: Charting the Careers of Music’s Biggest Stars
   url: http://www.concerthotels.com/best-selling-musicians/
   client: Concert Hotels
@@ -103,11 +109,11 @@
 #   img: grammar.jpg
 #   year: 2013
 
-- name: Distilled.net
-  url: http://www.distilled.net/
-  client: Distilled
-  img: distilled.png
-  year: 2013
+# - name: Distilled.net
+#   url: http://www.distilled.net/
+#   client: Distilled
+#   img: distilled.png
+#   year: 2013
 
 - name: The Career Aptitude Test
   url: http://www.rasmussen.edu/resources/aptitude-test/

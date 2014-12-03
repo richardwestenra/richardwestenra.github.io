@@ -133,7 +133,7 @@ $(function() {
 			return Math.round(n*100)/100;
 		}
 		function convert(n,toWeek){
-			return toWeek ? n*12/52 : n*52/12;
+			return toWeek ? ((n*12)/365.25)*7 : ((n/7)*365.25)/12;
 		}
 		var inputID = $(this).attr('id'),
 			val = $(this).val(),

@@ -11,7 +11,7 @@ html, body {
     background: $c_bg;
     color: $c_base;
     font-size: 90%;
-    @media screen and (min-width: $m_small) {
+    @media (min-width: $m_small) {
         font-size: 100%;
     }
 }
@@ -34,12 +34,12 @@ li, p, blockquote {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    @media only screen and (min-width: $m_large) {
+    @media (min-width: $m_large) {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
-    @media only screen and (min-width: $m_larger) {
+    @media (min-width: $m_larger) {
         width: $m_large;
     }
 }
