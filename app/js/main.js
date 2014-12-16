@@ -1,4 +1,4 @@
-/* global Konami, Modernizr, Walkway */
+/* global Konami, Modernizr */
 $(function(){
 	'use strict';
 
@@ -23,26 +23,6 @@ $(function(){
 		return Math.round(x);
 	}
 	window.prettyNumbers = si;
-
-
-
-	//--- Gramaphone SVG animation ---//
-	if (Modernizr.svg) {
-		$.get('http://cdn.jsdelivr.net/walkway/0.0.1/walkway.min.js', function(data) {
-			var gramaphoneTemplate = $('#gramaphone-template').html();
-			var $banner = $('.banner');
-			$banner.prepend(gramaphoneTemplate);
-			var svg = new Walkway({
-				selector: '.gramaphone',
-				duration: 3000
-			});
-			svg.draw(function(){
-				$banner.addClass('reveal');
-			});
-		});
-	}
-
-
 
 
 	//--- Testimonials carousel ---//
