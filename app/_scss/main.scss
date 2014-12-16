@@ -161,37 +161,29 @@ body {
     @media (min-width: $m_larger){
         font-size: 4em;
     }
-    .gramaphone {
+    h2 {
+        font-size: 1em;        
+        margin: 0;     
+    }      
+    &:before, &:after {        
+        content: '';       
+        display: block;        
+        .no-svg & {        
+            display: none;     
+        }      
+    }      
+    &:before {     
+        background: url($il + 'home/gramaphone.svg') no-repeat center;     
+        background-size: contain;
         $c: 0.015em;
         width: 161.25 * $c;
         height: 195.875 * $c;
         margin: 0 auto 10px;
-        .no-svg & {
-            display: none;
-        }
+        animation: vibrate 0.3s ease infinite;
+        animation-play-state: paused;
     }
-        path {
-            fill: transparent;
-            stroke: $c_base;
-            stroke-width: 1.5px;
-            transition: fill ease 0.5s, stroke-width ease 0.5s;
-        }
-    &.reveal, .no-js & {
-        .gramaphone {
-            animation: vibrate 0.3s ease infinite;
-            animation-play-state: paused;
-            &:hover {
-                animation-play-state: running;
-            }
-            path {
-                stroke-width: 0;
-                fill: $c_base;
-            }
-        }
-    }
-    h2 {
-        font-size: 1em;
-        margin: 0;
+    &:hover:before {
+        animation-play-state: running;
     }
         span, strong {
             position: relative;
@@ -213,12 +205,6 @@ body {
     }
     $d: 50vw;
     @media (min-width: $m_tablet){
-        .gramaphone {
-            position: absolute;
-            left: 9em;
-            top: -0.5em;
-            z-index: 2;
-        }
         &:after {
             width: $d;
             height: $d;
@@ -229,29 +215,21 @@ body {
             top: -($d/2);
             margin: 2em 0 0 ($d/-2 + 7);
             z-index: -1;
-            opacity: 0;
+            opacity: 0.5;
             animation: spin 45s infinite linear;
             pointer-events: none;
-            transition: opacity ease 2s;
         }
-        &.reveal:after, .no-js &:after {
-            opacity: 0.5;
+        &:before {
+            position: absolute;
+            left: 9em;     
+            top: -0.5em;       
+            z-index: 1;        
         }
         span {
             display: block;
             &.line2 {
                 font-size: 1.4em;
                 padding: 0.1em 0 0.2em;
-            }
-        }
-    }
-    @media (min-width: $m_larger){
-        .gramaphone {
-            .no-svg & {
-                display: block;
-                background: url($il + 'home/gramaphone.png') no-repeat center;
-                width: 161px;
-                height: 196px;
             }
         }
     }
