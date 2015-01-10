@@ -9,18 +9,6 @@ socialImg: assets/social/converter.png
 {% include header.html %}
 
 <style>
-body {
-	background:#eff0f2;
-	background-image: linear-gradient(bottom, #EFF0F2 60%, #CED0D6 100%);
-	background-image: -o-linear-gradient(bottom, #EFF0F2 60%, #CED0D6 100%);
-	background-image: -moz-linear-gradient(bottom, #EFF0F2 60%, #CED0D6 100%);
-	background-image: -webkit-linear-gradient(bottom, #EFF0F2 60%, #CED0D6 100%);
-	background-image: -ms-linear-gradient(bottom, #EFF0F2 60%, #CED0D6 100%);
-	background-image: -webkit-gradient(  linear,  left bottom,  left top,  color-stop(0.6, #EFF0F2),  color-stop(1, #CED0D6)  );
-}
-.header, .footer {background:#0e0e0e;}
-	.header a, .footer a {color:#fff;}
-main h2, main h3, main h4, main h5, main h6 { color:#222; }
 .postHeader {
 	text-align:center;
 	font-size:30px;
@@ -112,10 +100,10 @@ main h2, main h3, main h4, main h5, main h6 { color:#222; }
 </style>
 
 </head>
-<body>
+<body class="grey">
     {% include nav.html %}
 
-	<main class="wrapper">
+	<main class="wrapper base">
 		<article class="post">
 			<h2 class="postHeader">Convert between weekly rate and monthly rate</h2>
 			<form id="converter" class="clearfix">

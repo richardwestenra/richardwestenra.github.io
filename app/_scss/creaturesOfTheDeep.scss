@@ -1,18 +1,10 @@
 @import "mixins";
+@import "variables";
 
-body {
-	background:#0e9cc6 url(/img/creaturesOfTheDeep/waterBg.jpg) no-repeat center 30px;
+body.creatures {
+	background:$blue url(/img/creaturesOfTheDeep/waterBg.jpg) no-repeat center 30px;
 }
-.header, .footer {
-	background:#0e0e0e;
-	a {
-		color:#fff;
-		&:hover, &:focus {
-			color: #0e9cc6;
-		}
-	}
-}
-::selection {background:#000; color:#0e9cc6;}
+::selection {background:#000; color:$blue;}
 main {
 	font-family:Georgia, "Times New Roman", Times, serif;
 	color:#111;
@@ -124,7 +116,7 @@ main {
 					top:-26px;
 				}
 		#mimicContainer {
-			background-image: radial-gradient(35% 35%, circle closest-side, #53b7d5, #0e9cc6 100%);
+			background-image: radial-gradient(35% 35%, circle closest-side, #53b7d5, $blue 100%);
 			width:100%;
 		}
 			#mimic {

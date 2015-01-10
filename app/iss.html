@@ -11,20 +11,17 @@ socialImg: assets/social/iss.jpg
 {% include header.html %}
 
 <style>
-body {
-	background:#111 url({{site.baseurl}}img/iss/issBg.jpg) no-repeat center;
+body.iss {
+	background: #111 url({{site.baseurl}}img/iss/issBg.jpg) no-repeat center;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
-.header, .footer {background:#0e0e0e;}
-	.header a, .footer a {color:#fff;}
-main h2, main h3, main h4, main h5, main h6 { color:#fff; }
+main h2, main h3, main h4 { color:#fff; }
 main {
 	margin-top: 2em;
 }
 .post {
 	background: rgba(0,0,0,0.7);
-	max-width: 800px;
 	padding: 1em 2em;
 	color: #fff;
 }
@@ -68,7 +65,7 @@ h4 {
 </style>
 
 </head>
-<body>
+<body class="grey iss">
     {% include nav.html %}
 
 	<main class="wrapper">

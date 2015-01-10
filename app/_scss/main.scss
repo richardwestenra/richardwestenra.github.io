@@ -721,3 +721,37 @@ body.konami {
         color: $c_base;
     }
 }
+
+// Alternate colours:
+.grey {
+    background: #eff0f2;
+    background-image: linear-gradient(bottom, #ced0d6 60%, #eff0f2 100%);
+    .header, .footer {
+        background: $black;
+        a {
+            color: $c_opposite;
+            &:hover {
+                color: $blue;
+            }
+        }
+        ul li a {
+            @media screen and (max-width: $m_tablet) {
+                color: $c_base;
+                &:hover, &:focus {
+                    color: $c_base;
+                }
+            }
+            @media screen and (min-width: $m_tablet) {
+                color: $c_opposite;
+                &:hover, &:focus {
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
+.base {
+    h2, h3, h4, h5, h6 {
+        color: $c_base;
+    }
+}

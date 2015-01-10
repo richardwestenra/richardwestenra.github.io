@@ -11,21 +11,6 @@ socialImg: assets/social/arcus.jpg
 {% include header.html %}
 
 <style>
-body {
-	background:#eff0f2;
-	background-image: linear-gradient(bottom, #CED0D6 60%, #EFF0F2 100%);
-	background-image: -o-linear-gradient(bottom, #CED0D6 60%, #EFF0F2 100%);
-	background-image: -moz-linear-gradient(bottom, #CED0D6 60%, #EFF0F2 100%);
-	background-image: -webkit-linear-gradient(bottom, #CED0D6 60%, #EFF0F2 100%);
-	background-image: -ms-linear-gradient(bottom, #CED0D6 60%, #EFF0F2 100%);
-	background-image: -webkit-gradient(  linear,  left bottom,  left top,  color-stop(0.6, #CED0D6),  color-stop(1, #EFF0F2)  );
-}
-.header, .footer {background:#0e0e0e;}
-	.header a, .footer a {color:#fff;}
-main h2, main h3, main h4, main h5, main h6 { color:#333; }
-main {
-	/*margin-top: 2em;*/
-}
 .postHeader {
 	margin-bottom: 0;
 }
@@ -52,10 +37,10 @@ main {
 <!-- endbuild -->
 
 </head>
-<body>
+<body class="grey">
     {% include nav.html %}
 
-	<main class="wrapper">
+	<main class="wrapper base">
 		<article class="post">
 			<h2 class="postHeader">Redesigning the Arcus mobile app</h2>
 			<p class="subtitle">A very short case-study.</p>
