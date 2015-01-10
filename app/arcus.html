@@ -1,0 +1,84 @@
+---
+title: "Case Study: Redesigning the Arcus mobile app"
+description: 
+permalink: arcus-redesign/
+comments: true
+social: true
+socialTitle: 
+socialDesc: 
+socialImg: assets/social/arcus.jpg
+---
+{% include header.html %}
+
+<style>
+body {
+	background:#eff0f2;
+	background-image: linear-gradient(bottom, #CED0D6 60%, #EFF0F2 100%);
+	background-image: -o-linear-gradient(bottom, #CED0D6 60%, #EFF0F2 100%);
+	background-image: -moz-linear-gradient(bottom, #CED0D6 60%, #EFF0F2 100%);
+	background-image: -webkit-linear-gradient(bottom, #CED0D6 60%, #EFF0F2 100%);
+	background-image: -ms-linear-gradient(bottom, #CED0D6 60%, #EFF0F2 100%);
+	background-image: -webkit-gradient(  linear,  left bottom,  left top,  color-stop(0.6, #CED0D6),  color-stop(1, #EFF0F2)  );
+}
+.header, .footer {background:#0e0e0e;}
+	.header a, .footer a {color:#fff;}
+main h2, main h3, main h4, main h5, main h6 { color:#333; }
+main {
+	/*margin-top: 2em;*/
+}
+.postHeader {
+	margin-bottom: 0;
+}
+.subtitle {
+	font-size: 1.2em;
+	font-style: italic;
+	margin: 0 0 1em;
+}
+.imgRow img {
+	margin-bottom: 1em;
+	border: 3px solid #fff;
+}
+@media (min-width: 600px) {
+	.imgRow img {
+		width: 31%;
+		height: auto;
+		margin-bottom: 5px;
+	}
+}
+</style>
+
+<!-- build:css({app,.tmp}) {{site.baseurl}}css/featherlight.css -->
+<link rel="stylesheet" href="{{site.baseurl}}_bower_components/featherlight/release/featherlight.min.css">
+<!-- endbuild -->
+
+</head>
+<body>
+    {% include nav.html %}
+
+	<main class="wrapper">
+		<article class="post">
+			<h2 class="postHeader">Redesigning the Arcus mobile app</h2>
+			<p class="subtitle">A very short case-study.</p>
+			<p><a href="http://www.arcusweather.com/" target="_blank"><em>Arcus</em></a> is a hyper-local weather app for Android. Much like <a href="http://darkskyapp.com/" target="_blank"><em>Dark Sky</em></a> for iOS, it uses your phone's GPS to predict when it will rain or snow at your exact location, down to the minute. It's pretty great.</p>
+			<p>Unfortunately it doesn't boast a great design:</p>
+			<p class="clearfix imgRow original">
+				<a href="{{site.baseurl}}img/arcus/old1.png" data-featherlight="image"><img class="alignleft" src="{{site.baseurl}}img/arcus/old1.png" alt="Arcus screenshot - original design" width="100%" height="" /></a>
+				<a href="{{site.baseurl}}img/arcus/old2.png" data-featherlight="image"><img class="alignright" src="{{site.baseurl}}img/arcus/old3.png" alt="Arcus screenshot - original design" width="100%" height="" /></a>
+				<a href="{{site.baseurl}}img/arcus/old2.png" data-featherlight="image"><img class="aligncenter" src="{{site.baseurl}}img/arcus/old2.png" alt="Arcus screenshot - original design" width="100%" height="" /></a>
+			</p>
+			<p>On the upside, it has a great feature-set, so I began using it on the regular. However I still pined for a better designed version, and hoped that Dark Sky would port their app to Android. When that began to seem less and less likely, I decided that the best alternative might be to suggest improvements for Arcus. One evening when I was feeling creative, I emailled the Arcus's creator Kushan Kansara offering help with redesigning the app, and he happily accepted. After a few hours of playing with the design, this was the result:</p>
+			<p class="clearfix imgRow new">
+				<a href="{{site.baseurl}}img/arcus/new1.png" data-featherlight="image"><img class="alignleft" src="{{site.baseurl}}img/arcus/new1.png" alt="Arcus screenshot - new design" width="100%" height="" /></a>
+				<a href="{{site.baseurl}}img/arcus/new3.png" data-featherlight="image"><img class="alignright" src="{{site.baseurl}}img/arcus/new3.png" alt="Arcus screenshot - new design" width="100%" height="" /></a>
+				<a href="{{site.baseurl}}img/arcus/new2.png" data-featherlight="image"><img class="aligncenter" src="{{site.baseurl}}img/arcus/new2.png" alt="Arcus screenshot - new design" width="100%" height="" /></a>
+			</p>
+			<p>I didn't spend a lot of time refining the design because it was an unsolicited pro-bono project, so I'm still not completely happy with many aspects of the redesign. However, I like that the redesign simplifies the text-heavy interface and makes it easier to find information quickly.</p>
+			<p>Kushan was happy with the new layout and began revising the app's design over subsequent weeks. While he didn't implement every aspect of my design, he did use many of my suggestions, and I think the app is easier to use as a result.</p>
+		</article>
+	</main>
+
+{% include footerJS.html %}
+<!-- build:js(app) {{site.baseurl}}js/vendor/featherlight.js -->
+<script src="{{site.baseurl}}_bower_components/featherlight/src/featherlight.js"></script>
+<!-- endbuild -->
+{% include footer.html %}

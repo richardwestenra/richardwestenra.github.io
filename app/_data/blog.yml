@@ -1,7 +1,13 @@
+- name: "Case Study: Redesigning the Arcus mobile app"
+  url: arcus-redesign/
+  img: arcus.png
+  date: January 2015
+  featured: false
+
 - name: ISS Screensaver
   url: live-iss-screensaver/
   img: iss.jpg
-  date: 11 June 2014
+  date: June 2014
   featured: true
 
 - name: Dogenerator
