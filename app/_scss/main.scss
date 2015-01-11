@@ -728,28 +728,6 @@ body.konami {
     animation-duration:.5s;
     animation-name: spin;
 }
-@import "social", "geocities";
-
-@media print {
-    body {
-        background: white;
-    }
-    .header, .footer {
-        background: white;
-        &, a {
-            color: $c_base;
-        }
-        h1 {
-            font-size: 2em;
-        }
-    }
-    #nav, .hamburger, .homeSection .btn, .quicksearchForm {
-        display: none;
-    }
-    h1, h2, h3, h4, h5, h6 {
-        color: $c_base;
-    }
-}
 
 // Alternate colours:
 .grey {
@@ -781,6 +759,29 @@ body.konami {
 }
 .base {
     h2, h3, h4, h5, h6 {
+        color: $c_base;
+    }
+}
+
+@import "social", "geocities";
+
+@media print {
+    body {
+        background: white;
+    }
+    .header, .footer {
+        background: white;
+        &, a {
+            color: $c_base;
+        }
+        h1 {
+            font-size: 2em;
+        }
+    }
+    #nav, .hamburger, .homeSection .btn, .quicksearchForm {
+        display: none;
+    }
+    h1, h2, h3, h4, h5, h6 {
         color: $c_base;
     }
 }

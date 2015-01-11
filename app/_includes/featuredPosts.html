@@ -1,7 +1,7 @@
 <aside class="featuredPosts wrapper-small">
 	<h3>Liked this post? You might like:</h3>
 	<ul class="fp_list">
-		{% for post in site.data.blog %}{% if page.featPosts contains forloop.index %}
+		{% for post in site.data.blog %}{% if page.featPosts contains post.id %}
 			<li class="fp_item">
 				<a class="thumb" href="{{site.baseurl}}{{ post.url }}" title="{{ post.name }}"><img src="{{site.baseurl}}img/blogThumbs/{{ post.img }}" alt="{{ post.name }}" width="279" height="92" /></a>
 			</li>
