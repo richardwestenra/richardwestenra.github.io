@@ -21,16 +21,20 @@ body {
             margin: 0 0 0.8em;
             a {
                 text-decoration: none;
+                transition: border ease .1s;
                 i {
                     transition: all ease .2s;
                     float: right;
                     text-shadow: 0 1px 0 #fff;
                     margin-top: -0.1em;
                 }
-                &:hover i {
-                    font-size: 1.1em;
-                    margin-top: -0.15em;
-                    margin-right: -0.05em;
+                &:hover {
+                    border-bottom: 2px solid $c_primary;
+                    i {
+                        font-size: 1.1em;
+                        margin-top: -0.15em;
+                        margin-right: -0.05em;
+                    }
                 }
             }
         }
