@@ -13,10 +13,10 @@ body.geocities{
 	.header, .footer {
 		background:#0f0;
 		color: red;
-		a {
+		a, ul li a {
 			color: red;
 			&:hover, &:focus {
-				color:pink;
+				color:maroon;
 			}
 		}
 	}
