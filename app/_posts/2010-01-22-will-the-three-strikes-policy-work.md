@@ -4,6 +4,7 @@ title:  Will the Three Strikes policy work?
 description: A critical analysis of the New Zealand government's 2010 'Three Strikes' law, which aims to cut crime rates by tightening sentencing.
 comments: true
 socialImg: assets/social/threeStrikes.png
+featPosts: ['dailymail','sport','countdown']
 ---
 
 The New Zealand government <a href="http://www.stuff.co.nz/national/politics/3242717/Three-strikes-policy-announced">announced a new judicial ‘three strikes’ policy</a> shortly before the close of business hours on Tuesday afternoon:

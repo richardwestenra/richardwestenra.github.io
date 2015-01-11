@@ -7,6 +7,7 @@ social: true
 socialTitle: How to get live streaming video of earth from space as your desktop screensaver
 socialDesc: Watch beautiful live images of Earth from the ISS every time you lock your computer with this free screensaver
 socialImg: assets/social/iss.jpg
+featPosts: ["xkcd","creaturesOfTheDeep","tripToSpace"]
 ---
 {% include header.html %}
 
@@ -16,7 +17,7 @@ body.iss {
 	-webkit-background-size: cover;
 	background-size: cover;
 }
-main h2, main h3, main h4 { color:#fff; }
+main h2, main h3, main h4, .featuredPosts h3 { color:#fff; }
 main {
 	margin-top: 2em;
 }
@@ -69,7 +70,7 @@ h4 {
     {% include nav.html %}
 
 	<main class="wrapper">
-		<article class="post">
+		<article class="post wrapper-small">
 			<h2 class="postHeader">Live ISS video screensaver</h2>
 			<p>Since April 2014, NASA has been streaming high-definition live video of the Earth's surface from the International Space Station. This makes it possible to set your desktop background or screensaver to this feed, so you can have the same office view as the astronauts aboard the ISS. I've fallen in love with it: Due to the speed of low Earth orbit, there's always something new to see, and a gorgeous sunrise/sunset every 45 minutes. Check it out:</p>
 			<p class="aligncenter"><a class="btn" href="{{site.baseurl}}iss/">Browser Preview</a></p>

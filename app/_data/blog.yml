@@ -1,94 +1,110 @@
 - name: "Case Study: Redesigning the Arcus mobile app"
+  id: arcus
   url: arcus-redesign/
   img: arcus.png
   date: January 2015
   featured: false
 
 - name: ISS Screensaver
+  id: iss
   url: live-iss-screensaver/
   img: iss.jpg
   date: June 2014
   featured: true
 
 - name: Dogenerator
+  id: dogenerator
   url: doge/
   img: dogenerator.jpg
   date: June 2014
   featured: true
 
 - name: If Daily Mail readers wrote the headlines
+  id: dailymail
   url: daily-mail/
   img: dailymail.png
   date: March 2014
   featured: true
 
 - name: Click the button
+  id: click
   url: click-the-button/
   img: click.png
   date: July 2013
   featured: false
 
 - name: "xkcd’s &#8216;Time&#8217; – Animated Time-lapse"
+  id: xkcd
   url: xkcds-time-animated-time-lapse/
   img: xkcd.png
   date: March 2013
   featured: true
 
 - name: The Truth about Sport
+  id: sport
   url: the-truth-about-sport/
   img: sport.png
   date: September 2012
   featured: false
 
 - name: Weekly/Monthly Rental Rate Converter
+  id: converter
   url: weekly-monthly-rental-rate-converter/
   img: converter.png
   date: October 2011
   featured: false
 
 - name: Top 7 Most Mind-Blowing Creatures of the Deep
+  id: creaturesOfTheDeep
   url: top-7-most-mind-blowing-creatures-of-the-deep/
   img: creaturesOfTheDeep.jpg
   date: September 2011
   featured: true
 
 - name: Operation Heart of Darkness
+  id: heartOfDarkness
   url: operation-heart-of-darkness/
   img: heartOfDarkness.jpg
   date: March 2011
   featured: true
 
 - name: Will the Three Strikes policy work?
+  id: threeStrikes
   url: will-the-three-strikes-policy-work/
   img: threeStrikes.png
   date: January 2010
   featured: false
 
 - name: Photos from my recent trips to space
+  id: tripToSpace
   url: photos-from-my-recent-trips-to-space/
   img: tripToSpace.png
   date: January 2010
   featured: false
 
 - name: "Great Winter Roadtrip &#8211; Highlights from the 2009 Season"
+  id: greatWinterRoadtrip
   url: great-winter-roadtrip/
   img: greatWinterRoadtrip.png
   date: December 2009
   featured: false
 
 - name: An open letter to Countdown Church Corner
+  id: countdown
   url: an-open-letter-to-countdown-church-corner/
   img: countdown.jpg
   date: July 2009
   featured: false
 
 # - name: Spunday
+#   id: spunday
 #   url: spunday/
 #   img: spunday.png
 #   date: July 2009
   # featured: false
 
 # - name: The edge of what exactly?
+#   id: steinlagerEdge
 #   url: the-edge-of-what-exactly/
 #   img: steinlagerEdge.png
 #   date: July 2009

@@ -32,15 +32,17 @@ li, p, blockquote {
 }
 .wrapper {
     width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
     @media (min-width: $m_large) {
         width: 80%;
-        margin-left: auto;
-        margin-right: auto;
     }
     @media (min-width: $m_larger) {
         width: $m_large;
+    }
+    &-small {
+        @extend .wrapper;
+        max-width: 700px;
     }
 }
 .browsehappy {

@@ -6,6 +6,7 @@ permalink: an-open-letter-to-countdown-church-corner/
 comments: true
 social: true
 socialImg: assets/social/countdown.jpg
+featPosts: ['dailymail','sport','heartOfDarkness']
 ---
 
 Dear Countdown Church Corner.
