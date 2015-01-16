@@ -1,3 +1,9 @@
+- name: "By the book: What age did the greatest authors publish their most famous works?"
+  url: https://blog.blinkboxbooks.com/what-age-did-the-greatest-authors-publish-their-most-famous-works/
+  client: Blinkbox Books
+  img: books.jpg
+  year: 2015
+
 - name: "Beyond the Bay: Comparing the world’s top startup ecosystems"
   url: http://www.simplybusiness.co.uk/microsites/top-startup-ecosystems/
   client: Simply Business
@@ -49,7 +55,7 @@
 #   year: 2014
 
 - name: Find Your Ultimate UK Festival
-  url: http://www.thetrainline.com/tools/festival-finder/
+  url: https://www.thetrainline.com/tools/festival-finder/
   client: The Trainline
   img: festivals.png
   year: 2014
@@ -72,11 +78,11 @@
   img: uniforms.png
   year: 2013
 
-- name: Where to go shopping in London
-  url: http://www.thetrainline.com/tools/shopping-in-london/
-  client: The Trainline
-  img: shopping.png
-  year: 2013
+# - name: Where to go shopping in London
+#   url: https://www.thetrainline.com/tools/shopping-in-london/
+#   client: The Trainline
+#   img: shopping.png
+#   year: 2013
 
 - name: The Capacity of an iPod Visualized as Vinyl
   url: http://www.concerthotels.com/ipod-visualized-as-vinyl
