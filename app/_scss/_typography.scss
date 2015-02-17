@@ -36,37 +36,41 @@
 
 
 //--- Markup formatting ---//
+.post {
+    // standard
+    .highlight, pre, code {
+        border: 1px solid #ddd;
+        background-color: #fff;
+        border-color: rgba(#000,0.1);
+        background-color: rgba(#fff,0.7);
+        border-radius: 3px;
+    }
+    pre {
+        padding: 0 0.4em;
+    }
+    code {
+        padding: 0.2em 0.3em;
+    }
+    .highlight pre, .highlight code, pre code {
+        background: none;
+        border: none;
+    }
+    pre code {
+        line-height: 1.2em;
+        font-size: 0.95em;
+        padding: 0 0.8em;
+        display: block;
+    }
 
-// standard
-.post pre {
-    border: 1px solid #ddd;
-    background-color: #eef;
-    padding: 0 .4em;
-}
-
-// .post ul, .post ol {
-//     margin-left: 1.35em;
-// }
-
-.post code {
-    border: 1px solid #ddd;
-    background-color: #eef;
-    padding: 0 .2em;
-}
-
-.post pre code {
-    border: none;
-}
-
-// terminal
-.post pre.terminal {
-    border: 1px solid #000;
-    background-color: #333;
-    color: #FFF;
-}
-
-.post pre.terminal code {
-    background-color: #333;
+    // terminal
+    pre.terminal {
+        border: 1px solid #000;
+        background-color: #333;
+        color: #FFF;
+        code {
+            background-color: #333;
+        }
+    }
 }
 
 

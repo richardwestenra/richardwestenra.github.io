@@ -19,6 +19,7 @@ body {
         h3 {
             font-size: 1.7em;
             margin: 0 0 0.8em;
+            line-height: 1.1em;
             a {
                 text-decoration: none;
                 transition: border ease .1s;
@@ -165,7 +166,8 @@ body {
     }
     h2 {
         font-size: 1em;        
-        margin: 0;     
+        margin: 0;
+        line-height: 1.1em;
     }      
     &:before, &:after {        
         content: '';       
