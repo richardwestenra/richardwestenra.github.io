@@ -1,3 +1,10 @@
+- name: "Adding non-core feature-detects with Grunt-Modernizr"
+  id: gruntModernizr
+  url: grunt-modernizr/
+  img: grunt-modernizr.png
+  date: February 2015
+  featured: false
+
 - name: "Case Study: Redesigning the Arcus mobile app"
   id: arcus
   url: arcus-redesign/
