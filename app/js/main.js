@@ -125,12 +125,10 @@ $(function(){
 		toggleLinks(isOn);
 	});
 	// Detect localstorage value and use that if it exists
-	var localExt = localStorage.getItem('externalLinks');
-	if(localExt !== null) {
-		var isOn = JSON.parse(localExt);
-		$linkSwitcher.toggleClass('on',isOn);
-		toggleLinks(isOn);
-	}
+	var localExt = localStorage.getItem('externalLinks'),
+		isOn = (localExt !== null) ? JSON.parse(localExt) : true;
+	$linkSwitcher.toggleClass('on',isOn);
+	toggleLinks(isOn);
 
 
 
