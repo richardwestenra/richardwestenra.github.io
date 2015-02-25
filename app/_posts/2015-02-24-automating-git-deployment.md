@@ -1,31 +1,21 @@
 ---
 layout: post
-title:  Automating Git deployment setup with a shell script
+title: Automating Git deployment setup with shell scripts
 description: Create a small shell script to automate the process of setting up your staging server directory.
 comments: true
-socialImg: assets/social/grunt-modernizr.png
 featPosts: ['arcus','gruntModernizr','iss']
 ---
- 
-<style>
-	.post h2 {
-		font-size: 2.4em;
-	}
-	.post h3 {
-		font-size: 1.5em;
-	}
-</style>
 
 My job involves creating new projects every other week, and pushing them to a live staging server for testing and client presentations. I previously used FTP to upload my projects, but FTP can be risky as it's very easy to accidentally delete/overwrite the wrong files. FTP also makes it difficult to keep track of which files you've changed, so you often end up uploading more files than you need to, which makes deployment take longer than it needs to.
 
 For this reason, I switched to using Git to deploy new projects. Once you've got it set up, all you need to do is run `git push remotename master` (or `grunt deploy` if you use Grunt) to deploy your latest changes to the server, and it will only transmit the code that has changed, reducing upload time. I like [Curtis Blackwell's method](http://curtisblackwell.com/blog/my-deploy-method-brings-most-of-the-boys-to-the-yard), which uses [post-receive hooks](http://gthooks.com/). His article recommends using [grunt-build-control](https://github.com/robwierzbowski/grunt-build-control) for deployment (as do I), but it's not strictly necessary if you'd rather avoid using Grunt.
 
-The only tricky part about using Git for deployment is that setting up each new project requires you to enter several tricky and unmemorable terminal commands, which is cumbersome and easy to mess up. Since I was doing this frequently, I decided to automate the process with a simple shell script. I've pasted an example below: Feel free to modify it however you like.
+The only tricky part about using Git for deployment is that setting up each new project requires you to enter several rather unmemorable terminal commands, which is cumbersome and easy to mess up. Since I was doing this frequently, I decided to automate the process with a simple shell script. I've pasted an example below: Feel free to modify it however you like.
 
 
 ### Create a shell script
 
-Copy the following to a text document and save it as a shell file. I called mine `gitsetup.sh`:
+Copy the following to a text document and save it as a shell file. I called mine **gitsetup.sh**:
 
     # This script sets up a Git post receive hook for easy deployment.
     # Created by Richard Westenra

@@ -620,9 +620,6 @@ body {
 //--- Posts ---//
 .post {
     @extend .wrapper-small; // nbed: temporary. Ideally add .wrapper-small to all posts and remove this line
-    & > h2 {
-        font-size: 2em;
-    }
 }
 .meta {
     font-size: 0.8em;

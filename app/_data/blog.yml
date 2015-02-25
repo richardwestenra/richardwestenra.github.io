@@ -1,7 +1,14 @@
+- name: "Automating Git deployment setup with shell scripts"
+  id: gitDeploy
+  url: automating-git-deployment/
+  img: code.png
+  date: February 2015
+  featured: false
+
 - name: "Adding non-core feature-detects with Grunt-Modernizr"
   id: gruntModernizr
   url: grunt-modernizr/
-  img: grunt-modernizr.png
+  img: code.png
   date: February 2015
   featured: false
 

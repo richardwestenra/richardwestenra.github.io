@@ -7,15 +7,6 @@ socialImg: assets/social/grunt-modernizr.png
 featPosts: ['arcus','dailymail','iss']
 ---
 
-<style>
-	.post h2 {
-		font-size: 2.4em;
-	}
-	.post h3 {
-		font-size: 1.5em;
-	}
-</style>
-
 [Modernizr](http://modernizr.com/) is a JavaScript library which detects HTML5 and CSS3 features in users' browsers, and makes it easy to take advantage of cutting-edge techniques without abandoning users on older browsers. It also has a modular [build tool](http://modernizr.com/download/), which is great for optimising its file size and improving page speed. However using this in your website can make your code-base less maintainable. This is because it can be a little hard to keep track of which features you're using where, which can be tricky when you need to add new feature-detects.
 
 This is where [Grunt-Modernizr](https://github.com/Modernizr/grunt-modernizr) comes in. This tool automatically sifts through your project files looking for references to Modernizr tests, and generates a custom Modernizr file containing only the bits that you need. It's basically magic, and it has revolutionised the way I use Modernizr.
@@ -27,8 +18,6 @@ This is very simple once you know how, but I recently spent more time than I'd c
 **Nota bene:** I use a variation of Yeoman's [Webapp generator](https://github.com/yeoman/generator-webapp) as my standard project boilerplate, so these instructions assume a similar setup using Bower, grunt-usemin, etc.
 
 
-<br/>
-
 ### Step 1: Set up the test in your local dev environment
 
 Assuming that you've installed Modernizr with Bower, open Modernizr's [feature-detects directory](https://github.com/Modernizr/Modernizr/tree/master/feature-detects) (which should be in `bower_components/modernizr/feature-detects/`. If you don't use Bower, then you might need to download the right test file from [Github](https://github.com/Modernizr/Modernizr/tree/master/feature-detects)). Find the script with the feature detect that you need, and copy the path to the file. Include this script in your header next to the regular Modernizr script. It should look a bit like this:
@@ -38,8 +27,6 @@ Assuming that you've installed Modernizr with Bower, open Modernizr's [feature-d
     <script src="bower_components/modernizr/feature-detects/css-pointerevents.js"></script>
     <!-- endbuild -->
 
-
-<br/>
 
 ### Step 2: Add the test to your production build
 
