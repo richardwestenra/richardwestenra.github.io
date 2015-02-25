@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title type="text" xml:lang="en">Richard Westenra | Web designer &amp; front-end developer</title>
+    <link type="application/atom+xml" href="//atom.xml" rel="self"/>
+    <link href="//"/>
+  <updated>2015-02-25T15:34:06Z</updated>
+  <id>/</id>
+  <author>
+    <name>Richard Westenra</name>
+    <email>rjwestenra@gmail.com</email>
+  </author>
+  <rights type="text">Copyright © 2015 {"name"=>"Richard Westenra", "email"=>"rjwestenra@gmail.com"}. All rights reserved.</rights>
+
+  
+  <entry>
+    <title>Automating Git deployment setup with shell scripts</title>
+    <link rel="alternate" type="text/html" href="/automating-git-deployment/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=" />
+    <published>2015-02-01T00:00:00Z</published>
+    <updated>2015-02-01T00:00:00+00:00</updated>
+    <id>gitDeploy</id>
+  </entry>
+  
+  <entry>
+    <title>Adding non-core feature-detects with Grunt-Modernizr</title>
+    <link rel="alternate" type="text/html" href="/grunt-modernizr/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=" />
+    <published>2015-02-01T00:00:00Z</published>
+    <updated>2015-02-01T00:00:00+00:00</updated>
+    <id>gruntModernizr</id>
+  </entry>
+  
+  <entry>
+    <title>Case Study: Redesigning the Arcus mobile app</title>
+    <link rel="alternate" type="text/html" href="/arcus-redesign/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=" />
+    <published>2015-01-01T00:00:00Z</published>
+    <updated>2015-01-01T00:00:00+00:00</updated>
+    <id>arcus</id>
+  </entry>
+  
+  <entry>
+    <title>ISS Screensaver</title>
+    <link rel="alternate" type="text/html" href="/live-iss-screensaver/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=" />
+    <published>2014-06-01T00:00:00Z</published>
+    <updated>2014-06-01T00:00:00+01:00</updated>
+    <id>iss</id>
+  </entry>
+  
+  <entry>
+    <title>Dogenerator</title>
+    <link rel="alternate" type="text/html" href="/doge/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=" />
+    <published>2014-06-01T00:00:00Z</published>
+    <updated>2014-06-01T00:00:00+01:00</updated>
+    <id>dogenerator</id>
+  </entry>
+  
+  <entry>
+    <title>If Daily Mail readers wrote the headlines</title>
+    <link rel="alternate" type="text/html" href="/daily-mail/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=" />
+    <published>2014-03-01T00:00:00Z</published>
+    <updated>2014-03-01T00:00:00+00:00</updated>
+    <id>dailymail</id>
+  </entry>
+  
+  <entry>
+    <title>Click the button</title>
+    <link rel="alternate" type="text/html" href="/click-the-button/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=" />
+    <published>2013-07-01T00:00:00Z</published>
+    <updated>2013-07-01T00:00:00+01:00</updated>
+    <id>click</id>
+  </entry>
+  
+  <entry>
+    <title>xkcd’s &amp;#8216;Time&amp;#8217; – Animated Time-lapse</title>
+    <link rel="alternate" type="text/html" href="/xkcds-time-animated-time-lapse/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=" />
+    <published>2013-03-01T00:00:00Z</published>
+    <updated>2013-03-01T00:00:00+00:00</updated>
+    <id>xkcd</id>
+  </entry>
+  
+  <entry>
+    <title>The Truth about Sport</title>
+    <link rel="alternate" type="text/html" href="/the-truth-about-sport/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=" />
+    <published>2012-09-01T00:00:00Z</published>
+    <updated>2012-09-01T00:00:00+01:00</updated>
+    <id>sport</id>
+  </entry>
+  
+  <entry>
+    <title>Weekly/Monthly Rental Rate Converter</title>
+    <link rel="alternate" type="text/html" href="/weekly-monthly-rental-rate-converter/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=" />
+    <published>2011-10-01T00:00:00Z</published>
+    <updated>2011-10-01T00:00:00+01:00</updated>
+    <id>converter</id>
+  </entry>
+  
+  <entry>
+    <title>Top 7 Most Mind-Blowing Creatures of the Deep</title>
+    <link rel="alternate" type="text/html" href="/top-7-most-mind-blowing-creatures-of-the-deep/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=" />
+    <published>2011-09-01T00:00:00Z</published>
+    <updated>2011-09-01T00:00:00+01:00</updated>
+    <id>creaturesOfTheDeep</id>
+  </entry>
+  
+  <entry>
+    <title>Operation Heart of Darkness</title>
+    <link rel="alternate" type="text/html" href="/operation-heart-of-darkness/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=" />
+    <published>2011-03-01T00:00:00Z</published>
+    <updated>2011-03-01T00:00:00+00:00</updated>
+    <id>heartOfDarkness</id>
+  </entry>
+  
+  <entry>
+    <title>Will the Three Strikes policy work?</title>
+    <link rel="alternate" type="text/html" href="/will-the-three-strikes-policy-work/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=" />
+    <published>2010-01-01T00:00:00Z</published>
+    <updated>2010-01-01T00:00:00+00:00</updated>
+    <id>threeStrikes</id>
+  </entry>
+  
+  <entry>
+    <title>Photos from my recent trips to space</title>
+    <link rel="alternate" type="text/html" href="/photos-from-my-recent-trips-to-space/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=" />
+    <published>2010-01-01T00:00:00Z</published>
+    <updated>2010-01-01T00:00:00+00:00</updated>
+    <id>tripToSpace</id>
+  </entry>
+  
+  <entry>
+    <title>Great Winter Roadtrip &amp;#8211; Highlights from the 2009 Season</title>
+    <link rel="alternate" type="text/html" href="/great-winter-roadtrip/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=" />
+    <published>2009-12-01T00:00:00Z</published>
+    <updated>2009-12-01T00:00:00+00:00</updated>
+    <id>greatWinterRoadtrip</id>
+  </entry>
+  
+  <entry>
+    <title>An open letter to Countdown Church Corner</title>
+    <link rel="alternate" type="text/html" href="/an-open-letter-to-countdown-church-corner/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=" />
+    <published>2009-07-01T00:00:00Z</published>
+    <updated>2009-07-01T00:00:00+01:00</updated>
+    <id>countdown</id>
+  </entry>
+  
+
+</feed>
