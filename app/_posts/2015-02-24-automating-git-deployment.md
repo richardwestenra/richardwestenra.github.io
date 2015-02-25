@@ -3,7 +3,7 @@ layout: post
 title: Automating Git deployment setup with shell scripts
 description: Create a small shell script to automate the process of setting up your staging server directory.
 comments: true
-featPosts: ['arcus','gruntModernizr','iss']
+featPosts: ['arcus','dogenerator','iss']
 ---
 
 My job involves creating new projects every other week, and pushing them to a live staging server for testing and client presentations. I previously used FTP to upload my projects, but FTP can be risky as it's very easy to accidentally delete/overwrite the wrong files. FTP also makes it difficult to keep track of which files you've changed, so you often end up uploading more files than you need to, which makes deployment take longer than it needs to.
