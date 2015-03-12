@@ -59,7 +59,7 @@
   url: the-truth-about-sport/
   img: sport.png
   date: September 2012
-  featured: false
+  featured: true
 
 - name: Weekly/Monthly Rental Rate Converter
   id: converter
@@ -87,7 +87,7 @@
   url: will-the-three-strikes-policy-work/
   img: threeStrikes.png
   date: January 2010
-  featured: false
+  featured: true
 
 - name: Photos from my recent trips to space
   id: tripToSpace
