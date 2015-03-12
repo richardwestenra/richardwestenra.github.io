@@ -314,8 +314,10 @@ body {
     ul {
         @include noList;
         @include clearfix;
+    }
         li {
             margin: 0;
+        }
             .thumb {
                 display: block;
                 overflow: hidden;
@@ -327,28 +329,24 @@ body {
                     transform: scale(1.1);
                 }
             }
-        }
-    }
     &.homeSection {
-        ul {
-            li {
-                @media (min-width: $m_small){
-                    width: 50%;
-                    float: left;
-                    padding: 0 5px 5px 0;
-                }
-                @media (min-width: $m_large){
-                    width: 100%;
-                    float: none;
-                    padding: 0 0 15px;
-                }
-                @media (min-width: $m_large + 100){
-                    padding: 0 0 5px;
-                }
-                img {
-                    width: 100%;
-                    height: auto;
-                }
+        li {
+            @media (min-width: $m_small){
+                width: 50%;
+                float: left;
+                padding: 0 5px 5px 0;
+            }
+            @media (min-width: $m_large){
+                width: 100%;
+                float: none;
+                padding: 0 0 15px;
+            }
+            @media (min-width: $m_large + 100){
+                padding: 0 0 5px;
+            }
+            img {
+                width: 100%;
+                height: auto;
             }
         }
     }
