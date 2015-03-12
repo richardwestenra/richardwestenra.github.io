@@ -66,7 +66,7 @@ id: home
 	<section id="linkblog" class="homeSection linkblog">
 		<h3><a href="{{site.baseurl}}linkblog/" title="Browse/search linkblog archive">Linkblog <i class="icon-search"></i></a></h3>
 		<ul>
-			{% for link in site.data.linkblog %}{% if forloop.index <= 22 %}
+			{% for link in site.data.linkblog %}{% if forloop.index <= 27 %}
 				<li><a href="{{ link.url }}" target="_blank">{{ link.name }}</a> {% if link.desc %} &ndash; {{ link.desc }}{% endif %}</li>
 			{% endif %}{% endfor %}
 		</ul>
