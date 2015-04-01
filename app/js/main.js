@@ -83,25 +83,28 @@ $(function(){
 
 	//--- Style-switcher ---//
 	var $styleLinks = $('#styleSwitcher').find('a');
-	var styles = [];
-	$styleLinks.each(function(i,d){
-		styles.push( $(d).attr('id') );
-	});
+	var styles = $styleLinks.map(function(){ return $(this).attr('id'); }).get();
+
+	function updateStyle(style) {
+		$body.removeClass(styles.join(' ')).addClass(style);
+		$styleLinks.removeClass('on');
+		$('#'+style).addClass('on');
+	}
+	
 	// Toggle style on click
 	$styleLinks.on('click',function(e){
 		e.preventDefault();
 		var id = $(this).attr('id');
-		$body.removeClass(styles.join(' ')).addClass(id);
-		$styleLinks.removeClass('on');
-		$(this).addClass('on');
+		updateStyle(id);
 		localStorage.setItem('styleSwitcher',id);
 	});
 	// Detect localstorage value and use that if it exists
 	var localStyle = localStorage.getItem('styleSwitcher');
+	var today = new Date();
 	if(localStyle !== null) {
-		$body.removeClass(styles.join(' ')).addClass(localStyle);
-		$styleLinks.removeClass('on');
-		$('#'+localStyle).addClass('on');
+		updateStyle(localStyle);
+	} else if (today.getDate()===1 && today.getMonth()===3) { // if it's April 1st
+		updateStyle('geocities');
 	}
 
 

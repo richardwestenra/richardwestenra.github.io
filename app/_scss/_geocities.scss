@@ -54,6 +54,9 @@ body.geocities{
 	    	color: pink;
 	    }
 	}
+	.homeSection h3 a:hover {
+		border-bottom-color: lime;
+	}
 	.banner {
 		text-shadow:0 0 4px white, 0 -5px 4px #FFFF33, 2px -10px 6px #FFDD33, -2px -15px 11px #FF8800, 2px -25px 18px #FF2200;
 		&:before, &:after {
@@ -102,6 +105,23 @@ body.geocities{
 		@include ir;
 		margin: 1em auto;
 		display: block;
+	}
+	.logos {
+		padding: 10px;
+	    background-color: red;
+	    animation-name: rainbow;
+	    animation-duration: 15s;
+	    animation-iteration-count: infinite;
+	}
+	@keyframes rainbow {
+	    #{(100%/7)*0}   {background-color: red;}
+	    #{(100%/7)*1}  {background-color: orange;}
+	    #{(100%/7)*2}  {background-color: yellow;}
+	    #{(100%/7)*3} {background-color: lime;}
+	    #{(100%/7)*4}  {background-color: cyan;}
+	    #{(100%/7)*5}  {background-color: purple;}
+	    #{(100%/7)*6}  {background-color: violet;}
+	    #{(100%/7)*7}   {background-color: red;}
 	}
 	.portfolio ul {
 		padding-top: 90px;
