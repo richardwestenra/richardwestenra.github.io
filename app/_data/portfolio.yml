@@ -1,3 +1,27 @@
+- name: "How big is Snapchat?"
+  url: https://photoworld.com/how-big-is-snapchat/
+  client: Photoworld
+  img: snapchat.png
+  year: 2015
+
+- name: "What we really value"
+  url: http://www.totallymoney.com/what-we-really-value/
+  client: Totally Money
+  img: value.jpg
+  year: 2015
+
+- name: "If the UK were 100 Businesses"
+  url: http://www.simplybusiness.co.uk/microsites/if-the-uk-were-100-businesses/
+  client: Simply Business
+  img: 100businesses.png
+  year: 2015
+
+- name: "Difficult Second Album Syndrome"
+  url: http://www.concerthotels.com/difficult-second-album
+  client: Concert Hotels
+  img: secondAlbum.png
+  year: 2015
+
 - name: "By the book: What age did the greatest authors publish their most famous works?"
   url: http://itsallaboutthebooks.uk/infographics/what-age-did-the-greatest-authors-publish-their-most-famous-works/
   client: Blinkbox Books
