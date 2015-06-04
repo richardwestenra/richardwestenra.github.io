@@ -54,7 +54,7 @@ id: home
 				{% for item in site.data.portfolio %}
 					<li>
 						<a class="thumb" href="{{ item.url }}" target="_blank" style="background-image: url({{site.baseurl}}img/portfolioThumbs/{{ item.img }});">
-							<span class="name"><em>{{ item.name }}</em> <cite>&ndash; {{ item.client }}</cite></span>
+							<span class="name"><em>{{ item.name }}</em> <cite>{{ item.client }}</cite></span>
 							<span class="year">{{ item.year }}</span>
 						</a>
 					</li>
@@ -67,7 +67,7 @@ id: home
 		<h3><a href="{{site.baseurl}}linkblog/" title="Browse/search linkblog archive">Linkblog <i class="icon-search"></i></a></h3>
 		<ul>
 			{% for link in site.data.linkblog %}{% if forloop.index <= 29 %}
-				<li><a href="{{ link.url }}" target="_blank">{{ link.name }}</a> {% if link.desc %} &ndash; {{ link.desc }}{% endif %}</li>
+				<li><a href="{{ link.url }}" target="_blank">{{ link.name }}</a> {% if link.desc %} - {{ link.desc }}{% endif %}</li>
 			{% endif %}{% endfor %}
 		</ul>
 		<p><a href="{{site.baseurl}}linkblog/" class="btn">Read more &raquo;</a></p>

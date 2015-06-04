@@ -13,7 +13,7 @@ permalink: linkblog/
 		</form>
 		<ul class="lb">
 			{% for item in site.data.linkblog %}
-				<li><a href="{{ item.url }}">{{ item.name }}</a> {% if item.desc %} &ndash; {{ item.desc }}{% endif %}</li>
+				<li><a href="{{ item.url }}">{{ item.name }}</a> {% if item.desc %} - {{ item.desc }}{% endif %}</li>
 			{% endfor %}
 		</ul>
 	</article>

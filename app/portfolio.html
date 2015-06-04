@@ -12,7 +12,7 @@ permalink: portfolio/
 			{% for item in site.data.portfolio %}
 				<li>
 					<a class="thumb" href="{{ item.url }}" target="_blank" style="background-image: url({{site.baseurl}}img/portfolioThumbs/{{ item.img }});">
-						<span class="name"><em>{{ item.name }}</em> <cite>&ndash; {{ item.client }}</cite></span>
+						<span class="name"><em>{{ item.name }}</em> <cite>{{ item.client }}</cite></span>
 						<span class="year">{{ item.year }}</span>
 					</a>
 				</li>
