@@ -1,3 +1,21 @@
+# - name: The View From Here
+#   url: http://www.somfysystems.com/the-view-from-here
+#   client: Somfy
+#   img: view.jpg
+#   year: 2015
+
+- name: The Gender Pay Gap
+  url: http://www.michaelpage.co.uk/minisite/gender-pay-gap/
+  client: Michael Page
+  img: gender.png
+  year: 2015
+
+- name: The Food Capitals of Instagram
+  url: https://photoworld.com/instagram-food-capitals/
+  client: Photoworld
+  img: food.jpg
+  year: 2015
+
 - name: The minimum payment trap
   url: http://www.totallymoney.com/minimum-payment-trap/
   client: Totally Money
