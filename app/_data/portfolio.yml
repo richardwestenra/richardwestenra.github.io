@@ -1,8 +1,8 @@
-# - name: The View From Here
-#   url: http://www.somfysystems.com/the-view-from-here
-#   client: Somfy
-#   img: view.jpg
-#   year: 2015
+- name: The View From Here
+  url: http://www.somfysystems.com/the-view-from-here
+  client: Somfy
+  img: view.jpg
+  year: 2015
 
 - name: The Gender Pay Gap
   url: http://www.michaelpage.co.uk/minisite/gender-pay-gap/
@@ -108,11 +108,11 @@
 #   img: break.jpg
 #   year: 2014
 
-- name: Find Your Ultimate UK Festival
-  url: https://www.thetrainline.com/tools/festival-finder/
-  client: The Trainline
-  img: festivals.png
-  year: 2014
+# - name: Find Your Ultimate UK Festival
+#   url: https://www.thetrainline.com/tools/festival-finder/
+#   client: The Trainline
+#   img: festivals.png
+#   year: 2014
 
 - name: Turning A Profit
   url: https://www.worldpayzinc.com/tech-wealth/
