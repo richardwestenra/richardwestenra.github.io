@@ -1,5 +1,6 @@
 source "http://rubygems.org"
 
-gem 'jekyll', '~>1.4.0'
+gem 'jekyll', '~>3.1.2'
 gem 'redcarpet'
-gem 'compass', '>=0.12'
+gem 'compass', '~>1.0.3'
+gem 'pygments.rb'
