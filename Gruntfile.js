@@ -102,7 +102,7 @@ module.exports = function (grunt) {
         '.jekyll'
       ],
       useminprepare: [
-        '<%= yeoman.dist %>/useminprepare.html'
+        '<%= yeoman.dist %>/useminprepare'
       ]
     },
     compass: {
@@ -180,7 +180,7 @@ module.exports = function (grunt) {
       options: {
         dest: '<%= yeoman.dist %>'
       },
-      html: '<%= yeoman.dist %>/useminprepare.html'
+      html: '<%= yeoman.dist %>/useminprepare/index.html'
     },
     usemin: {
       options: {
@@ -422,7 +422,7 @@ module.exports = function (grunt) {
     'usemin',
     'htmlmin',
     'notify:build'
-    ]);
+  ]);
 
   grunt.registerTask('deploy', [
     'check',
@@ -430,7 +430,7 @@ module.exports = function (grunt) {
     'build',
     'buildcontrol',
     'notify:deploy'
-    ]);
+  ]);
 
   grunt.registerTask('default', [
     'check',
