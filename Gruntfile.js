@@ -344,6 +344,12 @@ module.exports = function (grunt) {
             '!<%= yeoman.app %>/js/vendor/*'
           ]
         },
+        excludeTests: [
+          'search',
+          'hidden',
+          'target',
+          'template'
+        ],
         options : [
           'setClasses',
           'addTest',
@@ -351,8 +357,7 @@ module.exports = function (grunt) {
           'testProp',
           'fnBind'
         ],
-        uglify: true,
-        tests: ['js']
+        uglify: true
       }
     },
     notify_hooks: {
