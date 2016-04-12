@@ -74,7 +74,7 @@ $(function(){
 					$(this).remove();
 				});
 		};
-		
+
 		function loop(){
 			var duration = 1000,
 				interval = randomVal(200,0);
@@ -125,4 +125,8 @@ $(function(){
 			});
 		});
 	}
+
+  if (location.hash === '#hideui') {
+    $('.header, .social, #suchForm').css('visibility','hidden');
+  }
 });
