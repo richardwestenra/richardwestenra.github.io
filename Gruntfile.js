@@ -344,7 +344,15 @@ module.exports = function (grunt) {
             '!<%= yeoman.app %>/js/vendor/*'
           ]
         },
-        uglify: true
+        options : [
+          'setClasses',
+          'addTest',
+          'html5printshiv',
+          'testProp',
+          'fnBind'
+        ],
+        uglify: true,
+        tests: ['js']
       }
     },
     notify_hooks: {
