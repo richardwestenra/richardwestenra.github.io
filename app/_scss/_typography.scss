@@ -47,6 +47,7 @@
     &:hover, &:focus {
         background: lighten($c_primary,10%);
         color: $c_opposite;
+        box-shadow: 0 -3px 0 rgba(#000,0.2) inset;
     }
     &:active {
         transform: translateY(1px);
