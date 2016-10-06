@@ -1,5 +1,307 @@
+- url: "https://medium.com/design-strategy-data-people/lost-in-translation-a-primer-for-cultural-differences-in-design-and-analytics-23b6db12d743#.iah5o6y4d"
+  name: "Lost in translation: a primer for cultural differences in design and analytics"
+
+- url: "http://www.wired.com/2016/04/openai-elon-musk-sam-altman-plan-to-set-artificial-intelligence-free/"
+  name: "Inside OpenAI, Elon Musk’s Wild Plan to Set Artificial Intelligence Free"
+
+- url: "https://aeon.co/essays/just-what-sort-of-nation-might-the-english-seek-to-create"
+  name: "The English question"
+  desc: "Little England may have undone Great Britain. Will a nation of dark fascism or one of green and pleasant lands emerge?"
+
+- url: "http://nautil.us/issue/40/learning/is-artificial-intelligence-permanently-inscrutable?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication"
+  name: "Is Artificial Intelligence Permanently Inscrutable?"
+
+- url: "https://www.theguardian.com/science/2016/sep/01/how-algorithms-rule-our-working-lives"
+  name: "How algorithms rule our working lives"
+
+- url: "http://fusion.net/story/340171/how-nextdoor-reduced-racial-profiling/"
+  name: "How Nextdoor reduced racist posts by 75%"
+
+- url: "http://www.nytimes.com/2016/05/08/magazine/should-prostitution-be-a-crime.html"
+  name: "Should Prostitution Be a Crime?"
+
+- url: "http://www.lrb.co.uk/v38/n15/john-lanchester/brexit-blues"
+  name: "Brexit Blues"
+
+- url: "https://eager.io/blog/the-languages-which-almost-were-css/"
+  name: "The Languages Which Almost Became CSS"
+
+- url: "http://nymag.com/daily/intelligencer/2016/06/edward-snowden-life-as-a-robot.html"
+  name: "Edward Snowden’s Strangely Free Life – As a Robot"
+
+- url: "https://uxdesign.cc/design-better-forms-96fadca0f49c?gi=e048e504f2f3"
+  name: "Design Better Forms"
+
+- url: "http://nymag.com/daily/intelligencer/2016/04/america-tyranny-donald-trump.html#jumpLink"
+  name: "America Has Never Been So Ripe for Tyranny"
+
+- url: "http://www.newyorker.com/culture/culture-desk/how-silicon-valley-nails-silicon-valley"
+  name: "How “Silicon Valley” Nails Silicon Valley"
+
+- url: "https://medium.com/utopia-for-realists/why-do-the-poor-make-such-poor-decisions-f05d84c44f1a#.5y3l1ggdr"
+  name: "Why Do the Poor Make Such Poor Decisions?"
+
+- url: "http://www.theatlantic.com/business/archive/2016/05/moira-weigel-qa/483533/"
+  name: "How Dating Has Always Been Like Work"
+
+- url: "http://www.politico.com/magazine/story/2016/05/2016-election-realignment-partisan-political-party-policy-democrats-republicans-politics-213909"
+  name: "This Is What the Future of American Politics Looks Like"
+  desc: "For political observers, 2016 feels like an earthquake."
+
+- url: "http://m.imgur.com/a/TwY6q"
+  name: "The Chernobyl Story"
+
+- url: "https://nplusonemag.com/issue-25/on-the-fringe/uncanny-valley/"
+  name: "Uncanny Valley"
+  desc: "I would say more, but I signed an NDA."
+
+- url: "http://www.theguardian.com/football/2016/apr/26/hillsborough-disaster-deadly-mistakes-and-lies-that-lasted-decades"
+  name: "Hillsborough disaster: deadly mistakes and lies that lasted decades"
+
+- url: "http://www.mcsweeneys.net/articles/how-to-negotiate-a-raise-if-youre-a-woman"
+  name: "How to Negotiate a Raise (If You’re a Woman)."
+  desc: "First, as you are a woman, stop crying."
+
+- url: "http://quinnae.com/2014/01/03/words-words-words-on-toxicity-and-abuse-in-online-activism/"
+  name: "Words, Words, Words: On Toxicity and Abuse in Online Activism"
+
+- url: "http://fusion.net/story/287592/internet-mapping-glitch-kansas-farm/"
+  name: "How an internet mapping glitch turned a random Kansas farm into a digital hell"
+
+- url: "https://segment.com/blog/the-deep-roots-of-js-fatigue/"
+  name: "The Deep Roots of Javascript Fatigue"
+  desc: "I recently jumped back into frontend development for the first time in months, and I was immediately struck by one thing: everything had changed. When I was more active in the frontend community, the changes seemed minor."
+
+- url: "https://www.youtube.com/watch?v=_pvNp9gHjfk&feature=youtu.be"
+  name: "Change your channel (video)"
+
+- url: "http://www.newyorker.com/magazine/2007/12/17/none-of-the-above"
+  name: "None of the Above"
+  desc: "What I.Q. doesn’t tell you about race."
+
+- url: "http://thebaffler.com/salvos/against-activism"
+  name: "Against Activism"
+
+- url: "http://www.gq.com/story/twitter-100-funniest-jokes"
+  name: "The 100 Funniest Jokes in the History of Twitter"
+
+- url: "http://motherboard.vice.com/read/wikipedia-zero-facebook-free-basics-angola-pirates-zero-rating"
+  name: "Angola’s Wikipedia Pirates Are Exposing the Problems With Digital Colonialism"
+
+- url: "http://publicaddress.net/speaker/out-of-the-mist-an-alternate-history-of-new/"
+  name: "Out of the Mist: An Alternate History of New Zealand Film"
+
+- url: "http://qz.com/584874/you-probably-know-to-ask-yourself-what-do-i-want-heres-a-way-better-question/"
+  name: "You probably know to ask yourself, “What do I want?” Here’s a way better question"
+
+- url: "http://www.nytimes.com/2016/01/03/opinion/how-to-cultivate-the-art-of-serendipity.html"
+  name: "How to Cultivate the Art of Serendipity"
+
+- url: "http://www.theatlantic.com/international/archive/2015/12/war-2015-china-russia-isis/422085/"
+  name: "Brave New War"
+  desc: "A new form of conflict emerged in 2015—from the Islamic State to the South China Sea."
+
+- url: "https://redflag.org.au/article/how-pauline-hanson-was-stopped"
+  name: "How Pauline Hanson was stopped"
+
+- url: "http://www.slate.com/blogs/the_world_/2014/07/17/the_middle_east_friendship_chart.html"
+  name: "The Middle East Friendship Chart"
+
+- url: "http://www.theatlantic.com/magazine/archive/2016/03/why-attacking-isis-wont-make-americans-safer/426861/"
+  name: "Why Attacking ISIS Won’t Make Americans Safer"
+  desc: "For close to a decade, the trauma of the Iraq War left Americans wary of launching new wars in the Middle East. That caution is largely gone."
+
+- url: "https://medium.com/@emmalindsay/what-i-learned-from-dating-women-who-have-been-raped-583e1001b6cd#.vpr78rvao"
+  name: "What I Learned From Dating Women Who Have Been Raped"
+
+- url: "https://www.youtube.com/watch?v=VJRBx0JjM_M"
+  name: "What do sex workers want? (video)"
+
+- url: "http://www.ft.com/cms/s/2/94e97eee-ce9a-11e5-831d-09f7778e7377.html"
+  name: "Why millennials go on holiday instead of saving for a pension"
+
+- url: "http://junkee.com/no-shame-why-most-australians-feel-okay-about-tormenting-asylum-seekers/72827"
+  name: "No Shame: The Science Behind Why Most Australians Feel Okay About Tormenting Asylum Seekers"
+
+- url: "https://www.washingtonpost.com/lifestyle/magazine/fatal-distraction-forgetting-a-child-in-thebackseat-of-a-car-is-a-horrifying-mistake-is-it-a-crime/2014/06/16/8ae0fe3a-f580-11e3-a3a5-42be35962a52_story.html"
+  name: "Fatal Distraction: Forgetting a Child in the Backseat of a Car Is a Horrifying Mistake. Is It a Crime?"
+
+- url: "https://medium.com/@bjmay/how-26-tweets-broke-my-filter-bubble-88c1527517f3#.nd6sklwzp"
+  name: "How 26 Tweets Broke My Filter Bubble"
+
+- url: "http://www.npr.org/sections/krulwich/2012/02/24/147367644/six-legged-giant-finds-secret-hideaway-hides-for-80-years"
+  name: "Six-Legged Giant Finds Secret Hideaway, Hides For 80 Years"
+
+- url: "http://robotlolita.me/2016/01/09/no-i-dont-want-to-configure-your-app.html"
+  name: "No, I Don't Want To Configure Your App!"
+
+- url: "http://www.perc.org.uk/project_posts/the-difficulty-of-neoliberalism/"
+  name: "The difficulty of ‘neoliberalism’"
+
+- url: "https://medium.com/@willcritchlow/46599a2c4a41#.4qjmcknwz"
+  name: "How to debug things. A guide for non-developers"
+
+- url: "https://broadly.vice.com/en_us/article/what-its-like-to-go-clubbing-when-you-have-aspergers"
+  name: "What It's Like to Go Clubbing When You Have Asperger's"
+
+- url: "http://www.nytimes.com/interactive/2015/us/year-in-interactive-storytelling.html"
+  name: "2015: The Year in Visual Stories and Graphics"
+
+- url: "http://slatestarcodex.com/2014/09/30/i-can-tolerate-anything-except-the-outgroup/"
+  name: "I Can Tolerate Anything Except The Outgroup"
+
+- url: "http://www.buzzfeed.com/jennybagel/they-pretend-to-be-us-while-pretending-we-dont-exist#.gxApqkqgV0"
+  name: "They Pretend To Be Us While Pretending We Don’t Exist"
+  desc: "To be Other in America is to be coveted and hated at the same time."
+
+- url: "http://www.theatlantic.com/health/archive/2015/10/emergency-room-wait-times-sexism/410515/"
+  name: "How Doctors Take Women's Pain Less Seriously"
+
+- url: "http://www.nytimes.com/2015/10/21/business/the-myth-of-welfares-corrupting-influence-on-the-poor.html"
+  name: "The Myth of Welfare’s Corrupting Influence on the Poor"
+  desc: "Does welfare corrupt the poor? Few ideas are so deeply ingrained in the American popular imagination as the belief that government aid for poor people will just encourage bad behavior."
+
+- url: "https://medium.com/@belledejour_uk/the-drugs-won-t-work-659c6d7a4ac1#.yiawf8rnm"
+  name: "The Drugs Won’t Work"
+  desc: "The Rise and Fall of Rational Drug Design"
+
+- url: "http://www.nybooks.com/articles/archives/2015/aug/13/mystery-isis/"
+  name: "The Mystery of ISIS"
+
+- url: "https://newrepublic.com/article/123590/sex-and-the-muslim-feminist"
+  name: "Sex and the Muslim Feminist"
+
+- url: "http://www.nybooks.com/blogs/nyrblog/2015/nov/16/paris-attacks-isis-strategy-chaos/"
+  name: "Paris: The War ISIS Wants"
+
+- url: "http://mobile.nytimes.com/2015/11/16/opinion/fearing-fear-itself.html"
+  name: "Fearing Fear Itself"
+
+- url: "http://www.newyorker.com/magazine/2015/11/23/conversion-via-twitter-westboro-baptist-church-megan-phelps-roper"
+  name: "Unfollow"
+  desc: "How a prized daughter of the Westboro Baptist Church came to question its beliefs."
+
+- url: "https://medium.com/matter/living-and-dying-on-airbnb-6bff8d600c04"
+  name: "Living and Dying on Airbnb"
+  desc: "My dad died in an Airbnb rental, and he’s not the only one. What can the company do to improve safety?"
+
+- url: "http://www.brainpickings.org/2013/01/14/how-to-write-with-style-kurt-vonnegut/"
+  name: "How to Write with Style: Kurt Vonnegut’s 8 Keys to the Power of the Written Word"
+
+- url: "https://medium.com/swlh/graham-for-the-lazy-51a170dacc86"
+  name: "Paul Graham’s Startup Advice for the Lazy"
+
+- url: "https://www.eff.org/deeplinks/2015/10/final-leaked-tpp-text-all-we-feared"
+  name: "The Final Leaked TPP Text is All That We Feared"
+
+- url: "https://medium.com/@AaronBleyaert/how-to-lose-weight-in-4-easy-steps-1f135f7e1dec"
+  name: "How to Lose Weight in 4 Easy Steps"
+
+- url: "http://nymag.com/daily/intelligencer/2015/09/frank-rich-in-praise-of-donald-trump.html"
+  name: "Donald Trump Is Saving Our Democracy"
+  desc: "Far from destroying our democracy, he’s exposing all its phoniness and corruption in ways as serious as he is not. And changing it in the process."
+
+- url: "http://www.theguardian.com/politics/2015/sep/25/jeremy-corbyn-earthquake-labour-party"
+  name: "The Corbyn earthquake – how Labour was shaken to its foundations"
+
+- url: "https://medium.com/@cwodtke/users-dont-hate-change-they-hate-you-461772fbcac7"
+  name: "Users don’t hate change. They hate you."
+
+- url: "http://idlewords.com/talks/web_design_first_100_years.htm"
+  name: "Web Design : The First 100 Years"
+
+- url: "http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/"
+  name: "What Is Code?"
+  desc: "Software has been around since the 1940s. Which means that people have been faking their way through meetings about software, and the code that builds it, for generations."
+
+- url: "http://www.newyorker.com/magazine/2015/07/20/the-really-big-one"
+  name: "The Really Big One"
+  desc: "An earthquake will destroy a sizable portion of the coastal Northwest. The question is when."
+
+- url: "http://www.bakadesuyo.com/2013/06/hostage-negotiation/"
+  name: "Hostage Negotiation Techniques That Will Get You What You Want"
+
+- url: "http://sebastien-gabriel.com/designers-guide-to-dpi/home"
+  name: "The Designer's Guide to DPI"
+
+- url: "http://thedissolve.com/features/career-view/1086-pixar-career-view/"
+  name: "Pixar’s films put technology and storytelling hand-in-hand"
+
+- url: "http://www.nytimes.com/2014/09/14/opinion/sunday/should-we-all-take-a-bit-of-lithium.html"
+  name: "Should We All Take a Bit of Lithium?"
+
+- url: "http://www.startuprob.com/learn-to-code/"
+  name: "Why is Learning to Code so Hard?"
+  desc: "Why can some people learn how to code with relative ease, yet others fail?"
+
+- url: "http://www.bloomberg.com/graphics/2015-krugman-battles-austerians/"
+  name: "Paul Krugman Goes for a Knockout Against Scrappy Austerians"
+
+- url: "http://waitbutwhy.com/2015/06/how-tesla-will-change-your-life.html?utm_source=List&utm_campaign=6091d95cd0-WBW+%28MailChimp%29&utm_medium=email&utm_term=0_5b568bad0b-6091d95cd0-51067921"
+  name: "How Tesla Will Change The World"
+
+- url: "http://www.inc.com/david-nihill/23-tips-from-comedians-to-be-funnier-in-your-next-presentation.html?cid=cp01002wired"
+  name: "23 Tips From Comedians to Be Funnier in Your Next Presentation"
+
+- url: "https://hbr.org/2015/05/your-presentation-needs-a-punch-line?utm_source=Socialflow&utm_medium=Tweet&utm_campaign=Socialflow"
+  name: "Your Presentation Needs a Punch Line"
+
+- url: "http://techcrunch.com/2015/05/24/who-will-be-hurt-most-when-the-tech-bubble-burst-not-vcs/"
+  name: "Who Will Be Hurt Most When The Tech Bubble Bursts? Not VCs"
+
+- url: "http://www.polygon.com/2015/6/3/8719389/colorblind-on-witcher-3-rust-and-gamings-race-problem"
+  name: "Colorblind: On Witcher 3, Rust, and gaming's race problem"
+  desc: "Survival indie MMO Rust recently changed how players were assigned characteristics for their avatar.  Everyone used to start as a bald white man, then the developers decided to alter avatars’ race and face."
+
+- url: "https://www.fastcompany.com/28121/they-write-right-stuff"
+  name: "They Write the Right Stuff"
+  desc: "As the 120-ton space shuttle sits surrounded by almost 4 million pounds of rocket fuel, exhaling noxious fumes, visibly impatient to defy gravity, its on-board computers take command."
+
+- url: "https://kateheddleston.com/blog/how-our-engineering-environments-are-killing-diversity-introduction"
+  name: "How Our Engineering Environments are Killing Diversity"
+
+- url: "http://www.pantograph-punch.com/post/on-some-qualities-of-respect"
+  name: "On Some Qualities of Respect"
+
+- url: "http://www.nytimes.com/2015/04/12/opinion/sunday/david-brooks-the-moral-bucket-list.html"
+  name: "The Moral Bucket List"
+
+- url: "http://io9.com/i-fooled-millions-into-thinking-chocolate-helps-weight-1707251800"
+  name: "I Fooled Millions Into Thinking Chocolate Helps Weight Loss. Here's How."
+
+- url: "http://www.esquire.com/lifestyle/a34905/matthew-teague-wife-cancer-essay/"
+  name: "The Friend"
+  desc: "His wife was just thirty-four. They had two little girls. The cancer was everywhere, and the parts of dying that nobody talks about were about to start. His best friend came to help out for a couple weeks. And he never left."
+
+- url: "http://www.slate.com/articles/life/food/2010/04/consider_the_oyster.html"
+  name: "Consider the Oyster"
+
+- url: "http://aeon.co/magazine/technology/could-we-reboot-civilisation-without-fossil-fuels/"
+  name: "Out of the ashes"
+  desc: "It took a lot of fossil fuels to forge our industrial world. Now they're almost gone. Could we do it again without them?"
+
+- url: "http://www.newrepublic.com/article/117088/silicons-valleys-brutal-ageism"
+  name: "The Brutal Ageism of Tech"
+  desc: "Years of experience, plenty of talent, completely obsolete"
+
+- url: "http://www.popularmechanics.com/technology/a14030/how-the-new-york-times-works/"
+  name: "How The New York Times Works"
+
+- url: "http://www.theguardian.com/science/2015/jan/21/-sp-why-cant-worlds-greatest-minds-solve-mystery-consciousness"
+  name: "Why can’t the world’s greatest minds solve the mystery of consciousness?"
+
+- url: "http://www.wired.com/2015/03/illegal-sand-mining/"
+  name: "The Deadly Global War for Sand"
+
+- url: "https://medium.com/the-archipelago/men-get-on-board-with-misandry-4a3bc6c08e16"
+  name: "Men, Get On Board With Misandry"
+
+- url: "http://www.vice.com/read/the-night-my-girlfriend-forgot-who-i-was-944"
+  name: "The Night My Girlfriend Dissociated and Forgot Who I Was"
+
 - url: "https://medium.com/@sailorhg/coding-like-a-girl-595b90791cce"
   name: "Coding Like a Girl"
+  desc: "Heartbreakingly, at some age, we become convinced that doing anything like a girl means that you are doing it ineffectively."
 
 - url: "http://www.howwegettonext.com/Article/VMe8ZSsAAKuo3iFk/why-the-american-founding-fathers-would-have-hated-the-anti-vaccination-movement#.VNAwR1WUctw"
   name: "Why the American Founding Fathers Would Have Hated the Anti-Vaccination Movement"
