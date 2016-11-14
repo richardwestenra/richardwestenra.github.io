@@ -1,3 +1,15 @@
+- name: Ventures of the PayPal Mafia
+  url: https://fleximize.com/paypal-mafia/
+  client: Flexmize
+  img: paypal.png
+  year: 2016
+
+- name: Very British Attitudes to Money
+  url: http://www.totallymoney.com/british-attitudes-to-money/
+  client: Totally Money
+  img: british.jpg
+  year: 2016
+
 - name: The View From Here
   url: http://www.somfysystems.com/the-view-from-here
   client: Somfy
@@ -98,7 +110,7 @@
 # - name: How will you decorate your tree?
 #   url: http://christmastreedecoratingideas.balsamhill.com/
 #   client: Balsam Hill
-#   img: 
+#   img:
 #   year: 2014
 
 # Removed due to confidentiality
@@ -114,11 +126,11 @@
 #   img: festivals.png
 #   year: 2014
 
-- name: Turning A Profit
-  url: https://www.worldpayzinc.com/tech-wealth/
-  client: WorldPay Zinc
-  img: profit.png
-  year: 2014
+# - name: Turning A Profit
+#   url: https://www.worldpayzinc.com/tech-wealth/
+#   client: WorldPay Zinc
+#   img: profit.png
+#   year: 2014
 
 - name: The Minimal Music Quiz
   url: http://www.concerthotels.com/minimal-music-quiz/
@@ -184,20 +196,20 @@
 # - name: The Movie Lover’s Guide to the World
 #   url: http://www.travelex.com/top250movies/index.html
 #   client: Travelex
-#   img: 
+#   img:
 #   year: 2013
 
 # - name: DistilledU
 #   url: http://www.distilled.net/u/
 #   client: Distilled
-#   img: 
+#   img:
 #   year: 2012
 
-- name: Super Bowl Head to Head
-  url: http://thomson.co.uk/blog/infographic/superbowl/index.html
-  client: Thomson
-  img: superbowl.jpg
-  year: 2012
+# - name: Super Bowl Head to Head
+#   url: http://thomson.co.uk/blog/infographic/superbowl/index.html
+#   client: Thomson
+#   img: superbowl.jpg
+#   year: 2012
 
 # Removed due to confidentiality
 # - name: What Speed Do You Read?
@@ -209,6 +221,6 @@
 # - name: Visualizing the World's Food Consumption
 #   url: http://www.foodservicewarehouse.com/calorie-viz/
 #   client: FoodServiceWarehouse
-#   img: 
+#   img:
 #   year: 2011
 
