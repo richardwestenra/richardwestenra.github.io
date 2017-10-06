@@ -66,10 +66,6 @@ $slick-dot-color: $c_primary;
         outline: none;
     }
 
-    .slick-loading & {
-        background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
-    }
-
     &.dragging {
         cursor: pointer;
         cursor: hand;
