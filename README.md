@@ -1,15 +1,26 @@
 [richardwestenra.com](http://richardwestenra.com/)
 ===============
 
-This is my personal website/blog/portfolio. It's built with [Jekyll](http://jekyllrb.com/), [Grunt](http://gruntjs.com/) and [Yeoman](http://yeoman.io/) (specifically, [Generator-Jekyllrb](https://github.com/robwierzbowski/generator-jekyllrb/)). Most of the pages have a custom design, and hence many include additional CSS/JS, either internal or external.
+This is my personal website/blog/portfolio. It's built with [Jekyll](http://jekyllrb.com/) and runs on GitHub Pages. Most of the pages have a custom design, and hence many include additional CSS/JS, either internal in the HTML, or in separate files.
+
+### Development
+
+Install Ruby (with rbenv ideally), then run `bundle install` to install dependencies. Then run `bundle exec jekyll serve` to start development.
 
 ### Hosting
 
-This site is currently hosted with Github Pages: The production repo for this site is over at [github.com/richardwestenra/richardwestenra.github.io](https://github.com/richardwestenra/richardwestenra.github.io) and the live URL is [richardwestenra.github.io](http://richardwestenra.github.io/) / [richardwestenra.com](http://richardwestenra.com/).
+This site is currently hosted with Github Pages: The live URL is [richardwestenra.github.io](https://richardwestenra.github.io/) / [richardwestenra.com](https://www.richardwestenra.com/).
 
 ### Design history
 
-This is a port (and very minor redesign) of my old site, which was built in Wordpress in 2010. For the new site, I've adapted the homepage to make it more responsive, optimised the CSS/JS, and updated the content (particularly the portfolio). I've also kept most of the old posts, made them responsive where possible.
+#### 2010
+I built the site in Wordpress. It was my second portfolio site, and I was moving to London soon and needed to get a job, and I wanted to jump on that "magazine-style bespoke blog-post layout" trend I'd be hearing so much about.
+
+#### 2014
+Smartphones became too common to ignore, so the site needed to be made responsive. Also, Github Pages and static site generators were getting big, and I wanted to stop having to pay for shared PHP web hosting when I could get free super-fast static hosting on GitHub instead. Also also, I was using Grunt and Yeoman for everything, so why should this site be any different? So I moved the site to [Jekyll](http://jekyllrb.com/)/[Grunt](http://gruntjs.com/)/[Yeoman](http://yeoman.io/) (specifically, [Generator-Jekyllrb](https://github.com/robwierzbowski/generator-jekyllrb/)).
+
+#### 2019
+It's been a few years since Grunt was popular, and it's starting to lose support. I only update this site about once a year or so, and every time I do, I need to fix the tooling first, because inevitably it's stopped working. It's probably easier to switch to a standard Jekyll setup, because at least it'll be low-maintenance, even if it is Ruby. Ideally I'd use Gatsby or Eleventy, but that seems like a lot of work, and an extra build step.
 
 ### Blog, portfolio and linkblog items
 
