@@ -1,0 +1,37 @@
+---
+title: dogenerator
+permalink: doge/
+description: such doge generator, wow
+social: true
+socialImg: assets/social/doge.jpg
+---
+{% include header.html %}
+
+<link rel="stylesheet" href="{{site.baseurl}}assets/css/doge.css">
+<link rel="canonical" href="{{site.liveUrl}}{{page.permalink}}">
+</head>
+<body>
+
+{% include nav.html %}
+
+<ul class="doge">
+    <script id="wowTemplate" type="text/template">
+        <li id="<%= id %>" class="wow"
+            style="color:<%= c %>; margin-top:<%= mt %>%; margin-left:<%= ml %>%; display: none;"
+        >
+            <%= text %>
+        </li>
+    </script>
+</ul>
+<form id="suchForm">
+    <h2><a href="#" class="makeDoge active">make your own!</a></h2>
+    <input type="text" id="suchInput" placeholder="Separate words by comma.  e.g. such, doge, wow, excite" />
+    <input type="submit" value="Go" class="submit">
+    <span class="url"></span>
+</form>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+{% include footerJS.html %}
+<script src="{{site.baseurl}}assets/js/doge.js"></script>
+
+{% include footer.html %}

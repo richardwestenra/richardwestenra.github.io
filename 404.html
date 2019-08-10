@@ -1,0 +1,49 @@
+---
+title: 404 Error | Richard Westenra
+description: Page not found
+permalink: /404.html
+---
+{% include header.html %}
+
+<style>
+	canvas {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 0;
+	}
+	main {
+		max-width: 510px;
+		background: rgba(233, 226, 215, 0.9);
+		position: relative;
+		z-index: 1;
+		padding: 10px 20px;
+	}
+	.default .postHeader {
+		margin: 0;
+	}
+	.container {
+		min-height: 400px; /* Mobile nav overflow fix */
+	}
+	.footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}
+</style>
+
+</head>
+<body class="default">
+
+{% include nav.html %}
+
+<main class="wrapper">
+	<h2 class="postHeader">Oops! This is awkward.</h2>
+	<p>The page you&rsquo;re looking for isn&rsquo;t here. Try the <a href="{{site.baseurl}}">home</a> or <a href="{{site.baseurl}}blog/">blog</a> pages instead, maybe.</p>
+</main>
+
+{% include footerJS.html %}
+<script src="{{site.baseurl}}assets/js/404.js"></script>
+
+{% include footer.html %}

@@ -1,0 +1,116 @@
+---
+title: International Space Station Live HD Video Screensaver
+description: Stream beautiful live images of Earth from the ISS every time you lock your computer with this free screensaver
+permalink: live-iss-screensaver/
+comments: true
+social: true
+socialTitle: How to get live streaming video of earth from space as your desktop screensaver
+socialDesc: Watch beautiful live images of Earth from the ISS every time you lock your computer with this free screensaver
+socialImg: assets/social/iss.jpg
+featPosts: ["xkcd","creaturesOfTheDeep","tripToSpace"]
+---
+{% include header.html %}
+
+<style>
+body.iss {
+	background: #111 url({{site.baseurl}}assets/images/iss/issBg.jpg) no-repeat center fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+main h2, main h3, main h4, .featuredPosts h3 { color:#fff; }
+main {
+	margin-top: 2em;
+}
+.post {
+	background: rgba(0,0,0,0.7);
+	padding: 1em 2em;
+	color: #fff;
+}
+.post .postHeader {
+	font-size: 2.7em;
+}
+.post a {
+	color: #def;
+}
+.post .btn {
+	background: steelblue;
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+.btn:hover, .btn:focus {
+	background: #67a3df;
+}
+blockquote {
+	border-left: 2px solid rgba(255,255,255,0.4);
+	margin-left: 0;
+	padding-left: 1em;
+	font-style: italic;
+	font-size: 0.9em;
+}
+	cite {
+		font-style: normal;
+		text-align: right;
+		display: block;
+	}
+h3 {
+	font-size: 1.8em;
+	margin-top: 2em;
+}
+h4 {
+	font-size: 1.2em;
+	margin: 2em 0 0;
+}
+#disqus_thread.wrapper-small {
+	background: #fff;
+	background: rgba(255,255,255,0.8);
+}
+</style>
+
+</head>
+<body class="grey iss">
+    {% include nav.html %}
+
+	<main class="wrapper">
+		<article class="post wrapper-small">
+			<h2 class="postHeader">Live ISS video screensaver</h2>
+			<p>Since April 2014, NASA has been streaming high-definition live video of the Earth's surface from the International Space Station. This makes it possible to set your desktop background or screensaver to this feed, so you can have the same office view as the astronauts aboard the ISS. I've fallen in love with it: Due to the speed of low Earth orbit, there's always something new to see, and a gorgeous sunrise/sunset every 45 minutes. Check it out:</p>
+			<p class="aligncenter"><a class="btn" href="{{site.baseurl}}iss/">Browser Preview</a></p>
+			<p>There are currently two live feeds: The <a href="{{site.baseurl}}iss/#17074538">HDEV exterior feed</a> and an <a href="{{site.baseurl}}iss/#9408562">ISS webcam feed</a> which changes depending on what's going on aboard the station, and sometimes shows the astronauts at work. Switch between the two views using the button at the bottom left. Note that about half the time, there's nothing to see, because the ISS is on the dark side of the Earth.</p>
+
+			<h3>How to set it up</h3>
+			<p>See <a href="#win" class="scroll">instructions for Windows</a> or <a href="#osx" class="scroll">instructions for OS X</a>.</p>
+			<h4 id="win">Instructions for Windows users</h4>
+			<ol>
+				<li>Download <a href="https://code.google.com/p/web-page-screensaver/" target="_blank">web-page-screensaver</a>.</li>
+				<li>To install, right-click on the downloaded file and click 'Install', or save it into the Windows/System32 folder.. If you have trouble, try <a href="http://osxdaily.com/2014/07/30/install-screen-saver-mac-os-x/" target="_blank">these instructions</a>.</li>
+				<li>Change the screensaver to Web Page Screensaver in Screen properties.</li>
+				<li>Open Settings and set the URL to <a href="{{site.baseurl}}iss/" target="_blank">http://richardwestenra.com/iss/</a>.</li>
+			</ol>
+
+			<h4 id="osx">Instructions for Mac OS X users</h4>
+			<ol>
+				<li>Download <a href="https://code.google.com/p/websaver/" target="_blank">websaver</a>.</li>
+				<li>Open the dmg file and install the screensaver. If you have trouble, try <a href="http://osxdaily.com/2014/07/30/install-screen-saver-mac-os-x/" target="_blank">these instructions</a>.</li>
+				<li>Change the screensaver to websaver in System Preferences > Desktop &amp; Screensaver.</li>
+				<li>Open 'Screen Saver Options' and set the URL to <a href="{{site.baseurl}}iss/" target="_blank">http://richardwestenra.com/iss/</a>.</li>
+			</ol>
+			<p>Alternatively, OSX users can choose to <a href="{{site.baseurl}}assets/iss/iss_screensavers_osx.zip">download and install the native screensaver files</a>. These are slightly easier to install, but they don't include a map or the ability to switch feed.</p>
+
+			<p>If you have any trouble, please let me know in the comments below.</p>
+
+			<h3>About the HDEV stream</h3>
+			<blockquote>
+				<p>The High Definition Earth Viewing (HDEV) experiment aboard the ISS was activated April 30, 2014. It is mounted on the External Payload Facility of the European Space Agency’s Columbus module. This experiment includes several commercial HD video cameras aimed at the earth which are enclosed in a pressurized and temperature controlled housing. Video from these cameras is transmitted back to earth and also streamed live on this channel. While the experiment is operational, views will typically sequence though the different cameras. Between camera switches, a gray and then black color slate will briefly appear. Since the ISS is in darkness during part of each orbit, the images will be dark at those times. During periods of loss of signal with the ground or when HDEV is not operating, a gray color slate or previously recorded video may be seen.</p>
+				<p>Analysis of this experiment will be conducted to assess the effects of the space environment on the equipment and video quality which may help decisions about cameras for future missions. High school students helped with the design of some of the HDEV components through the High Schools United with NASA to Create Hardware (HUNCH) program. Student teams will also help operate the experiment. To learn more about the HDEV experiment, <a href="http://www.nasa.gov/mission_pages/station/research/experiments/917.html" target="_blank">visit here</a>.</p>
+				<cite>via <a href="http://www.ustream.tv/channel/iss-hdev-payload" target="_blank">Ustream</a></cite>
+			</blockquote>
+
+			<h3>Credits</h3>
+			<p>I borrowed most of the code for this project from <a href="http://sobolev.us/iss-hd-earth-viewing-experiment-screen-saver/" target="_blank">Vladimir Sobolev's version</a>, but stripped out the audio and added the ability to switch feeds between HDEV and internal feeds. If you prefer a version with audio, check out his site.</p>
+			<p>The <a href="https://www.flickr.com/photos/nasamarshall/6950477589/in/set-72157646171136812" target="_blank">background image of Morocco and Spain used on this page</a> is courtesy of <a href="https://www.flickr.com/photos/nasamarshall/"target="_blank">NASA's Marshall Space Flight Center</a>.</p>
+			<p class="meta">Published 11 June 2014</p>
+		</article>
+	</main>
+
+{% include footerJS.html %}
+{% include footer.html %}

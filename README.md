@@ -20,4 +20,4 @@ Most of the blog posts are built as static html pages rather than using markup f
 ### Assets
 In order to allow `useminprepare` to detect all of the CSS/JS used in the build, they must be added to a throwaway html file called `useminprepare.html`. This gets scanned during build then deleted before deployment. It's the best [workaround](https://github.com/yeoman/grunt-usemin/pull/382#issuecomment-61409135) that I could find.
 
-Social images must be added to the `/assets/` directory (not `/img/`) otherwise their filenames will be revved and their URLs will be incorrect.
+Social images must be added to the `/assets/` directory (not `/images/`) otherwise their filenames will be revved and their URLs will be incorrect.
