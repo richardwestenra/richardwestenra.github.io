@@ -26,9 +26,4 @@ It's been a few years since Grunt was popular, and it's starting to lose support
 
 The Blog posts, Portfolio items and Linkblog items are all listed in YAML in the `_data` directory. This isn't the most DRY way of listing the blog posts, but they're all created in different ways (mostly with static html pages instead of posts) so it gives me more control over the order.
 
-Most of the blog posts are built as static html pages rather than using markup files in `_posts`. Many of them have custom images and other assets, and these are in the `img`, `assets` and `fonts` folders: Usually organised in folders named after the post or the font name.
-
-### Assets
-In order to allow `useminprepare` to detect all of the CSS/JS used in the build, they must be added to a throwaway html file called `useminprepare.html`. This gets scanned during build then deleted before deployment. It's the best [workaround](https://github.com/yeoman/grunt-usemin/pull/382#issuecomment-61409135) that I could find.
-
-Social images must be added to the `/assets/` directory (not `/images/`) otherwise their filenames will be revved and their URLs will be incorrect.
+Most of the blog posts are built as static html pages rather than using markup files in `_posts`. Many of them have custom images and other assets, and these are in the `images`, `assets` and `fonts` folders: Usually organised in folders named after the post or the font name.
