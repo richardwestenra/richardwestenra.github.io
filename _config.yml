@@ -19,11 +19,9 @@ include: ['.htaccess','**.ico','**.xml', 'CNAME']
 future: true
 show_drafts: true
 
-# Markdown library
-markdown: redcarpet
-#   extensions: ['fenced_code_blocks', 'smart']
+markdown: kramdown
 
-highlighter: pygments
+highlighter: rouge
 
 permalink: :title/
 
