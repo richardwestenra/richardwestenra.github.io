@@ -29,8 +29,6 @@ permalink: :title/
 
 relative_permalinks: false
 
-liveUrl: "http://richardwestenra.com/"
+liveUrl: "https://www.richardwestenra.com/"
 
 env: local
-
-baseurl: "/"

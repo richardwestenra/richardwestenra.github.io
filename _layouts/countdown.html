@@ -2,8 +2,8 @@
 <style>
 @font-face {
 	font-family: 'jr!handRegular';
-	src: url('{{site.baseurl}}assets/fonts/jrHand/jr!ha___-webfont.eot');
-	src: local('☺'), url('{{site.baseurl}}assets/fonts/jrHand/jr!ha___-webfont.woff') format('woff'), url('{{site.baseurl}}assets/fonts/jrHand/jr!ha___-webfont.ttf') format('truetype'), url('{{site.baseurl}}assets/fonts/jrHand/jr!ha___-webfont.svg#webfontCkXtjCv7') format('svg');
+	src: url('/assets/fonts/jrHand/jr!ha___-webfont.eot');
+	src: local('☺'), url('/assets/fonts/jrHand/jr!ha___-webfont.woff') format('woff'), url('/assets/fonts/jrHand/jr!ha___-webfont.ttf') format('truetype'), url('/assets/fonts/jrHand/jr!ha___-webfont.svg#webfontCkXtjCv7') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -39,7 +39,7 @@ body {background:#fff;}
 }
 .paper .postContent {
 	position: relative;
-	background:url({{site.baseurl}}assets/images/countdown/countdownBgRepeat.jpg) repeat-y 0 290px;
+	background:url(/assets/images/countdown/countdownBgRepeat.jpg) repeat-y 0 290px;
 	-webkit-background-size: 100% auto;
 	background-size: 100% auto;
 	padding:60px 50px;
@@ -47,11 +47,11 @@ body {background:#fff;}
 	text-shadow:0 -1px 1px #DDD;
 }
 .paper .postContent:before {
-	background-image:url({{site.baseurl}}assets/images/countdown/countdownBgTop.jpg);
+	background-image:url(/assets/images/countdown/countdownBgTop.jpg);
 	background-position: left top;
 }
 .paper .postContent:after {
-	background-image:url({{site.baseurl}}assets/images/countdown/countdownBgBottom.jpg);
+	background-image:url(/assets/images/countdown/countdownBgBottom.jpg);
 	background-position: left bottom;
 }
 .paper .postContent:before, .paper .postContent:after {
@@ -79,7 +79,7 @@ body {background:#fff;}
 	position: relative;
 }
 .paper .winter:before {
-	background:url({{site.baseurl}}assets/images/countdown/paperclip.png) no-repeat center;
+	background:url(/assets/images/countdown/paperclip.png) no-repeat center;
 	-webkit-background-size: contain;
 	background-size: contain;
 	content: '';
@@ -127,7 +127,7 @@ body {background:#fff;}
 			<div class="postContent">
 				<div class="postContentInner">
 					<div class="winter alignright">
-						<img src="{{site.baseurl}}assets/images/countdown/winter.jpg" height="534" width="400" alt="Countdown in winter" title="Now is the winter of our discontent" />
+						<img src="/assets/images/countdown/winter.jpg" height="534" width="400" alt="Countdown in winter" title="Now is the winter of our discontent" />
 					</div>
 					{{ content }}
 				</div>
