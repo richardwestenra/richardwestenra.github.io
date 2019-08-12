@@ -708,7 +708,7 @@ body {
             background-color: rgba($c_opposite,0.1);
         }
     }
-    @media (min-width: 860px){
+    @media (min-width: 1000px){
         p {
             margin: 0;
         }
@@ -724,6 +724,11 @@ body {
     }
     .legal span {
         display: inline-block;
+        margin: 0 10px;
+    }
+    .legal b {
+        display: inline-block;
+        font-weight: normal;
         transform: scaleX(-1);
     }
 }
