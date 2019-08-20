@@ -1,21 +1,39 @@
 <script id="config_tmpl" type="text/template">
-	<div id="config">
+	<div id="config" tabindex="-1">
 		<div class="wrapper">
-			<a class="configBtn" href="#" title="Close" role="button">&times;</a>
 			<h3>Configure site options</h3>
 			<section>
 				<h4>Change theme</h4>
 				<ul id="styleSwitcher">
-				   <li><a class="on" href="#" id="standard"><i class="icon-check-empty"></i> Standard</a></li>
-				   <li><a href="#" id="geocities"><i class="icon-check-empty"></i> Geocities</a></li>
+				   <li>
+              <input type="radio" name="styleswitcher" value="standard" id="standard" />
+              <label for="standard">
+                <i class="icon-check-empty"></i>
+                Standard
+              </label>
+            </li>
+				   <li>
+              <input type="radio" name="styleswitcher" value="geocities" id="geocities" />
+              <label for="geocities">
+                <i class="icon-check-empty"></i>
+                Geocities
+              </label>
+            </li>
 				</ul>
 			</section>
 			<section>
 				<h4>Modify link behaviour</h4>
-				<ul id="linkSwitcher">
-					<li><a href="#" class="on"><i class="icon-check-empty"></i> Open external links in a new tab</a></li>
+				<ul>
+          <li>
+            <input type="checkbox" name="linkswitcher" value="linkswitcher" id="linkswitcher" />
+            <label for="linkswitcher">
+              <i class="icon-check-empty"></i>
+              Open external links in a new tab
+            </label>
+          </li>
 				</ul>
 			</section>
+			<a class="configBtn" href="#" title="Close" aria-label="Close settings panel" role="button">&times;</a>
 		</div>
 	</div>
 </script>

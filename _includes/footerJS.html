@@ -1,22 +1,13 @@
-{% if page.featPosts %}
-	{% include featuredPosts.html %}
-{% endif %}
-{% include config.html %}
-{% if site.env == 'local' %}
-	<script src="/assets/js/jquery.js"></script>
+{% if page.featPosts %} {% include featuredPosts.html %} {% endif %} {% include
+config.html %} {% if site.env == 'local' %}
+<script src="/assets/js/jquery.js"></script>
 {% else %}
-	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 {% endif %}
 
-<!-- build:js(app) /assets/js/main.js -->
 <script src="/assets/js/slick.js"></script>
 <script src="/assets/js/jquery.quicksearch.min.js"></script>
 <script src="/assets/js/konami.js"></script>
 <script src="/assets/js/main.js"></script>
-<!-- endbuild -->
-{% if page.social %}
-	{% include social.html %}
-{% endif %}
-{% if page.comments %}
-	{% include disqus.html %}
-{% endif %}
+{% if page.social %} {% include social.html %} {% endif %} {% if page.comments
+%} {% include disqus.html %} {% endif %}

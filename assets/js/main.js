@@ -75,44 +75,57 @@ $(function(){
 	//--- Config popup ---//
 	var $config = $( $('#config_tmpl').html() );
 	$body.prepend($config);
-	$('.configBtn').on('click',function(e){
+  var $configBtn = $('.configBtn');
+	$configBtn.on('click',function(e){
 		e.preventDefault();
-		$config.slideToggle(240);
+		$config.slideToggle(240, function() {
+      if ($config.is(':visible')) {
+        $config.focus();
+      } else {
+        $configBtn.focus();
+      }
+    });
 	});
 
 
 	//--- Style-switcher ---//
-	var $styleLinks = $('#styleSwitcher').find('a');
-	var styles = $styleLinks.map(function(){ return $(this).attr('id'); }).get();
+	var $styleSwitcher = $('#styleSwitcher');
+	var $styleInputs = $('#styleSwitcher').find('input');
+	var styles = $styleInputs.map(function(){
+    return $(this).attr('id');
+  }).get();
 
-	function updateStyle(style) {
+	function updateStyle(style, updateInputs) {
 		$body.removeClass(styles.join(' ')).addClass(style);
-		$styleLinks.removeClass('on');
-		$('#'+style).addClass('on');
+    if (updateInputs) {
+      $styleSwitcher
+        .find('input[value="' + style + '"]')
+        .attr('checked', true);
+    }
 	}
-	
-	// Toggle style on click
-	$styleLinks.on('click',function(e){
-		e.preventDefault();
+
+	// Toggle style on change
+	$styleInputs.on('change', function(){
 		var id = $(this).attr('id');
 		updateStyle(id);
 		localStorage.setItem('styleSwitcher',id);
 	});
+
 	// Detect localstorage value and use that if it exists
 	var localStyle = localStorage.getItem('styleSwitcher');
 	var today = new Date();
-	if(localStyle !== null) {
-		updateStyle(localStyle);
+	if (localStyle !== null) {
+		updateStyle(localStyle, true);
 	} else if (today.getDate()===1 && today.getMonth()===3) { // if it's April 1st
-		updateStyle('geocities');
+		updateStyle('geocities', true);
 	}
 
 
 
 	//-- Toggle opening links in a new tab ---//
-	var $linkSwitcher = $('#linkSwitcher').find('a');
+	var $linkSwitcher = $('#linkswitcher');
 	function toggleLinks(state){
-		var $extLinks = $('a').filter(function() {
+		$('a').filter(function() {
 		   return this.hostname && this.hostname !== location.hostname;
 		}).toggleClass('external',state).attr({
 			target: function(){
@@ -120,20 +133,19 @@ $(function(){
 			}
 		});
 	}
-	$linkSwitcher.on('click',function(e){
-		e.preventDefault();
-		$(this).toggleClass('on');
-		var isOn = $(this).hasClass('on');
-		localStorage.setItem('externalLinks',isOn);
-		toggleLinks(isOn);
-	});
+
 	// Detect localstorage value and use that if it exists
-	var localExt = localStorage.getItem('externalLinks'),
-		isOn = (localExt !== null) ? JSON.parse(localExt) : true;
-	$linkSwitcher.toggleClass('on',isOn);
+	var localExt = localStorage.getItem('externalLinks');
+	var isOn = (localExt !== null) ? JSON.parse(localExt) : true;
+	$linkSwitcher.attr('checked', isOn);
 	toggleLinks(isOn);
 
-
+  // Add event listener
+	$linkSwitcher.on('change',function(e){
+		isOn = $(this).is(':checked');
+		localStorage.setItem('externalLinks', isOn);
+		toggleLinks(isOn);
+	});
 
 	//--- Konami code easter egg ---//
 	var easterEgg = new Konami();
@@ -144,6 +156,4 @@ $(function(){
 		}, 3000);
 	};
 	easterEgg.load();
-
-
 });
