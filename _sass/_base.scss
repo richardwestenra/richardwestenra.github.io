@@ -22,6 +22,10 @@ a {
         text-decoration: none;
     }
 }
+// What-Input: suppress focus ring on form controls for mouse users
+[data-whatintent='mouse'] *:focus {
+  outline: none;
+}
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.25em;
     color: $c_primary;
@@ -80,7 +84,7 @@ main {
     to { transform: rotate(360deg); }
 }
 
-// Mixin classes: 
+// Mixin classes:
 .display {@include display;}
 .serif {@include serif;}
 .sansSerif {@include sansSerif;}

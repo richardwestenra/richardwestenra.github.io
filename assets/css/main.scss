@@ -84,8 +84,14 @@
           opacity: 0;
           position: absolute;
         }
+        label {
+          cursor: pointer;
+        }
         input:focus + label {
           outline: auto;
+          [data-whatintent="mouse"] & {
+            outline: none;
+          }
         }
         input:checked + label i {
           @extend .icon-check;
