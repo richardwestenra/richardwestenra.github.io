@@ -32,7 +32,7 @@ $(function(){
 		autoplaySpeed: 5000,
 		centerPadding: '5%',
 		dots: true,
-		slide: 'li',
+		slide: 'blockquote',
 		slidesToShow: 1,
 		speed: 400
 	});
@@ -53,13 +53,15 @@ $(function(){
 	// Toggle nav on button click
 	$('.hamburger').on('click',function(e){
 		e.preventDefault();
-		$nav.toggleClass('visible');
+		$nav.toggleClass('visible')
+      .attr('aria-expanded', !$nav.hasClass('visible'));
 	});
 	// Hide nav on document click (except header)
-    $(document).on('click', function(e) {
+  $(document).on('click', function(e) {
 		// if the target of the click isn't the container, nor a descendant of the container
 		if (!$header.is(e.target) && $header.has(e.target).length === 0) {
-			$nav.removeClass('visible');
+			$nav.removeClass('visible')
+        .attr('aria-expanded', 'false');
 		}
 	});
 

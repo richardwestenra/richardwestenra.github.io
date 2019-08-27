@@ -5,9 +5,6 @@
 
 @import "variables", "mixins", "base", "fontface", "typography", "syntax", "header", "slick";
 
-body {
-}
-
 //--- Home ---//
 
 .container {
@@ -257,6 +254,7 @@ body {
 .testimonials {
     padding: 3em 0;
     position: relative;
+    text-align: center;
     &:before, &:after {
         position: absolute;
         font-size: 300px;
@@ -277,45 +275,39 @@ body {
         top: 0px;
         right: -40px;
     }
-    ul {
-        @include noList;
-        text-align: center;
+    blockquote {
+        position: relative;
+        z-index: 2;
+        margin: 0;
+        text-shadow: 0 1px 3px $c_bg;
+        p {
+            @include serif;
+            font-style: italic;
+            font-size: 1.3em;
+            margin: 0 0 .3em;
+            &:before {
+                content: "“";
+            }
+            &:after {
+                content: "”";
+            }
+        }
+        footer {
+            line-height: 1.3em;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+            cite {
+                display: block;
+                font-style: normal;
+                margin: 0;
+            }
+            span {
+                display: block;
+                font-size: 0.8em;
+                opacity: 0.6;
+            }
     }
-        li {
-        }
-        blockquote {
-            position: relative;
-            z-index: 2;
-            margin: 0;
-            text-shadow: 0 1px 3px $c_bg;
-            p {
-                @include serif;
-                font-style: italic;
-                font-size: 1.3em;
-                margin: 0 0 .3em;
-                &:before {
-                    content: "“";
-                }
-                &:after {
-                    content: "”";
-                }
-            }
-            footer {
-                line-height: 1.3em;
-                font-size: 0.9em;
-                opacity: 0.8;
-            }
-                cite {
-                    display: block;
-                    font-style: normal;
-                    margin: 0;
-                }
-                span {
-                    display: block;
-                    font-size: 0.8em;
-                    opacity: 0.6;
-                }
-        }
 }
 
 

@@ -5,7 +5,7 @@ This is my personal website/blog/portfolio. It's built with [Jekyll](http://jeky
 
 ### Development
 
-Install Ruby (with rbenv ideally), then run `bundle install` to install dependencies. Then run `bundle exec jekyll serve` to start development.
+Install Ruby (with rbenv ideally), then run `bundle install` to install dependencies. Then run `bundle exec jekyll serve --livereload` to start development.
 
 ### Hosting
 
